@@ -1,0 +1,278 @@
+.main {
+	background-image: url('../img/main/tablet/bg.jpg');
+
+	&__partner {
+		&-text {
+			font-size: 32px;
+		}
+	}
+
+	&__speaker {
+		&_no-content & {
+			&-image {
+				max-width: 115%;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		padding-top: 48px;
+		&__info {
+			margin: 12px -10px 26px 0;
+		}
+		&__title {
+			margin-right: -10px;			
+
+			.version-email & {				
+				margin-bottom: 30px;
+			}
+		}
+		
+
+		&__image {
+			img {margin: -48px 0 -90px;}
+		}
+
+		&__speaker {
+			&-content {
+				max-width: 200px;
+				margin-right: 10px;
+			}
+			&-image {
+				bottom: 0;
+				right: 90px;
+				margin-left: -90px;
+
+				.version-main-kotler & {
+					bottom: 0;
+					right: 60px;
+					margin-left: -150px;
+				}
+			}
+			&-date {
+				font-size: 21px;
+			}
+			&-name {
+				font-size: 49px;
+				margin-left: 17px;
+			}
+
+			&_no-content & {
+				&-name {
+					font-size: 4.5vw;
+				}
+			}
+		} // &__speaker
+
+		&__bottom-form {
+			margin-bottom: -27px;
+		}
+
+		&-1 {	
+			.version-email & {
+				padding-bottom: 0;
+			}
+		}
+		&__button {
+			.version-email & {
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+		}
+
+		.version-chernyak &,
+		.version-arkhangelskyi &,
+		.version-schwarzenegger & {
+			@media (min-width: 768px) {
+				&__speaker {
+					&_no-content {
+						.main {&__speaker-image {max-width: 111%;}}
+					}
+				}
+			}
+		}
+
+	} // 991
+
+	@media (max-width: 1120px) {
+
+		&__speaker {
+			&_no-content & {
+				&-name {
+					font-size: 4.5vw;
+				}
+			}
+		}
+	}
+
+
+	@media (max-width: 767px) {
+		background-image: url('../img/main/mobile/bg.jpg');
+		padding: 14px 0 0;
+
+		&__bg {
+			background: #230872;
+		}
+
+		&-1 {
+			margin-top: 66px;
+		}		
+
+		&__image {
+			margin: 0 -100px;
+			img {margin: -90px 0 -50px;}
+		}
+
+		&__info {
+			max-width: 73.4%;
+			margin: 0 0 18px 0;
+			.main_no-speaker & {
+				max-width: none;
+			}
+		}
+
+		&__title {
+			max-width: 74.3%;
+			margin: 0 0 31px;
+			z-index: 3;
+			position: relative;
+			.main_no-speaker & {
+				max-width: none;
+			}
+
+			&-speaker {
+				&-date {
+					font-size: 17.1745px;
+					padding: 7px 12px;
+					margin: 0 auto 0 0;
+				}
+				&-name {
+					font-size: 63.4873px;
+					line-height: 89%;
+					margin: auto 0 0;
+				}
+				&-note {
+					max-width: 220px;
+					font-size: 36.3434px;
+					margin: 6px 0 12px;
+				}
+			} // &-speaker
+		} // &__title
+
+		&__bottom-form {
+			display: none;
+		}
+
+		&__form {
+			display: none;
+			&-counter {
+				color: #3640B9;
+				background: #FFF;
+				margin: 9px -15px 0;
+			}
+		}
+
+		&__speaker {
+			flex-direction: row;
+			align-items: center;
+			background: rgba(26, 0, 68, 0.76);
+			padding: 0 14px 0 15px;
+			margin: 0 -15px;
+			&-image {
+				max-width: 282px;
+				max-height: 211px;
+				overflow: hidden;
+				bottom: 100%;
+				right: -96px;
+				margin: 0;
+
+				.version-main-kotler &{
+					bottom: 100%;
+					right: -96px;
+					margin: 0;
+				}
+			}
+			&-content {
+				max-width: 90px;
+				order: 2;
+				margin: -14px 0 -10px auto;
+				img {
+					box-shadow: 0px 6px 10px rgba(0, 3, 80, 0.25);
+				}
+			}
+			&-title {
+				display: block;
+				padding: 15px 0;
+			}
+			&-date {
+				display: inline-block;
+				font-size: 17.1745px;
+				padding: 5px 8px 7px;
+				margin-bottom: 5px;
+			}
+			&-base {
+				max-width: 110px;
+				min-width: 90px;
+				padding: 2px 8px;
+				margin: 0 auto 15px 0;
+			}
+			&-name {
+				white-space: normal;
+				font-size: 45px;
+				line-height: 50%;
+				margin: 0 10px 0 0;
+			}
+
+			&_no-content & {
+				&-image {
+					max-width: 57%;
+					max-height: initial;
+					bottom: 100%;
+					right: 0px;
+
+					&:before {
+						box-shadow: 0px -20px 40px 40px rgba(33, 0, 128, 0.1);
+					}
+				}
+				&-title {
+					display: block;
+					width: 100%;
+				}
+				&-name {
+					font-size: 40px;
+					text-align: left;
+				}
+			}
+		} // &__speaker
+
+	} // 767
+
+
+	@media ( max-width: 575px ) {
+
+		&__speaker-name {
+			line-height: 90%;
+		}	
+
+		&__top50 {
+			&-date{
+				font-size: 25px;
+    			margin-top: 20px;
+			}
+			&-info {
+				font-size: 15px;
+				&-item {
+					min-width: 45px;
+				}
+				&-num {
+					font-size: 44px;
+				}
+			}
+			&-num {
+				font-size: 60px;
+			}
+		} // &__top50
+
+	} // 575
+
+}

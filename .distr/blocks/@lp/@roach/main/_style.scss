@@ -1,0 +1,82 @@
+.main {
+	padding: 50px 0;
+	&__title {
+		text-transform: uppercase;
+		margin: 10px 0 43px;
+
+		&-speaker {
+			&-date {
+				display: inline-block;
+				font-size: 22.6743px;
+				font-weight: 800;
+				line-height: 79%;
+				letter-spacing: -0.01em;
+				background: $red;
+				padding: 9px 15px;
+				margin: 0 0 20px 0;
+			}
+			&-name {
+				font-size: 150px;
+				font-weight: 900;
+				line-height: 89%;
+				letter-spacing: -0.02em;
+				margin: 0 0 7px -5px;
+			}
+			&-note {
+				position: relative;
+    		z-index: 2;
+				white-space: nowrap;
+				font-size: 45px;
+				font-weight: 600;
+				line-height: 84%;
+				letter-spacing: -0.015em;
+				span {font-weight: 900;}
+			}
+		}
+	}
+	&__speaker {
+		&-image {
+			margin-left: -100px;
+			bottom: -64px;
+		}
+		&-title {
+			display: none !important;
+		}
+
+		&_no-content & {
+			&-image {
+				right: -110px;
+				bottom: -45px;
+			}
+		}		
+	}
+
+	&__button {
+		&-link {
+			max-width: 250px;
+			height: 50px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__books {
+		box-shadow: 9.65514px 9.65514px 8.68963px rgba(54, 0, 80, 0.61), inset 0px -34.7585px 61.7929px rgba(82, 0, 146, 0.2);
+		&_1 {
+			margin-right: 90px;
+		}
+
+		&-wrap {
+			position: relative;
+			z-index: 2;
+			margin-bottom: -250px;
+		}
+	}
+
+	&_bottom & {
+		&__books {
+			display: none;
+			&-wrap {margin: 0;}
+		}
+	}
+	&_bottom {margin-top: 0;}
+}

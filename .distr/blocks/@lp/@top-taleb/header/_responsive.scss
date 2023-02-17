@@ -1,0 +1,56 @@
+.header {
+
+	@media (max-width: 991px) {
+
+		&__logo {
+			max-width: 135px;
+		}
+
+		&__phone {
+			font-size: 20px;
+		}
+
+		&__button {
+			min-width: 146px;
+			min-height: 44px;
+			font-size: 10px;
+			margin: auto;
+			&-col {
+				align-self: center;
+			}
+		}
+
+	} // 991
+
+
+	@media (max-width: 767px) {
+
+		// &__phone {
+		// 	display: none;
+		// 	&-col {
+		// 		display: none;
+		// 	}
+		// }
+
+		&__button {
+			min-height: 80px;
+			bottom: 0;
+			font-size: 23px;
+			box-shadow: none;
+			margin-bottom: 10px;
+			&-col {
+				width: auto;
+				height: auto;
+			}
+		}
+		// &__toggle {
+		// 	&-popup {
+		// 		&-col {
+		// 			display: none;
+		// 		}
+		// 	}
+		// }
+
+	} // 767
+
+}

@@ -1,0 +1,32 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+@import '@lp/@version-taleb/common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import '@lp/@version-taleb/header/_responsive';
+@import '@lp/@version-taleb/main/_responsive';
+@import '@lp/@version-taleb/about/_responsive';
+@import '@lp/@version-taleb/registration/_responsive';
+@import '@lp/@version-taleb/beginning/_responsive';
+@import '@lp/@version-taleb/after/_responsive';
+@import '@lp/@version-taleb/whois/_responsive';
+@import '@lp/@version-taleb/reputation/_responsive';
+@import '@lp/@version-taleb/what-now/_responsive';
+@import '@lp/@version-taleb/comingsoon/_responsive';
+@import '@lp/@version-taleb/platform/_responsive';
+@import '@lp/@version-taleb/pay/_responsive';
+@import '@lp/@version-taleb/footer/_responsive';
+@import 'price/_responsive';
+
+/***********/
+/* Popups */
+@import 'popup-price/_responsive';

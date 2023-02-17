@@ -1,0 +1,30 @@
+.concept {
+	color: #ECECF7;
+	background: url('../img/concept/bg-1.png') no-repeat 86px 143px, url('../img/concept/bg-2.png') no-repeat right 90px top 397px, #FFF;
+	@media (max-width: 1800px) {
+		background-image: none;
+	}
+	padding: 106px 0 60px;
+
+	&__title {
+		margin-bottom: 24px;
+	}
+	&__subtitle {
+		display: none;
+		color: $blue;
+		font-size: 59px;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+	&__text {
+		color: #333;
+		font-size: 23px;
+		line-height: 139%;
+		&_1 {
+			max-width: 520px;
+			font-weight: bold;
+		}
+	}
+
+}

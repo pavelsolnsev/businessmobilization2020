@@ -1,0 +1,223 @@
+.genesis{
+
+	@media ( max-width: 1600px ) {
+
+		&-banner {
+
+			&__cont {
+				background: #F5FAFF;
+			}
+		}
+	}
+
+	@media (max-width: 992px) {
+
+		&-banner {
+
+			&__cont {
+				background: url('../img/@lp/@platform/genesis/bg_face_mobile.svg')no-repeat right 0 / 40%, #F5FAFF;
+				padding-top: 200px;
+			}
+
+			&__title {
+				padding-right: 30%;
+
+				&-cont {
+					display: block;
+
+					img {
+						margin-bottom: 10px;
+					}
+				}
+			}
+
+			&__desc {
+				margin-bottom: 30px;
+			}
+
+			&__middle {
+				flex-direction: column;
+			}
+
+			&__img {
+				width: 100%;
+				max-width: 700px;
+				position: relative;
+				top: 0px;
+				margin: -30px auto -10px;
+
+				&-txt {
+
+				}
+
+				img {
+					position: relative;
+					margin: 0 auto;
+					top: -30px;
+				}
+			}
+
+			&__button {
+				margin: 0 auto;
+			}
+		}
+	
+		&__bg {
+			background: url("../img/@lp/@platform/genesis/bg-tablet.jpg") bottom center no-repeat;
+			background-size: cover;
+			padding-top: 30px;
+			padding-bottom: 550px;
+		}
+		&__main{
+			padding-top: 100px;
+			&-title{
+				font-size: 88px;
+				span{
+					font-size: 52px;
+					line-height: 56px;
+				}
+			}
+			&-block{
+				margin-top: 70px;
+			}
+			&-text{
+				margin-top: 70px;
+			}
+		}
+		&__form{
+			&-container{
+				flex-direction: column;
+				&-title,
+				&-block{
+					width: 100%;
+					margin: 0 auto;
+					max-width: 670px;
+				}
+			}
+			.form{
+				&__title{
+					text-align: center;
+					&-pic{
+						display: none;
+					}
+				}
+				&__items{
+					flex-direction: column;
+				}
+				&__item{
+					width: 100%;
+					margin: 0 0 15px;
+				}
+				&__button {
+					max-width: inherit;
+					border-radius: 0;
+				}
+				&__footer {
+					font-size: 13px;
+					max-width: 600px;
+					text-align: center;
+					margin: 15px auto 0;
+				}
+			}
+		}
+		&__footer-flex{
+			justify-content: space-between;
+		}
+	}
+
+	@media (max-width: 768px) {
+		&__main-time{
+			margin-left: 15px;
+		}
+		&__form{
+			.form__title{
+				font-size: 44px;
+				margin-bottom: 40px;
+			}
+		}
+		
+	}
+
+	@media ( max-width: 576px ) {
+		&__bg{
+			background: url("../img/@lp/@platform/genesis/bg-mobile.jpg") bottom center no-repeat;
+			background-size: cover;
+			padding-top: 15px;
+			padding-bottom: 320px;
+		}
+		&__header{
+			&-logo{
+				max-width: 100px;
+			}
+			&-phone{
+				font-size: 14px;
+			}
+			&-btn{
+				display: none;
+			}
+		}
+		&__main{
+			padding-top: 50px;
+			&-title{
+				font-size: 56px;
+				line-height: 58px;
+				span{
+					font-size: 26px;
+					line-height: 23px;
+				}
+			}
+			&-block{
+				margin-top: 35px;
+			}
+			&-name{
+				font-size: 24px;
+				padding: 10px 10px 15px;
+			}
+			&-time{
+				margin-left: 10px;
+				&-pic{
+					width: 35px;
+					height: 35px;
+				}
+			}
+			&-column{
+				margin-left: 10px;
+				&-title{
+					font-size: 16px;
+				}
+				&-description{
+					font-size: 18px;
+				}
+			}
+			&-text{
+				margin-top: 45px;
+				font-size: 24px;
+			}
+		}
+		&__form{
+			.form{
+				.form__title {
+					font-size: 34px;
+					margin-bottom: 40px;
+				}
+			}
+		}
+		&__footer-flex {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	@media ( max-width: 425px ) {
+
+		&-banner {
+
+			&__cont {
+				background: url('../img/@lp/@platform/genesis/bg_face_mobile.svg')no-repeat right 0, #F5FAFF;
+				background-size: 200px;
+				padding-top: 160px;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.press {
+	background: #F4F4F4;
+	padding: 82px 0 80px;
+
+	&__title {
+		text-align: center;
+		padding: 0 15px;
+		margin-bottom: 45px;
+	}
+
+	.swiper-slide {
+		max-width: 751px;
+	}
+
+	&-card {
+		min-height: 615px;
+		display: block;
+		text-align: center;
+		text-decoration: none !important;
+		background: linear-gradient(180deg, #FFFFFF 50.09%, #ECECEC 100%);
+		box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.2);
+		padding: 30px 82px;
+		&__image {
+			min-height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+		&__title {
+			color: $blue;
+			font-size: 40px;
+			font-weight: 900;
+			line-height: 100%;
+			letter-spacing: -0.03em;
+			margin-bottom: 26px;
+		}
+		&__text {
+			color: #333333;
+			font-size: 23px;
+			line-height: 139%;
+		}
+	}
+
+}

@@ -1,0 +1,64 @@
+.franchise {
+	max-width: 1295px;
+	display: block;
+	position: relative;
+	color: #0D0D0D;
+	opacity: 1 !important;
+	text-decoration: none !important;
+	background: linear-gradient(4.59deg, #F7006F -6.19%, rgba(214, 20, 107, 0.51) 61.14%), linear-gradient(196.53deg, #FF0072 19.3%, rgba(214, 20, 107, 0.37) 48.17%), linear-gradient(269.01deg, #05006D -14.93%, #280099 9.94%, rgba(71, 0, 191, 0.4) 41.24%, rgba(98, 0, 160, 0) 59.08%), linear-gradient(89.21deg, rgba(5, 0, 109, 0.63) -7.24%, rgba(37, 0, 149, 0.63) 7.02%, rgba(71, 0, 191, 0.63) 21.87%, rgba(98, 0, 160, 0.63) 62.27%, rgba(184, 0, 147, 0.63) 100.29%);
+	box-shadow: 0px 32px 44px rgba(255, 0, 110, 0.37);
+	padding: 15px;
+	margin: 0 auto;
+	@media (max-width: 1295+30px) {
+		margin: 0 15px;
+	}
+	&__inner {
+		background: #FFF url('../img/franchise/bg.svg') no-repeat 100% 0;
+		padding: 57px 35px 34px;
+		.lang-en & {
+			background-image: none;
+		}
+	}
+	&__title {
+		font-size: 55.61px;
+		font-weight: 900;
+		line-height: 91.35%;
+		letter-spacing: -0.03em;
+		margin-bottom: 10px;
+	}
+	&__subtitle-1 {
+		font-size: 28px;
+		font-weight: bold;
+		line-height: 1;
+		letter-spacing: -0.01em;
+		margin-top: 5px;
+	}
+	&__subtitle-2 {
+		font-size: 37px;
+		font-weight: bold;
+		line-height: 1;
+		letter-spacing: -0.01em;
+		margin-bottom: 19px;
+	}
+	&__button {
+		max-width: 370px;
+		min-height: 80px;
+		font-size: 28px;
+		line-height: 0.9;
+		font-weight: 900;
+		box-shadow: 0px 7px 9px rgba(52, 0, 173, 0.33);
+		padding: 0 10px;
+		margin-top: 60px;
+	}
+	&__item {
+		font-size: 28px;
+		font-weight: bold;
+		line-height: 1;
+		letter-spacing: -0.03em;
+		margin-top: 35px;
+		&-image {
+			min-height: 50px;
+			margin-bottom: 8px;
+		}
+	}
+}

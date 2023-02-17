@@ -1,0 +1,141 @@
+.reputation {
+
+	@media (max-width: 1580px) {
+/* 		.blockquote {
+			margin-top: -40px;
+		} */
+	}
+
+	@media (max-width: 1199px) {
+	}
+
+	@media (max-width: 991px) {
+		background-image: none;
+
+		&__title {
+			line-height: 94px;
+			margin-bottom: 48px;
+		}
+		&__subtitle {
+			margin-bottom: 35px;
+		}
+		&__text {
+			&-img,
+			&--img {
+				max-width: 50px;
+			}
+
+			&--bottom {
+				padding: 0 5rem;
+				width: 100%;
+			}
+		}
+		&__img {
+			img {
+				margin: 0 -45px 0 0;
+				max-width: 500px;
+			}
+
+			&_left {
+				float: none;
+				width: 100%;
+				text-align: center;
+				img {margin: 0;}
+			}
+		}
+		&__content {
+			flex-direction: column-reverse;
+			align-items: center;
+			&--bottom {
+				padding: 90px 0 0 0;
+			}
+		}
+		.blockquote {
+			&__img {
+				&--bottom--left {
+					width: 195px;
+					right: -6.6%;
+					top: 103%;
+					left: auto;			
+				}
+			}
+		}
+	} // 991
+
+
+	@media (max-width: 575px) {
+		padding-top: 95px;
+		padding-bottom: 80px;
+		&__title {
+			margin-bottom: 25px;
+			line-height: 31px;
+			br {
+				display: none;
+			}
+		}
+		&__subtitle {
+			order: 2;
+			font-size: 24px;
+			line-height: 24px;
+			br {
+				display: none;
+			}
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			padding: 0 2rem 0 2rem;
+			margin-bottom: 4px;
+			&--title {
+				order: 1;
+			}
+			&--box {
+				order: 2;
+				margin-bottom: 25px;
+			}
+			p {
+				margin-bottom: 1.5rem;
+			}
+			&--bottom {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+		&__img {
+			width: 100%;
+			text-align: center;
+			order: 3;
+			float: none;
+			img {
+				margin: -30px 0 0 0;
+				max-width: 300px;
+			}
+			&_left {order: 0;}
+		}
+
+		&__content {
+			&--bottom {
+				padding: 300px 0 0 0;
+			}
+		}
+
+		.blockquote {
+			&__img {
+				&--bottom--left {
+					max-width: 300px;
+					width: 100%;
+					bottom: -270px;
+					top: auto;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				&--bottom--right {
+					display: none;
+				}
+			}
+		}
+
+	} // 575
+	
+}
+

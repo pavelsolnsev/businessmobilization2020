@@ -1,0 +1,27 @@
+.reviews {
+	color: $blue;
+	background: #FFF;
+	padding: 119px 10px 80px;
+
+	&__title {
+		text-align: center;
+		padding: 0 15px;
+		margin-bottom: 40px;
+	}
+
+	.swiper-slide {
+		max-width: 300px;
+	}
+
+	&__card {
+		display: block;
+		margin: 0 auto;
+		opacity: 1 !important;
+		box-shadow: 0px 0px 54px rgba(22, 27, 67, 0.25);
+		picture {
+			display: block;
+			overflow: hidden;
+		}
+	}
+
+}

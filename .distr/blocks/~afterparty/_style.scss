@@ -1,0 +1,24 @@
+.afterparty {
+    padding: 122px 0 90px 0;
+    background: #2b0675 url(../img/afterparty/bg_afterparty.jpg) no-repeat 50% 0;
+    background-size: cover;
+    color: #fff;
+
+    &__title {color: #fff;}
+
+    &__description {padding: 25px 0 20px 0;}
+
+    &__paragraph {
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -0.01em;
+        margin-bottom: 15px;
+
+        &-part {font-weight: 700;}
+    }
+
+    &__hashtag {
+        font-size: 35px;
+        letter-spacing: -0.03em;
+    }
+}

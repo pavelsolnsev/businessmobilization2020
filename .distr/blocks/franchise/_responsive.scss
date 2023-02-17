@@ -1,0 +1,63 @@
+.franchise {
+
+	&__title {
+		font-size: 45px;
+	}
+	&__button {
+		max-width: 318px;
+		min-height: 62px;
+		font-size: 25px;
+	}
+
+	@media (max-width: 1199px) {
+		&__button {
+			margin-top: 30px;
+		}
+	} // 1199
+
+	@media (max-width: 991px) {
+		&__title {
+			margin-right: 130px;
+		}
+	} // 991
+
+
+	@media (max-width: 767px) {
+		padding: 6px;
+		&__inner {
+			background-size: 74px auto;
+			padding: 22px 3px 29px;
+		}
+		&__title {
+			font-size: 35px;
+			margin-bottom: 30px;
+			margin-right: 50px;
+		}
+		&__subtitle-1 {
+			font-size: 20px;
+		}
+		&__subtitle-2 {
+			font-size: 26px;
+			margin-bottom: 20px;
+		}
+		&__button {
+			min-height: 60px;
+			font-size: 23px;
+			box-shadow: none;
+			margin-top: 0;
+		}
+
+		.version-retargeting & {
+			display: none;
+		}
+
+	} // 767
+
+
+	@media (max-width: 575px) {
+		&__title {
+			margin-right: 0;
+		}
+	} // 575
+
+}

@@ -1,0 +1,23 @@
+.discussion {
+
+	@media (max-width: 767px) {
+		&__title {
+			font-size: 50px;
+		}
+	
+		&__suptitle {
+			font-size: 31px;
+		}
+	} // 991
+
+	@media (max-width: 575px) {
+		padding: 30px 0;
+	} // 575
+
+	@media (max-width: 480px) {
+	
+		&__title {
+			font-size: 37px;
+		}
+	} // 480
+}

@@ -1,0 +1,41 @@
+.fancybox {
+	&-content {
+		padding: 0 !important;
+	}
+
+	&-theme-dark &-button path {
+		fill: #FFF;
+	}
+
+	&-button {
+		overflow: hidden;
+		padding: 0 !important;
+		svg {
+			display: block;
+			width: 25px;
+			height: 25px;
+			margin: 0 0 0 10px;
+		}
+	}
+
+	&-close-small {
+		width: 45px !important;
+		height: 45px !important;
+	}
+
+	@media (max-width: 767px) {
+		&-close-small {
+			width: 46px !important;
+			height: 46px !important;
+			border: none;
+			svg {
+				width: 28px !important;
+				height: 28px !important;
+
+				path {
+					fill: #FFF ;
+				}
+			}
+		}
+	}
+}

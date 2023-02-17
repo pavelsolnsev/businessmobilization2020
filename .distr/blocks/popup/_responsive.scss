@@ -1,0 +1,14 @@
+.popup {
+
+	@media (max-width: 767px) {
+
+		&__caption {
+			font-size: 24px;
+			margin-bottom: 0;
+		}
+
+	}	// 767
+
+	@import '_responsive.accreditation';
+
+}

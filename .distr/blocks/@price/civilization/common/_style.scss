@@ -1,0 +1,45 @@
+@import '_variables';
+
+/* Text common styles */
+@import '_text';
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+body {
+    color: #000000;
+	font-size: 15px;
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+	line-height: 1.25;
+	background: #FFF;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+}
+
+.button {
+    width: 100%;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-family: Minion Pro, sans-serif;
+    font-weight: bold;    
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    background: linear-gradient(148.05deg, rgba(254, 237, 174, 0.7) -13.24%, rgba(228, 152, 12, 0.7) 10.13%, rgba(228, 152, 12, 0) 32.74%), #E72F0C;
+    border: 0;
+    cursor: pointer;
+    padding-top: 2px;
+}

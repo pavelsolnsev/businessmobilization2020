@@ -1,0 +1,45 @@
+.footer {
+    background: #1662DA;
+
+    &__box {
+        display: flex;
+    }
+
+    &__logo {
+        position: relative;
+        width: 50%;
+        padding-bottom: 22px;
+        background: #251B1D;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 100%;
+            width: 1000px;
+            background: #251B1D;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 50%;
+        padding: 0 0 22px 110px;
+        font-family: $proximanova;
+        font-size: 11px;
+        line-height: 128.3%;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        color: #fff;
+
+        A {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}
+

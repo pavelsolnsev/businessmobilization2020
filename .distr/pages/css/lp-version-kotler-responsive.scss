@@ -1,0 +1,27 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+@import '@lp/@version-kotler/common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import '@lp/@version-kotler/header/_responsive';
+@import '@lp/@version-kotler/main/_responsive';
+@import '@lp/@version-kotler/about/_responsive';
+@import '@lp/@version-kotler/registration/_responsive';
+@import '@lp/@version-kotler/whois/_responsive';
+@import '@lp/@version-kotler/opposition/_responsive';
+@import '@lp/@version-kotler/what-now/_responsive';
+@import '@lp/@version-kotler/became-few/_responsive';
+@import '@lp/@version-kotler/charge/_responsive';
+@import '@lp/@version-kotler/soul/_responsive';
+@import '@lp/@version-kotler/what-will/_responsive';
+@import '@lp/@version-kotler/platform/_responsive';
+@import 'vtb/_responsive';

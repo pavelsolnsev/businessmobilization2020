@@ -1,0 +1,156 @@
+.community {
+
+	@media (max-width: 1199px) {
+
+		padding: 70px 0 43px;
+
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		&__features {
+			margin-left: -1.5em;
+		}
+
+		&__item {
+			min-height: 167px;
+			font-size: 26px;
+
+			&:before {
+				width: 86px;
+				height: 80px;
+				background-size: cover;				
+				margin: 0 auto 10px auto;
+			}
+		}
+	} // 1199
+
+
+	@media (max-width: 991px) {
+
+		padding-top: 50px;
+		background-image: url(../img/community/tablet/bg.jpg);
+
+		&__title {
+			font-size: 78px;
+			line-height: .9;
+		}
+
+		&__text {
+			max-width: none;
+			margin-bottom: 30px;
+		}
+
+		&__features {
+			margin-left: 0;
+		}
+
+		&__button {
+			position: static;
+			max-width: 330px;
+			height: 60px;
+			font-size: 23px;
+		}
+
+		&__item {
+			font-size: 20px;
+		}
+	} // 991
+
+	@media (max-width: 767px) {
+		padding: 40px 0 35px;
+
+		&__title {
+			font-size: 45px;
+			line-height: .9;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+
+		&__features {
+			font-size: 18px;
+			margin-bottom: 20px;
+			li {
+				padding-left: 25px;
+			}
+			li + li {
+				margin-top: 15px;
+			}
+		}
+
+		&__item {
+			position: relative;
+			max-width: none;
+			min-height: 73px;
+			text-align: left;
+			padding: 20px 10px 15px 73px;
+			margin: 0 auto 8px auto;
+	
+			&:before {
+				position: absolute;
+				left: 15px;
+				top: 50%;
+				width: 40px;
+				height: 37px;
+				margin: -17px 0 0 0;
+			}
+		}
+	} // 767
+
+	@media (max-width: 575px) {
+
+		padding: 40px 0 26px;
+		background-image: url(../img/community/mobile/bg.jpg);
+
+		&__box {
+			margin-bottom: 15px;
+		}
+
+		&__text-top {
+			margin-bottom: 10px;
+		}
+
+		&__text-bottom {
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-weight: 700;
+			letter-spacing: -0.01em;
+
+			p {
+				margin: 0 0 10px;
+			}
+		}
+
+		&__features {
+			li {
+				padding-left: 32px;
+
+				&:before {
+					content: url('../img/community/checkmark.png');
+				}
+			}
+			li + li {
+				margin-top: 13px;
+			}
+		}
+
+		&__button {
+	
+			&_1 {
+				display: none;
+			}
+			&_2 {
+				display: flex;
+				margin-top: 11px;
+			}
+		}
+
+	} // 575
+}

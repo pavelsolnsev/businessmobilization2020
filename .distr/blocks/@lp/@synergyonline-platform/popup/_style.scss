@@ -1,0 +1,89 @@
+.popup-demo {
+    max-width: 833px;
+    &__wrap {
+        display: flex;
+
+    }
+    &__left {
+        padding: 80px 32px;
+        background: url(../img/@lp/@synergyonline-platform/popup/form-bg.jpg) center center / cover no-repeat;
+        max-width: 340px;
+    }
+    &__content {
+        color: #fff;
+        text-align: center;
+    }
+    &__name {
+        font-family: 'Proxima Nova Cn';
+        font-weight: 900;
+        font-size: 54px;
+    }
+    &__free {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__wrap {
+        min-height: 615px;
+    }
+    &__list {
+        margin-bottom: 36px;
+    }
+    &__right {
+        padding: 59px 77px 30px;
+        max-width: 492px;
+    }
+    .form {
+        &__title {
+            margin-bottom: 0.4em;
+        }
+        &__item {
+            margin: 5px 0;
+        }
+        &__input {
+            border: 1.5px solid #BCBCBC;
+        }
+        &__button {
+            font-family: 'Proxima Nova';
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: unset;
+            order: 0;
+        }
+        &__pay {
+            font-size: 11px;
+            line-height: 13px;
+            color: #838383;
+        }
+        &__footer {
+            &-text {
+                a {
+                    color: #2B79E5;
+                }
+            }
+        }
+	}
+
+	@media (max-width: 767px) {
+        &__right {
+            padding: 20px 30px 20px;
+        }
+        &__left {
+            padding: 20px;
+
+        }
+    }
+    @media (max-width: 575px) {
+        &__wrap {
+            min-height: unset;
+            flex-direction: column;
+        }
+        &__right, &__left {
+            max-width: unset;
+        }
+        .fancybox-button svg path {
+            color: #fff;
+        }
+    }
+
+}

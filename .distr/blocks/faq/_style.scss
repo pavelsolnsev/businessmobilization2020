@@ -1,0 +1,49 @@
+.faq {
+	padding: 30px 0 40px;
+
+	&__title {
+		color: #000051;
+		font-size: 70px;
+		line-height: 90%;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		border-top: 1px solid #000051;
+		position: relative;
+		cursor: pointer;
+		font-size: 23px;
+		line-height: 32px;
+
+		&:last-child {
+			border-bottom: 1px solid #000051;
+		}
+
+		&-top {
+			padding: 30px 70px 30px 0;
+			font-weight: bold;
+
+			&::after {
+				content: url(../img/price/plus.svg);
+				height: 26px;
+				transition: 0.3s;
+				position: absolute;
+				right: 20px;
+			}
+		}
+
+		&-bottom {
+			display: none;
+			padding: 0 70px 40px 0;
+		}
+
+		&.active & {
+			&-top {
+				&::after {
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+
+}

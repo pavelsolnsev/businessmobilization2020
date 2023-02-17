@@ -1,0 +1,121 @@
+.offer {
+    text-align: center;
+    $scrollbarBG: #EAEAEA; //
+    $thumbBG: #5503E5; //
+
+    &__top {
+        padding: 120px 0 70px;
+        background: linear-gradient(0deg, #F4F4F4, #F4F4F4), #FFFFFF;
+    }
+    
+    &__title {
+        font-size: 70px;
+        color: #5503E5;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 48px;
+        letter-spacing: -0.03em;
+        line-height: 1;
+    }
+
+    &__box {         
+        padding: 47px 0 90px;
+
+        &-title {
+            max-width: 740px;
+            margin: 0 auto;
+            font-size: 48px;
+            letter-spacing: -0.03em;
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+    }
+            
+    &__list {
+        padding: 0 40px 0;
+        color: #333333;
+        max-height: 660px;
+        font-size: 23px;
+        text-align: left;
+        line-height: 1.4;
+        overflow-y: scroll;
+
+        &-title {
+            font-size: 43px;
+            color: #000000;
+            span {
+                font-size: 23px; 
+                font-weight: normal;
+                padding-left: 10px;
+            }
+        }
+
+        &-wrap {
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #C4C4C4;
+        }
+
+        &-desc {
+            margin-bottom: 70px;
+        }
+
+        ol {
+            padding-left: 0;
+        }
+        
+        li { list-style-type: none; }
+        ol { counter-reset: list1; }
+        ol li:before {
+            counter-increment: list1;
+            content: counter(list1) ".";
+            font-weight: 700;
+            margin-right: 5px;
+        }
+        ol ol { counter-reset: list2; }
+        ol ol li:before {
+        counter-increment: list2;
+        content: counter(list1) "." counter(list2) ".";
+        }
+        ol ol ol { counter-reset: list3; }
+        ol ol ol li:before {
+        counter-increment: list3;
+        content: counter(list1) "." counter(list2) "." counter(list3) ".";
+        }
+
+        &::-webkit-scrollbar {
+            width: 9px;
+        }
+
+        & {
+            scrollbar-width: thin;
+            scrollbar-color: $thumbBG $scrollbarBG;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $scrollbarBG;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $thumbBG;
+            border: 9px solid $thumbBG;
+        }
+    }
+
+    &__item {
+        margin-bottom: 70px;
+
+        &-title, 
+        li {margin-top: 35px;}
+
+        &-title {
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            li:before {content: none;}
+        }
+    }
+}

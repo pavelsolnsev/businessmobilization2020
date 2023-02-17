@@ -1,0 +1,120 @@
+.community {
+	padding: 70px 0 73px;
+	background: #360092 url(../img/community/bg.jpg) no-repeat center center / cover;
+	color: #FFF;
+	position: relative;
+
+	&:after, &:before {
+		position: absolute;
+		z-index: 2;
+	}
+	&:before {
+		content: url('../img/community/before.png');
+		left: 5%;
+		top: 8%;
+	}
+	&:after {
+		content: url('../img/community/after.png');
+		right: 0;
+		bottom: 0;
+	}
+
+	@media (max-width: 1780px) {
+		&:before {
+			left: 0%;
+		}
+		&:after {
+			right: -5%;
+		}
+	}
+
+	@media (max-width: 1590px) {
+		&:before, &:after {
+			content: none;
+		}
+	}
+
+	&__title {
+		margin-bottom: 55px;
+		color: inherit;
+		line-height: 0.9;
+	}
+
+	&__box {
+		position: relative;
+		margin-bottom: 70px;
+	}
+	
+	&__text {
+		max-width: 420px;
+		font-size: 23px;
+		line-height: 139%;
+		margin-bottom: 0;
+
+		p {
+			font-weight: 700;
+			margin: 0 0 20px;
+		}
+	}
+
+	&__features {
+		font-size: 23px;
+		line-height: 1;
+		li:before {
+			color: #F8006B;
+		}
+		li + li {
+			margin-top: 25px;
+		}
+	}
+
+	&__button {
+		height: 80px;
+		max-width: 410px;
+		margin-top: 30px;
+		position: absolute;
+		left: 0;
+		bottom: 15px;
+		font-size: 29px;
+		font-weight: 900;
+
+		&_2 {
+			display: none;
+		}
+	}
+
+	&__item {
+		max-width: 360px;
+		min-height: 200px;
+		background: linear-gradient(180deg, rgba(248, 0, 107, 0.595) 0%, rgba(255, 49, 210, 0.7) 50%, rgba(255, 0, 110, 0.616) 100%);
+		box-shadow: 0px 4px 30px rgba(11, 0, 62, 0.5);
+		font-weight: 900;
+		font-size: 32px;
+		line-height: 88.91%;
+		text-align: center;
+		letter-spacing: -0.03em;
+		color: #fff;
+		padding: 23px 10px 15px 10px;
+		margin: 0 auto;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 102px;
+			height: 95px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			margin: 0 auto 10px auto;
+		}
+
+		&_1 {
+			&:before {background-image: url(../img/community/community-icon-1.png);}
+		}
+		&_2 {
+			&:before {background-image: url(../img/community/community-icon-2.png);}
+		}
+		&_3 {
+			&:before {background-image: url(../img/community/community-icon-3.png);}
+		}
+	}
+}

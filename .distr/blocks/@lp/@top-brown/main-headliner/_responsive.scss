@@ -1,0 +1,124 @@
+.main-headliner {
+    @media(max-width:1199px){
+        &__left {
+            margin-right: 0;
+        }
+        &__img {
+            max-width: 428px;
+        }
+    }
+    @media (max-width: 991px) {
+        padding-top: 50px;
+        &__title { 
+            font-size: 170px;
+        }
+        &__content {
+            margin-top: -33px;
+        }
+        &__name {
+            font-size: 36px;
+        }
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+        &__text {
+            p {
+                margin-bottom: 25px;
+            }
+        }
+        &__desscription {
+            font-size: 30px;
+        }
+        &__bottom {
+            &:after {
+                width: 90vw;
+                height: 22vw;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__title {
+            font-size: 125px;
+        }
+        &__content {
+            flex-direction: column;
+            margin: 0;
+        }
+        &__left {
+            margin: 40px 0 0;
+            order: 0;
+        }
+        &__img {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        &__right {
+            max-width: unset;
+        }
+        &__subtitle {
+            margin-top: -549px;
+            margin-bottom: 562px;
+            justify-content: center;
+        }
+        &__name{
+            font-size: 42px;
+        }
+        &__description {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__box {
+            padding-bottom: 200px;
+        }
+        &__bottom {
+            &:after {
+                width: 117vw;
+                height: 28vw;
+                left: -34px;
+            }
+        }
+
+    }
+    @media (max-width: 575px) {
+        &__title {
+            font-size: 21vw;
+        }
+        &__left {
+            margin: 12vw 0 0;
+        }
+        &__img {
+            max-width: 78vw;
+        }
+        &__subtitle {
+            margin-top: -93vw;
+            margin-bottom: 97vw;
+        }
+        &__line {
+            min-width: 24vw;
+        }
+        &__name {
+            font-size: 8vw;
+        }
+        &__box {
+            padding: 40px 24px 120px;
+            border-top: 12px solid #F8006B;
+            border-left: none;
+        }
+        &__description {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 40px;
+        }
+        &__link {
+            max-width: unset;
+        }
+        &__bottom {
+            &:after {
+                // height: 109px;
+                // background-size: 56%;
+                // left: -200px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+.themes {
+
+	@media (max-width: 991px) {
+		&__title-1 {
+			font-size: 38px;
+		}
+		&__title-2 {
+			font-size: 124px;
+		}
+		&__title-3 {
+			font-size: 56px;
+		}
+		&__text {
+			font-size: 20px;
+		}
+	} // 991
+
+
+	@media (max-width: 767px) {
+		padding: 23px 0 20px;
+		&__title-1 {
+			font-size: 21px;
+		}
+		&__title-2 {
+			font-size: 64px;
+			margin-top: 20px;
+		}
+		&__title-3 {
+			font-size: 36px;
+		}
+		&__text {
+			font-size: 16px;
+		}
+		&__video {
+			min-height: 270px;
+			overflow: hidden;
+			&-image img {
+				max-width: none;
+				max-height: 270px;
+				position: absolute;
+				left: -100%;
+				right: -100%;
+				margin: 0 auto;
+			}
+			&-text {
+				font-size: 33.814px;
+				i {
+					font-size: 60px;
+					margin-right: 16px;
+				}
+			}
+		}
+	} // 767
+
+}

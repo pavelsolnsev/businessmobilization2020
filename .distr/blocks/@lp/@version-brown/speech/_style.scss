@@ -1,0 +1,92 @@
+.speech {
+  background: #0A0000;
+  color: #FFFFFF;
+  &__box {
+    display: flex;
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 45px;
+  }
+
+  &__left {
+    margin-bottom: -103px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 87%;
+    margin-bottom: 39px;
+    position: relative;
+
+    &_big {
+      font-size: 70px;
+    }
+
+    &::after {
+      content: url(../img/@lp/@version-brown/speech/shadow.png);
+      position: absolute;
+      display: block;
+      left: -20%;
+      bottom: -50%;
+    }
+  }
+
+  &__subtitle {
+    padding: 25px 43px 35px;
+    margin-top: -55px;
+    margin-bottom: -32px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    position: relative;
+    span {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background-color: #251B1D;
+    }
+
+    &::after {
+      content: url(../img/@lp/@version-brown/speech/shadow.png);
+      position: absolute;
+      bottom: -20%;
+      right: -15%;
+    }
+  }
+
+  &__photo  {
+    width: 150%;
+    margin-left: -60px;
+  } 
+
+  &__button {
+    max-width: 290px;
+    width: 80%;
+    position: relative;
+    margin-left: 45px;
+    font-size: 30px;
+    line-height: 117%;
+    text-transform: none;
+    letter-spacing: -0.03em;
+  }
+}

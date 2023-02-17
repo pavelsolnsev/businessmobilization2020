@@ -1,0 +1,14 @@
+.swiper {
+
+	@media (max-width: 991px) {
+	} // 991
+
+	@media (max-width: 767px) {
+
+		&-pagination {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}	// 767
+
+}

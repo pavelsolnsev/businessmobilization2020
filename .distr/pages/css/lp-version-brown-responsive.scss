@@ -1,0 +1,25 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import '@lp/@version-brown/common/_responsive';
+@import '@lp/@version-brown/form/_responsive';
+
+
+/***********/
+/* Blocks */
+@import '@lp/@version-brown/header/_responsive';
+@import '@lp/@version-brown/main/_responsive';
+@import '@lp/@version-brown/speech/_responsive';
+@import '@lp/@version-brown/public-section/_responsive';
+@import '@lp/@version-brown/middle-form/_responsive';
+@import '@lp/@version-brown/what-now/_responsive';
+@import '@lp/@version-brown/platform/_responsive';
+@import '@lp/@version-brown/blockquote/_responsive';
+@import '@lp/@version-brown/bottom/_responsive';
+@import '@lp/@version-brown/footer/_responsive';
+@import '@lp/@version-brown/after/_responsive';
+@import '@lp/@version-brown/who/_responsive';

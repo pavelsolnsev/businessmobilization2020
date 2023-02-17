@@ -1,0 +1,15 @@
+.what-now {    
+
+  @media (max-width: 1199px) {
+    &__title {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 575px) {
+    padding: 70px 0 0;
+  }
+}

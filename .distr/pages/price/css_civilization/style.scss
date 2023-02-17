@@ -1,0 +1,20 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+
+/* Шрифты из civilization */
+@import url('https://xn--80adpcbacuftw0bk6ah9l.xn--p1ai/css/fonts-price.css');
+
+/*************/
+/* Defaults */
+@import '@price/civilization/common/_style';
+@import '@price/civilization/fancybox/_style';
+
+/***********/
+/* Blocks */
+@import '@price/civilization/header/_style';
+@import '@price/civilization/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/civilization/popup-price/_style';

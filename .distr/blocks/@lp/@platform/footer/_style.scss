@@ -1,0 +1,26 @@
+.footer {
+	padding: 32px 0;
+	&__bottom {
+		font-size: 13px;
+	}
+	&__meta {
+		&_2 {
+			margin-right: 30px;
+			a {
+				text-decoration: underline;
+			}
+			&-col{
+				display: flex;
+				margin-left: auto;
+				flex-wrap: wrap;
+			}
+		}
+	}
+	&__link{
+		&-privacy{
+		}
+	}
+	&__fixed{
+		display: none;
+	}
+}

@@ -1,0 +1,41 @@
+.about {
+	background: #FFF url($path + 'about/bg.jpg') no-repeat 50% 159px;
+	padding: 143px 0 154px;
+
+	.lang-en & {
+		background: #FFF url($path + 'about/bg-eng.jpg') no-repeat 50% 159px;
+	}
+
+	&__title {
+		max-width: 970px;
+		position: relative;
+		z-index: 1;
+		font-size: 70px;
+		line-height: 117%;
+		text-transform: uppercase;
+		margin-bottom: 52px;
+	}
+
+	&__text {
+		max-width: 1150px;
+		font-size: 32px;
+		line-height: 162%;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+
+	.blockquote {
+
+		&__img {
+
+			&--bottom--right {
+				top: 50%;
+				bottom: auto;
+				right: -6%;
+				transform: translate(0, -50%); 
+				width: 451px;
+			}
+		}
+	}
+
+}

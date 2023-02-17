@@ -1,0 +1,31 @@
+.press {
+
+	@media (max-width: 767px) {
+		padding: 38px 0;
+
+		&__title {
+			margin-bottom: 18px;
+		}
+
+		&-card {
+			min-height: 270px;
+			padding: 25px 15px;
+			&__image {
+				min-height: 0;
+				margin-bottom: 20px;
+				img {
+					max-height: 20px;
+				}
+			}
+			&__title {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			&__text {
+				font-size: 14px;
+			}
+		}
+
+	}	// 767
+
+}

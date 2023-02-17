@@ -1,0 +1,15 @@
+.cite {
+  margin: 60px 0 200px;
+  .blockquote {
+    &__img {
+      &--top--left {
+        top: -22%;
+        left: -7.8%;
+      }
+      &--bottom--right {
+        bottom: -80%;
+        right: -12%;
+      }
+    }
+  }
+}

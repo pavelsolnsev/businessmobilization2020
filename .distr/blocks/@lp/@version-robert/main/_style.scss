@@ -1,0 +1,59 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	color: #FFF;
+	text-transform: uppercase;
+	background: #000 url($path + 'main/bg.jpg') no-repeat 50% 0 / cover;
+	cursor: pointer;
+	padding: 116px 0 130px 109px;
+
+	&-1 {
+		margin-top: 66px;
+	}
+
+	&__info {
+		font-size: 43px;
+		font-weight: 800;
+		line-height: 79%;
+		letter-spacing: -0.01em;
+		margin-bottom: 32px;
+
+		&-banner {			
+			margin: 10px 0 32px 0;
+			text-transform: uppercase;
+			letter-spacing: -0.01em;
+			font-size: 43px;
+			line-height: 79%;
+			font-weight: normal;
+		}
+	}
+
+	&__title {
+		font-size: 210px;
+		font-weight: 900;
+		line-height: 86%;
+		letter-spacing: -0.015em;
+		margin-bottom: 25px;	
+	}
+
+	&__subtitle {
+		max-width: 540px;
+		font-size: 39.3096px;
+		font-weight: normal;
+		line-height: 94%;
+		letter-spacing: 0.02em;
+		margin-bottom: 48px;
+		span {
+			font-weight: 800;
+		}
+	}
+
+	&__button {
+		display: inline-flex;
+		max-width: 364px;
+		min-height: 92px;
+		font-size: 27px;
+		border-radius: 5.3604px;
+	}
+
+}

@@ -1,0 +1,65 @@
+.comingsoon {
+	padding: 147px 0 160px 0;
+
+	&__title {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 47px;
+		line-height: 120px;
+	}
+
+	&__img {
+		width: 50%;
+		text-align: right;
+		z-index: 10;
+		position: relative;
+
+		&-inner {
+			margin: -50px -200px 0 0;
+		}
+	}
+
+	&__left {
+		width: 50%;
+	}
+
+	&__text {
+		display: flex;
+		width: 100%;
+    margin-bottom: 30px;
+		padding: 0 0 0 5rem;
+
+		&--title {
+			display: flex;
+		}
+
+		p {
+			margin-bottom: 2.8rem;
+		}
+	}
+
+	.blockquote {
+		// margin-top: -277px;
+		&__img {
+			&--bottom--right {
+				bottom: -25%;
+				right: 11%;
+			}
+			img {
+				max-height: 269px;
+			}
+			picture {
+				max-height: 269px;
+			}
+		}
+	}
+
+	&__subtitle {
+		width: 100%;
+		max-width: 1114px;
+		font-size: 70px;
+		line-height: 117%;
+		text-transform: uppercase;
+		margin: 134px auto 0 auto;
+	}
+}

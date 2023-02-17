@@ -1,0 +1,29 @@
+$mobile-min-width: 360px;
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import 'main/_responsive';
+@import '@lp/@speaker/main/_responsive';
+@import '@lp/@speaker/themes/_responsive';
+@import '@lp/@speaker/result/_responsive';
+@import '@lp/@speaker/about/_responsive';
+@import '@lp/@speaker/rules/_responsive';
+@import '@lp/@speaker/reviews/_responsive';
+@import '@lp/@speaker/platform/_responsive';
+@import '@lp/@speaker/base/_responsive';
+@import '@lp/@speaker/services/_responsive';
+@import 'organizer/_responsive';
+@import 'faq/_responsive';
+@import 'footer/_responsive';
+
+/***********/
+/* Popups */
+@import 'popup-speakers/_responsive';

@@ -1,0 +1,86 @@
+.slick {
+
+	@media (max-width: 991px) {
+		&-prev {
+			left: 25%;
+		}
+		&-next {
+			right: 25%;
+		}
+		&-dots {
+			max-width: 50%;
+			li {
+				padding: 6px 0 0;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+	
+		&-dots {
+			max-width: none;
+			counter-reset: slides-num;
+			font-size: 29px;
+			font-family: 'Proxima Nova Cn', 'Helvetica Neue', Helvetica, sans-serif;
+			font-weight: 900;
+			letter-spacing: -0.02em;
+			margin-bottom: -10px;
+			&:after {
+				content: "/" counter(slides-num);
+				vertical-align: middle;
+			}
+			li {
+				position: absolute;
+				left: -9999px;
+				counter-increment: slides-num;
+				border: 0;
+				transition: none;
+
+				button {
+					display: none;
+				}
+			}
+			.slick-active {
+				width: auto !important;
+				height: auto !important;
+				position: static;
+				display: inline;
+				text-align: right;
+				padding: 0 !important;
+				margin: 0;
+				&:before {
+					content: counter(slides-num);
+					vertical-align: middle;
+				}
+			}
+		}
+
+		&-arrow {
+			// width: 50px;
+			// height: 50px;
+			// bottom: -5px;
+			// border: 1px solid;
+			// border-radius: 50%;
+		}
+		&-prev {
+		}
+		&-next {
+		}
+
+		&-carousel_theme-big & {
+			&-arrow {
+				margin-bottom: 5px;
+			}
+		}
+
+		.slick-carousel_numbered.slick-carousel_theme-dark & {
+			&-dots {
+				margin-bottom: -5px;
+			}
+		}
+
+
+	}
+	// 767
+
+}

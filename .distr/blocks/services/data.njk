@@ -1,0 +1,122 @@
+{% set data = [
+
+	{ image: 'sydi.svg', href: '' }
+	,{ image: 'synbot.svg', href: '' }
+	,{ image: 'scrm.svg', href: '' }
+	,{ image: 'sgtrade.svg', href: '' }
+	,{ image: 'spay.svg', href: '' }
+	,{ image: 'sdesign.svg', href: '' }
+
+	]
+	%}
+
+
+	{# Резерв #}
+	{#
+
+	,{ image: 'profil.jpg', href: 'https://profile.ru/'}
+	,{ image: 'praim.jpg', href: 'https://1prime.ru/'}
+	,{ image: 'fedpress.jpg', href: 'https://fedpress.ru/' }
+	,{ image: 'finam.jpg', href: 'https://www.finam.ru/' }
+	,{ image: 'kompravda.jpg', href: 'https://www.rostov.kp.ru' }
+	,{ image: 'nr.jpg', href: 'https://new-retail.ru/'}
+	,{ image: 'exo.jpg', href: 'http://echomskufa.ru'}
+	,{ image: 'kommersant-yug.png', href: 'https://www.kommersant.ru/regions/61'}
+	,{ image: 'sport.png', href: 'https://www.sportsdaily.ru'}
+	,{ image: 'rbc-chernozem.png', href: 'https://chr.rbc.ru'}
+	,{ image: 'strategy.jpg', href: 'http://strategyjournal.ru/' }
+	,{ image: 'bo.jpg', href: 'https://bosfera.ru/' }
+	,{ image: 'be.jpg', href: 'https://ria-stk.ru/ds/about.php?utm_source=infopartner&utm_medium=logo&utm_campaign=synergy_online_forum' }
+	,{ image: 'business_journal.png', href: 'https://business-magazine.online' }
+	,{ image: 'naom.png', href: 'http://eventros.ru' }
+	,{ image: 'retail.png', href: 'https://www.retail.ru'}
+	,{ image: 'shopandmall.png', href: 'https://shopandmall.ru'}
+	,{ image: 'rl.jpg', href: 'https://www.retail-loyalty.org' }
+	,{ image: 'plusworld.png', href: 'https://www.plusworld.ru'}
+	,{ image: 'arb.svg', href: '' }
+	,{ image: 'PRObusiness.jpg', href: 'https://www.probusinesstv.ru/' }
+	,{ image: 'sustainable_business.jpg', href: 'http://csrjournal.com/' }
+	,{ image: 'eventmarket.png', href: 'https://eventmarket.ru/' }
+	,{ image: 'cetre.png', href: 'https://cetre.ru/' }
+	,{ image: 'daylymoscow.png', href: 'https://dailymoscow.ru/' }
+	,{ image: 'uralpress.jpg', href: 'https://uralpress.ru/' }
+	,{ image: 'mbm.jpg', href: 'https://mbm.mos.ru/?utm_source=partners&utm_campaign=mobiliz2020&utm_medium=ssilka_na_saite' }
+	,{ image: 'NBJ.jpg', href: 'http://nbj.ru/' }
+	,{ image: 'garant.png', href: 'http://www.garant.ru/' }
+	,{ image: 'ramu.png', href: 'https://www.ramu.ru/' }
+	,{ image: 'seranking.png', href: 'https://seranking.ru/' }
+	,{ image: 'nn_color.png', href: 'https://www.nn.ru/?utm_source=synergy&utm_medium=cpc&utm_campaign=%7Bonline_conference_synergy%7D&utm_content=%7Bad_id%7D_%7Bsitesynergy%7D&utm_term=%7Bsynergy%7D' }
+	,{ image: 'hr-270.png', href: 'http://hr-elearning.ru/' }
+	,{ image: 'sendsay.png', href: 'https://sendsay.ru' }
+	,{ image: 'bestinvest.jpg', href: 'https://www.bestinvestblog.com/' }
+	,{ image: 'rosfirm.JPG', href: 'https://www.rosfirm.ru/' }
+	,{ image: 'Jobsora.png', href: 'https://ru.jobsora.com/' }
+	,{ image: 'ingate.jpg', href: 'https://www.ingate.ru/' }
+	,{ image: 'BIGBOOKEDU.jpg', href: 'https://moscow.big-book-edu.ru/' }
+	,{ image: 'openbusiness.png', href: 'https://www.openbusiness.ru/' }
+	,{ image: 'prnews.jpg', href: 'https://www.prnews.ru/' }
+	,{ image: 'etazhi.jpg', href: 'https://www.etagi.com' }
+	,{ image: 'ugra-news.png', href: 'https://ugra-news.ru' }
+	,{ image: 'sputnikfm.jpg', href: 'https://radio.pp.ru/sputnik-107-fm-ufa/' }
+	,{ image: 'DFM.png', href: 'https://dfmnn.ru' }
+	,{ image: 'esalen.png', href: ''}
+	,{ image: 'sendpulse.png', href: 'https://sendpulse.com/ru'}
+	,{ image: 'ActualMarketing.png', href: 'https://actualmarketing.ru/ '}
+	,{ image: 'allcafe.png', href: 'https://allcafe.ru/'}
+	,{ image: 'gorodovoy.png', href: 'https://www.gorodovoy.spb.ru/'}
+	,{ image: 'kinoafisha.png', href: 'https://www.kinoafisha.info/'}
+	,{ image: 'sravni.png', href: 'https://www.sravni.ru'}
+	,{ image: 'LogoRandevunew.png', href: 'https://randevuradio.ru'}
+	,{ image: 'calltouch.png', href: 'https://www.calltouch.ru/'}
+	,{ image: 'piterzavtra.png', href: 'https://piterzavtra.ru/'}
+	,{ image: 'komus.png', href: 'https://www.komus.ru/'}
+	,{ image: 'nskdnk.jpg', href: 'https://nsk.dk.ru'}
+	,{ image: 'atol.png', href: 'https://online.atol.ru/'}
+	,{ image: 'insight.jpg', href: 'https://bi-school.ru'}
+	,{ image: 'bquadro.png', href: 'https://clck.ru/Mm9z6'}
+	,{ image: 'mashakhova.png', href: 'http://mashakhova.ru/'}
+	,{ image: 'bkn.jpeg', href: 'https://nsk.dk.ru'}
+	,{ image: 'delalma.jpeg', href: 'http://delalma.tilda.ws/'}
+	,{ image: 'unisender.png', href: 'https://www.unisender.com'}
+	,{ image: 'granadapress.jpg', href: 'https://granadapress.ru'}
+	,{ image: 'restoranoved.jpg', href: 'http://restoranoved.ru'}
+	,{ image: 'tatcenter.png', href: 'http://tatcenter.ru'}
+	,{ image: 'welcometimes.jpg', href: 'https://welcometimes.ru'}
+	,{ image: 'yord.png', href: 'http://yord.ru'}
+	,{ image: 'russoft.jpg', href: 'https://russoft.org'}
+	,{ image: 'regru.png', href: 'https://www.reg.ru/?utm_source=site&utm_medium=event&utm_campaign=synergy '}
+	,{ image: '7info.png', href: 'https://7info.ru/ '}
+	,{ image: 'gorodrabot.png', href: 'https://gorodrabot.ru/'}
+	,{ image: '23etazh.png', href: 'https://2big.ru/'}
+	,{ image: 'gfitness.png', href: 'https://gfitness.ru/'}
+	,{ image: 'emqarta.jpg', href: 'https://eqpa.ru/'}
+	,{ image: 'agima.jpg', href: 'https://www.agima.ru/'}
+	,{ image: 'trendfox.jpeg', href: 'https://trendfox.ru/?utm_source=synergy&utm_term=synergy'}
+	,{ image: 'bm24.png', href: 'https://bm24.ru'}
+	,{ image: 'skyeng.png', href: 'http://skyeng.ru/go/synergyglobal'}
+	,{ image: 'tv-brics.png', href: 'https://tvbrics.com/'}
+	,{ image: 'kidsdev.jpg', href: 'http://kidsd.ru/'}
+	,{ image: 'bmc.png', href: 'https://www.baikal-media.ru'}
+	,{ image: 'webmart.png', href: 'https://webmart.by'}
+	,{ image: 'financial-one.png', href: 'https://fomag.ru/'}
+	,{ image: 'tvzavr.png', href: 'https://www.tvzavr.ru/'}
+	,{ image: 'jooble.png', href: 'https://ru.jooble.org/'}
+	,{ image: 'alpina.png', href: 'https://www.alpinabook.ru/blog/alpina-doma-pryamye-efiry-s-avtorami-kazhdyy-den-/'}
+	,{ image: 'working-mama.png', href: 'http://workingmama.ru'}
+	,{ image: 'infopro.png', href: 'https://infopro54.ru/'}
+	,{ image: 'prparthner.png', href: 'https://www.prpartner.ru/'}
+	,{ image: 'skyeng.png', href: 'https://skyeng.ru/'}
+	,{ image: 'mcn-telecom.png', href: 'https://www.mcn.ru/'}
+	,{ image: 'sok.png', href: 'https://sok.works/ru'}
+	,{ image: 'boss.png', href: 'http://www.bossmag.ru/' }
+	,{ image: 'dom-ru.png', href: 'https://perm.b2b.domru.ru/'}
+	,{ image: 'rts-tender.png', href: 'https://www.rts-tender.ru'}
+	,{ image: 'logirus.jpg', href: 'http://logirus.ru/'}
+	,{ image: 'radio-1.png', href: 'https://radio1.news'}
+	,{ image: 'vostok-media.png', href: 'https://vmoutdoor.ru'}
+	,{ image: 'megogo.png', href: 'https://megogo.ru/ru'}
+	,{ image: 'emg.png', href: 'https://emg.fm/'}
+	,{ image: 'tutoronline.png', href: 'https://www.tutoronline.ru'}
+	,{ image: 'netpeak.png', href: 'https://netpeak.ru'}
+
+#}

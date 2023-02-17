@@ -1,0 +1,37 @@
+.comingsoon {
+	padding: 140px 0 100px 0;
+
+	&__title {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 64px;
+		line-height: 120px;
+	}
+
+	&__subtitle {
+		font-weight: 900;
+		font-size: 70px;
+		line-height: 117%;
+		text-transform: uppercase;
+		margin-bottom: 64px;
+	}
+
+	&__img {
+		width: 50%;
+	}
+
+	&__text {
+		width: 50%;
+		margin-bottom: 22px;
+		padding: 0 5rem 0 1.9rem;
+
+		p {
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 162%;
+			text-transform: uppercase;
+			margin-bottom: 2.8rem;
+		}
+	}
+}
+

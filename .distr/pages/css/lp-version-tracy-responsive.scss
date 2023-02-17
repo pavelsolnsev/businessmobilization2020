@@ -1,0 +1,27 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+@import '@lp/@version-tracy/common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import '@lp/@version-tracy/header/_responsive';
+@import '@lp/@version-tracy/main/_responsive';
+@import '@lp/@version-tracy/about/_responsive';
+@import '@lp/@version-tracy/registration/_responsive';
+@import '@lp/@version-tracy/whois/_responsive';
+@import '@lp/@version-tracy/tabs/_responsive';
+@import '@lp/@version-tracy/cite/_responsive';
+@import '@lp/@version-tracy/breakthrough/_responsive';
+@import '@lp/@version-tracy/beginning/_responsive';
+@import '@lp/@version-tracy/current/_responsive';
+@import '@lp/@version-tracy/comingsoon/_responsive';
+@import '@lp/@version-tracy/platform/_responsive';
+@import '@lp/@version-tracy/footer/_responsive';

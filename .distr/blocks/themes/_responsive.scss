@@ -1,0 +1,37 @@
+.themes {
+	padding: 52px 0;
+
+	@media (max-width: 767px) {
+		padding: 80px 0 0px;
+
+		&__title {
+			margin-bottom: 20px;
+		}
+		&__card {
+			flex-direction: column;
+			&-num {
+				max-width: none;
+				min-height: 5px;
+				font-size: 0px;
+				padding: 0;
+			}
+			&-text {
+				min-height: 180px;
+				padding: 20px 17px 15px 19px;
+			}
+			&-title {
+				font-size: 42px;
+				margin-bottom: 5px;
+			}
+			&-desc {
+				font-size: 23px;
+			}
+		}
+
+		.form-horizontal__button-wrap {
+			display: none;
+		}
+
+	} // 767
+
+}

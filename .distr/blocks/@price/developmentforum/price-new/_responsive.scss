@@ -1,0 +1,46 @@
+
+.price-card {
+	@media (max-width: 991px) {
+	}
+	@media (max-width: 767px) {		
+		&#price-offline {
+			flex-direction: column;
+			max-width: 100%;
+			margin: 50px auto;			
+		}
+		&#price-offline &{
+			&__header {				
+				max-width: 100%;
+				width: 100%;
+				align-items: center;		
+				border-radius: 5px 5px 0px 0px;
+
+				&-name {
+					font-size: 19.2531px;
+				}
+			}			
+			&__item +
+			.price-card__item {
+				&:before {content: none;}
+			}
+			&__body { 
+				width: 100%;
+				padding: 30px 30px 20px;
+			}
+			&__button,
+			&__label { 
+				width: 100%;
+			}
+			&__button { 				
+				max-width: 400px;
+				margin: 20px auto;
+			}
+			&__label { 				
+				max-width: 100%;
+				font-size: 8px;
+			}
+		}
+	}
+	@media (max-width: 575px) {
+	}
+}

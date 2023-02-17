@@ -1,0 +1,17 @@
+$mobile-min-width: 360px;
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+
+/* Defaults synergydigital */
+@import '@price/synergydigitalplatform/common/_responsive';
+
+/***********/
+/* Blocks */
+@import '@price/synergydigitalplatform/header/_responsive';
+@import '@price/synergydigitalplatform/price/_responsive';
+
+/***********/
+/* Popups */
+@import '@price/synergydigitalplatform/popup-price/_responsive';

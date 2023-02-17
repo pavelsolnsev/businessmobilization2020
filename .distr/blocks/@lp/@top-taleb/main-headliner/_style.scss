@@ -1,0 +1,85 @@
+.main-headliner {
+    background: url(../img/@lp/@top-taleb/main-headliner/bg.jpg) center center / cover no-repeat;
+    padding: 120px 0;
+    &__title {
+        font-weight: 900;
+        font-size: 220px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #000051;
+        opacity: 0.11;
+        text-align: center;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -42px;
+    }
+    &__left {
+        // margin: -33px 0 0 -200px;
+        margin: -33px 30px 0 -9vw;
+    }
+    &__right {
+        max-width: 544px;
+    }
+    &__subtitle {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &__line {
+        background: #F8006B;
+        min-width: 152px;
+        margin-bottom: 4px;
+        margin-right: 10px;
+    }
+    &__name {
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 78%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #000051;
+    }
+    &__text {
+        p {
+            font-weight: 400;
+            margin: 0 0 57px;
+        }
+    }
+    &__bottom {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07), 0px 4px 14px rgba(0, 0, 0, 0.07), 0px 4px 33px rgba(0, 0, 0, 0.07), 0px 4px 66px rgba(0, 0, 0, 0.07);
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../img/@lp/@top-taleb/main-headliner/wing.png) center center / 100% no-repeat;
+            bottom: 0;
+            display: block;
+            left: -80px;
+            width: 867px;
+            height: 199px;
+        }
+    }
+    &__box {
+        padding: 76px 76px 100px;
+        border-left: 12px solid #F8006B;
+        display: flex;
+        flex-direction: column;
+    }
+    &__description {
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000051;
+        margin-bottom: 40px;
+    }
+    &__link {
+        max-width: 244px;
+        padding: 19px 0;
+        align-self: flex-end;
+        display: flex;
+    }
+}

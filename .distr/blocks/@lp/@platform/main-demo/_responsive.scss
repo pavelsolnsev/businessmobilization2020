@@ -1,0 +1,80 @@
+.main-demo {
+    @media (max-width: 1199px) {
+        &:before, &:after {
+            display: none;
+        }
+        &__text {
+            line-height: 50px;
+        }
+    }
+    @media (max-width: 991px) {
+        background: url(../img/@lp/@platform/main-demo/bg-tablet.jpg) center center / cover no-repeat;
+        &__triggers {
+            flex-direction: column;
+        }
+        &__item {
+            padding-right: 0;
+            margin-right: 0;
+            border-right: none;
+            margin-bottom: 15px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:after {
+                content: url(../img/@lp/@platform/main-demo/line.png);
+                bottom: 0;
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+    }
+    @media (max-width: 767px) {
+        padding-top: 150px;
+        &__title {
+            font-size: 22px;
+        }
+    }
+    @media (max-width: 575px) {
+        padding-top: 100px;
+        &__title {
+            font-size: 16px;
+            letter-spacing: 0.215em;
+        }
+        &__logo {
+            &_desktop {
+                display: none;
+            }
+            &_mobile {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__item {
+            &::after {
+                display: none;
+            }
+        }
+        &__link {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 3%;
+            border-radius: 0;
+            font-size: 23px;
+            br {
+                display: block;
+            }
+        }
+        &__triggers {
+            margin-bottom: 0;
+        }
+        &__text {
+            font-size: 37px;
+        }
+    }
+}

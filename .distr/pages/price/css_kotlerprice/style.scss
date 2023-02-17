@@ -1,0 +1,23 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+
+/* Defaults synergydigital */
+@import '@price/kotlerprice/common/_style';
+
+/* Icons */
+@import 'icon/_style';
+
+/***********/
+/* Blocks */
+@import '@price/kotlerprice/header/_style';
+@import '@price/kotlerprice/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/kotlerprice/popup-price/_style';

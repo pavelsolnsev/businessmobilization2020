@@ -1,0 +1,135 @@
+.main {
+
+    @media (max-width: 1199px) {
+
+        &__content {
+            bottom: -85px;
+        }
+
+        &__day {
+            font-size: 34px;
+        }
+
+        &__time {
+            font-size: 24px;
+        }
+
+        &__title {
+            max-width: 600px;
+            margin-top: -70px;
+        }
+
+        &__person {
+            bottom: 70px;
+            width: 578px;
+        }
+
+        &__subtitle {
+            max-width: 465px;
+            padding: 26px 35px 69px 35px;
+            font-size: 40px;
+            margin: -28px 0 -25px 0;
+
+            &:before {
+                height: 50%;
+            }
+
+            &:after {
+                background-position: 140% 140%;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        &__date {
+            line-height: 65%;
+        }
+
+        &__day {
+            font-size: 26px;
+        }
+
+        &__time {
+            font-size: 18px;
+        }
+
+        &__title {
+            max-width: 500px;
+            margin-top: -50px;
+        }
+
+        &__person {
+            bottom: 70px;
+            width: 478px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 100px;
+        &__content {
+            margin-top: 70px;
+            bottom: 0;
+        }
+
+        &__day {
+            font-size: 20px;
+        }
+
+        &__title {
+            max-width: 500px;
+            margin: -40px 0 0 0;
+        }
+
+        &__person {
+            position: relative;
+            z-index: 2;
+            left: auto;
+            bottom: -10px;
+            width: 267px;
+            margin: -50px auto 0 auto;
+        }
+
+        &__subtitle {
+            max-width: none;
+            padding: 14px 15px 112px 55px;
+            font-size: 26px;
+            line-height: 115%;
+            margin: 0 -15px 0 -15px ;
+
+            &:before {
+                height: 80%;
+            }
+
+            &:after {
+                background-position: 100% 100%;
+            }
+        }
+
+        &__buttonbox {
+            max-width: 320px;
+            margin: -96px auto 0 auto;
+        }
+
+    }
+
+    @media (max-width: 575px) {
+
+    }
+}
+
+
+.lang-en {    
+	.main {
+        @media (max-width: 1199px) {
+            &__subtitle {
+                padding: 26px 35px 40px 35px;
+            }
+        }
+        @media (max-width: 767px) {
+            &__subtitle {
+                padding: 14px 15px 112px 55px;
+            }
+        }
+	}
+}

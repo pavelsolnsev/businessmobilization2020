@@ -1,0 +1,43 @@
+.weekly-forums {
+	padding: 50px 0 70px;
+	background: #190543 url('../img/@lp/@synergyonline-platform/weekly-forums/bg.jpg') no-repeat center center / cover;
+	color: #FFFFFF;
+
+	&__title {
+		margin-bottom: 25px;
+		color: #FFFFFF;
+	}
+
+	&__subtitle {
+		font-size: 23px;
+		margin-bottom: 25px;
+	}
+
+	&__desc {
+		font-size: 24px;
+		line-height: 120%;
+		margin-bottom: 35px;
+		&_1 {
+			max-width: 520px;
+			font-weight: bold;
+		}
+	}
+
+	&__slide {
+		&-photo {
+			margin-bottom: 10px;
+			img {border-radius: 10px;}
+		}
+		&-text {
+			font-size: 16px;
+		}
+	}
+
+	&__slider {
+		overflow: hidden;
+
+		.swiper-pagination-bullet {
+			background-color: #CDCDCD;
+		}
+	}
+}

@@ -1,0 +1,305 @@
+.price {
+
+	&__header_2 {
+		padding-top: 50px;
+	}
+	
+	&__subtitle {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 122% ;
+	color: #150035;
+
+		&-part {
+			color: #e2a828;
+		}
+	}
+
+	&__extratitle {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 90.13%;
+		letter-spacing: 0.01em;
+		color: #150035;
+		text-transform: uppercase;
+		margin-bottom: 36px;
+	}
+}
+
+
+
+.price-card {
+
+	&__button {
+		background: #FFB000;
+		box-shadow: 0px 15.19px 40px rgba(255, 176, 0, 0.5);
+		border-radius: 0;
+	}
+
+	&#price-offline {
+		width: 100%;
+		padding: 0;
+		margin: 50px 0;
+		max-width: unset;
+		flex-direction: row;
+		box-shadow: 0px 3.55625px 21.3375px rgba(70, 32, 223, 0.25);
+		min-height: 250px;		
+		border-radius: 5px;
+	}
+
+	&#price-offline & {
+
+		&__header {
+			max-width: 362px;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 32%;
+			background: linear-gradient(270deg, #150035 0%, #6000F1 100%);
+			border-radius: 5px 0px 0px 5px;
+			
+			&-name {				
+				font-size: 30px;
+				line-height: 105%;
+				margin-bottom: 10px;
+				text-align: left;
+			}
+
+			&-price {
+				display: block;
+			}
+		}
+
+		&__cost {display: none;}
+
+		&__box { margin-bottom: auto; }
+
+		&__label {
+		/* 	display: block !important; */
+			margin: 0;
+		}
+
+		&__body {	
+			width: 68%;
+			padding: 17px 40px 40px;
+			background: #FFFFFF;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: flex-end;		
+		}
+
+		&__item {
+			display: none;
+			text-align: left;
+			padding: 13px 0;
+			border-bottom: 1px solid #DBE4F5;
+
+			&:last-child {
+				border: 0;
+			}
+
+			&-title {				
+				font-family: 'Montserrat', sans-serif;
+				font-weight: normal;
+				font-size: 13px;
+				line-height: 120%;
+			}
+		}
+
+		&__item +
+		.price-card__item {
+
+			&:before {
+				content: none; 
+			}
+		}
+
+		&__button { 
+			width: 33%;
+			margin: 0 auto 0 0;
+			background: #FFB000;
+			box-shadow: 0px 15.19px 40px rgba(255, 176, 0, 0.5);
+			border-radius: 0;
+			text-transform: uppercase;
+		}
+
+		&__label { 			
+			font-family: 'Montserrat', sans-serif;
+			width: 67%;
+			padding: 0;
+
+			&-checkbox {
+				&-icon:before {
+					content: url("../../img/price-new/check.svg");
+				}
+			}
+
+		}
+	}
+
+
+	&#price-offline_standard &,
+	&#price-offline_business &,
+	&#price-offline_vip & {
+
+		&__header {
+			width: 100%;
+			max-width: 362px;
+			height: 63px;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			border-radius: 0;
+			
+			&-name {				
+				font-size: 30px;
+				line-height: 105%;
+				margin-bottom: 10px;
+				text-align: left;
+			}
+
+			&-price {
+				display: none;
+			}
+		}
+
+		&__cost {
+			display: block;
+			font-weight: bold;
+			font-size: 52.0667px;
+			line-height: 110%;
+			text-align: center;
+			letter-spacing: -0.02em;
+			text-transform: uppercase;
+			color: #200C3E;
+			margin-bottom: 38px;
+		}
+
+		&__box { margin-bottom: auto; }
+
+		&__label {
+		/* 	display: block !important; */
+			margin: 0;
+		}
+
+		&__body {	
+			width: 100%;
+			padding: 17px 30px 40px;
+			background: #F4F4F4;;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;		
+		}
+
+		&__item {
+			text-align: center;
+			padding: 18px 0;
+
+			&:last-child {
+				border: 0;
+			}
+
+			&-title {				
+				font-family: 'Montserrat', sans-serif;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 130%;
+			}
+		}
+
+		&__item +
+		.price-card__item {
+
+			&:before {
+				content: none; 
+			}
+		}
+
+		&__button { 
+			width: 100%;
+			max-width: none;
+			height: 54px;
+			margin: 0 auto 0 0;
+			background: #FFB000;
+			box-shadow: 0px 15.19px 40px rgba(255, 176, 0, 0.5);
+			border-radius: 0;
+			text-transform: uppercase;
+		}
+
+		&__label { 			
+			font-family: 'Montserrat', sans-serif;
+			width: 67%;
+			padding: 0;
+
+			&-checkbox {
+				&-icon:before {
+					content: url("../../img/price-new/check.svg");
+				}
+			}
+
+		}
+	}
+
+		
+	&#price-offline_standard & {
+		&__header {
+			background: linear-gradient(270deg, #150035 0%, #6000F1 100%);
+		}
+		&__item {
+			border-bottom: 1px solid #1E014B;
+		}
+	}
+
+	&#price-offline_business & {
+		&__header {
+			background: linear-gradient(90deg, #0028FF 0%, #001688 100%);
+		}
+		&__item {
+			border-bottom: 1px solid #011AA0;
+		}
+	}
+
+	&#price-offline_vip &  {
+		&__header {
+			background: linear-gradient(270deg, #FF8A00 36.17%, #FFEC44 95.2%);
+		}
+		&__item {
+			border-bottom: 1px solid #FBB15B;
+		}
+	}
+
+	
+}
+
+.price-card__item + .price-card__item:before {
+	background:#FFB000;
+}
+
+.price-payment__subtitle svg path {
+	fill: #FFB000;
+}
+
+.price__bottom-button {
+	background: #FFB000;
+	box-shadow: 0px 15.19px 40px rgba(255, 176, 0, 0.5);
+	border-radius: 0;
+}
+
+.version-legalforum__offline,
+.legalforum_offline {
+
+	#price-offline {
+		display: none;
+	}
+}
+
+.version-legalforum__online,
+.legalforum_online {
+
+	#price-offline_standard,
+	#price-offline_business,
+	#price-offline_vip
+	 {
+		display: none;
+	}
+}
+

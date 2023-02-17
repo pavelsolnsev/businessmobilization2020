@@ -1,0 +1,19 @@
+@mixin form-vertical-childs {
+	.form__item {
+		flex: 100%;
+		margin: 10px 0;
+
+		&_button {
+			padding-left: 0 !important;
+		}
+	}
+
+	.form__item + .form__item {
+		padding-left: 0;
+	}
+
+	.form__footer {
+		padding-bottom: 10px;
+		width: 100%;
+	}
+}

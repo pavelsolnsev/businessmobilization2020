@@ -1,0 +1,35 @@
+.result {
+
+	@media (max-width: 991px) {
+    padding-top: 220px;
+		margin-bottom: 54px;
+
+		&__title {
+			margin-bottom: 38px;
+		}
+
+		&__item {
+			font-size: 18px;
+		}
+
+		&__form {
+			margin: 46px 0 -54px;
+		}
+
+	} // 991
+
+	@media (max-width: 767px) {
+		padding: 50px 0;
+		margin-bottom: 0;
+
+		&__title {
+			margin-bottom: 18px;
+		}
+
+		&__item {
+			font-size: 14px;
+		}
+
+	} // 767
+
+}

@@ -1,0 +1,39 @@
+.what-will {
+	@include vw('padding: 130px 0 80px 0');
+	&__title {
+		position: relative;
+		z-index: 1;
+		@include vw('margin: 0 0 41px 0');
+		@include vw('line-height: 120px');
+	}
+	&__subtitle {
+		text-transform: uppercase;
+		@include vw('font-size: 57px');
+		@include vw('line-height: 67px');
+	}
+
+	&__img {
+		width: 50%;
+		text-align: center;
+		img {
+			@include vw('width: 750px');
+			@include vw('margin: -60px 0 0 0');
+		}
+	}
+
+	&__text {
+		width: 50%;
+		@include vw('margin: 0 0 22px 0');
+		@include vw('padding: 0 30px 0 120px');
+		
+		p {
+			@include vw('margin: 0 0 44px 0');
+		}
+
+		&-1 {
+			text-transform: uppercase;
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+	}
+}

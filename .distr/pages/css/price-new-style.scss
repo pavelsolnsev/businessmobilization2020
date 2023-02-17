@@ -1,0 +1,19 @@
+/**********/
+/* Fonts */
+@import 'fonts/_style';
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+@import '@price/price-new/common/_style';
+
+/***********/
+/* Blocks */
+@import 'header/_style';
+@import 'price-new/_style';
+@import 'footer/_style';
+
+/***********/
+/* Popups */
+@import 'popup-price-new/_style';
+@import 'popup-message/_style';

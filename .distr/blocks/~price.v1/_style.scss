@@ -1,0 +1,145 @@
+.price {
+	position: relative;
+	background: #F4F4F4;
+	&__top {
+		background: #fff;
+		padding: 110px 0 40px;
+		&-title {
+			h1 {
+				font-size: 70px;
+				line-height: 70px;
+				color: #000051;
+				margin: 0;
+			}
+			span {
+				color: #4D2CE0;
+			}
+		}
+		p {
+			font-size: 31px;
+			line-height: 41px;
+			font-weight: 600;
+			text-align: center;
+			color: #0C0C0C;
+		}
+	}
+	&__container {
+		width: 100%;
+		min-height: 506px;
+		position: relative;
+		padding-top: 63px;
+		overflow: hidden; 
+		&:after {
+			content: url('../img/price/right.png');
+			right: 0;
+		}
+		&:before {
+			content: url('../img/price/left.png');
+			left: 0;
+		}
+		&:after , &:before {
+			position: absolute;
+			bottom: 0;
+			z-index: 2;
+		}
+	}
+	.row {
+		position: relative;
+		justify-content: center;
+		z-index: 3;
+	}
+	&__title {
+		width: 100%;
+		max-width: 980px;
+		h2 {
+			font-size: 60px;
+			line-height: 54px;
+			font-weight: 900;
+			color: #F8006B;
+			margin-bottom: 20px;
+		}
+	}
+	&__wrapper {
+		width: 100%;
+		max-width: 980px;
+		position: relative;
+		display: flex;
+		background:#fff;
+	}
+	&__item {
+		width: 100%;
+		max-width: 980px;
+		display: flex;
+		text-decoration: none !important;
+		box-shadow: 0px 7px 22px rgba(0, 0, 94, 0.12);
+		margin: 0 auto;
+		&-title {
+			font-size: 54px;
+			line-height: 31px;
+			margin-bottom: 20px;
+			color: #fff;
+		}
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		&-package {
+			font-size: 30px;
+			line-height: 17px;
+			text-transform: none;
+			margin-bottom: 20px;
+		}
+		&-top {
+			position: relative;
+			width: 100%;
+			max-width: 327px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background: linear-gradient(0deg, #4D2CE0, #4D2CE0), #FFFFFF;
+			text-align: center;
+			color: #fff;
+		}
+		&-bottom {
+			background: #fff;
+			padding: 37px 44px;
+		}
+		&-price {
+			font-size: 33px;
+			line-height: 33px;
+			font-weight: 900;
+		}
+		&-text {
+			font-size: 38px;
+			line-height: 41px;
+			margin-bottom: 20px;
+			color: #000;
+			span {
+				color: #331098;
+			}
+		}
+		.form__submit {
+			width: 100%;
+		}
+		&-button  {
+			width: 100%;
+			min-height: 54px;
+			max-width: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			line-height: 25px;
+			font-weight: 900;
+			text-transform: uppercase;
+			color: #fff;
+			background: #F8006B;
+		}
+	}
+	.main-price {
+		margin-top: 0;
+	}
+}

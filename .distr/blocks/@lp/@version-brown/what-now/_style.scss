@@ -1,0 +1,21 @@
+.what-now {
+  padding: 200px 0 150px;
+  &__title {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+  }
+}
+
+
+.lang-en {
+    .what-now {
+        .blockquote {
+            &__right_1 {display: none;}
+            &__left_1 {max-width: 100%;}
+        }
+    }
+}

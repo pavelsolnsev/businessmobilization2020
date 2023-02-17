@@ -1,0 +1,25 @@
+.afterparty {
+
+    @media (max-width: 1199px) {
+
+        padding: 58px 0 56px 0;
+        background-position: 70% 0;
+
+        .container {padding: 0 54px;}
+    }
+
+    @media (max-width: 767px) {
+
+        padding: 38px 0 55px 0;
+
+        .container {padding: 0 15px;}
+
+        &__description {padding: 15px 0 10px 0;}
+
+        &__paragraph {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+    }
+}

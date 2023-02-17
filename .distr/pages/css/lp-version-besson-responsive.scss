@@ -1,0 +1,28 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+@import '@lp/@version-besson/common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import '@lp/@version-besson/header/_responsive';
+@import '@lp/@version-besson/main/_responsive';
+@import '@lp/@version-besson/about/_responsive';
+@import '@lp/@version-besson/registration/_responsive';
+@import '@lp/@version-besson/platform/_responsive';
+@import '@lp/@version-besson/whois/_responsive';
+@import '@lp/@version-besson/beginning/_responsive';
+@import '@lp/@version-besson/after/_responsive';
+@import '@lp/@version-besson/current/_responsive';
+@import '@lp/@version-besson/comingsoon/_responsive';
+@import '@lp/@version-besson/breakthrough/_responsive';
+@import '@lp/@version-besson/success/_responsive';
+@import '@lp/@version-besson/tabs/_responsive';
+@import '@lp/@version-besson/cite/_responsive';

@@ -1,0 +1,19 @@
+$mobile-min-width: 360px;
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+
+/***********/
+/* Blocks */
+@import '@price/developmentforum/header/_responsive';
+@import 'price-new/_responsive';
+@import '@price/developmentforum/price-new/_responsive';
+@import 'footer/_responsive';
+
+/***********/
+/* Popups */
+@import 'popup-speakers/_responsive';
+@import 'popup-price-new/_responsive';

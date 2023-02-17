@@ -1,0 +1,97 @@
+.public-section {
+    @media (max-width: 1199px) {
+        &__description {
+            font-size: 42px;
+            line-height: 62px;
+        }
+        &__text {
+            font-size: 30px;
+            line-height: 48px;
+        }
+        &__right {
+            font-size: 38px;
+            line-height: 38px;
+        }
+        &__decoration {
+            padding-left: 18px;
+            padding-right: 12px;
+        }
+        &__years {
+            padding: 22px 0 17px 18px;
+        }
+    }
+    @media (max-width: 991px) {
+        padding: 68px 0 75px;
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__description {
+            font-size: 36px;
+            line-height: 54px;
+        }
+        &__text {
+            font-size: 28px;
+            line-height: 44px;
+        }
+        &__right {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        &__decoration {
+            padding-right: 8px;
+        }
+        &__years {
+            padding: 8px 0 8px 18px;
+            max-width: 335px;
+        }
+
+    }
+    @media (max-width: 767px) {
+        &__box {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 575px) {
+        padding: 70px 0 80px;
+        &__title {
+            font-size: 34px;
+            line-height: 34px;
+            margin-bottom: 20px;
+        }
+        &__description {
+            font-size: 28px;
+            line-height: 46px;
+            margin-bottom: 30px;
+        }
+        &__left {
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &__right {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__years {
+            max-width: 276px;
+            padding: 15px 0 15px 18px;
+        }
+
+    }
+}
+
+.lang-en {
+    .public-section {
+        @media(max-width: 767px) {
+            &__wrap {
+                br {
+                    display: block;
+                }
+            }
+
+        }
+    }
+}

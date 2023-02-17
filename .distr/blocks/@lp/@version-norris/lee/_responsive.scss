@@ -1,0 +1,145 @@
+.lee {
+
+	@media (max-width: 1199px) {
+		&__img {
+			&_right {
+				padding-right: 2rem;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		background-image: none;
+		&__left {
+			width: auto;
+		}
+		&__text {
+			flex-direction: column;
+			padding: 0 1rem;
+
+			&_bottom {
+				flex-direction: column-reverse;
+			}
+		}
+		&__right {
+			width: 100%;
+		}
+		&__title {
+			line-height: 94px;
+			margin-bottom: 48px;
+			br {
+				display: none;
+			}
+		}
+		&__img {
+			width: auto;
+			&_right {
+				padding: 0;
+				text-align: center;
+				margin-bottom: 52px;
+			}
+			&_left {
+				margin-top: -30px;
+				text-align: center;
+			}
+			&-signature {
+				margin: -30px auto 0 auto;
+			}
+			img {
+				max-width: 400px;
+			}
+		}
+		.blockquote {
+			margin-top: 0;
+			&__img {
+				&--bottom--1 {
+					bottom: -245px;
+					width: 100%;
+					max-width: 350px;
+					right: 50%;
+					transform: translateX(50%);
+				}
+				&--bottom--2 {
+					bottom: -6%;
+					right: 7%;
+				}
+			}
+			&_top {				
+				margin-bottom: 300px;
+			}
+		}
+	} // 991
+
+
+	@media (max-width: 575px) {
+		padding-top: 70px;
+		padding-bottom: 220px;
+		&__title {
+			margin-bottom: 25px;
+			line-height: 31px;
+			br {
+				display: none;
+			}
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+			margin-bottom: 4px;
+			&--title {
+				order: 1;
+			}
+			&--box {
+				order: 4;
+			}
+			p {
+				margin-bottom: 1.5rem;
+			}
+		}
+		&__img {
+			order: 3;
+			float: none;
+
+			&_right {
+				display: none;
+			}
+			picture {
+				max-width: 205px;
+    		max-height: 197px;
+			}
+			img {
+				margin: 0;
+				max-width: 300px;
+			}
+		}
+
+		.blockquote {
+			&_top {
+				margin-bottom: 250px;
+			}
+			&__img {
+				&--bottom--1 {
+					max-width: 300px;
+					bottom: -200px;
+					img {
+						max-height: none;
+						width: 100%;
+					}
+				}
+				&--bottom--2 {
+					max-width: 300px;
+					bottom: -230px;
+					width: 100%;
+					right: 50%;
+					transform: translateX(50%);
+					img {
+						max-height: none;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+	} // 575
+
+}

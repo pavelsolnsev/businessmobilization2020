@@ -1,0 +1,35 @@
+/**********/
+/* Fonts */
+@import 'fonts/_style';
+
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+@import '@lp/@version-norris/common/_style';
+
+
+/***********/
+/* Blocks */
+@import 'header/_style';
+@import '@lp/@version-norris/header/_style';
+@import '@lp/@version-norris/main/_style';
+@import '@lp/@version-norris/about/_style';
+@import '@lp/@version-norris/registration/_style';
+@import '@lp/@version-norris/reputation/_style';
+@import '@lp/@version-norris/lee/_style';
+@import '@lp/@version-norris/start/_style';
+@import '@lp/@version-norris/what-now/_style';
+@import '@lp/@version-norris/comingsoon/_style';
+@import '@lp/@version-norris/beginning/_style';
+@import '@lp/@version-norris/platform/_style';
+@import '@lp/@version-norris/pay/_style';
+@import '@lp/@version-norris/footer/_style';
+@import 'price/_style';
+@import 'vtb/_style';
+
+/***********/
+/* Popups */
+@import 'popup-price/_style';
+@import 'popup-message/_style';
+@import '@lp/@version-norris/popup/_style';

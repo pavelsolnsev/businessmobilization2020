@@ -1,0 +1,19 @@
+@import '_variables';
+
+
+.container {
+	@media (max-width: 991px) {
+		max-width: 826px;
+	} // 991
+
+	@media (max-width: 575px) {
+		max-width: 330px;
+	} // 575
+}
+
+@media (min-width: 576px) {
+	.not-active {
+		pointer-events: none;
+		cursor: default;
+	}
+} // 575

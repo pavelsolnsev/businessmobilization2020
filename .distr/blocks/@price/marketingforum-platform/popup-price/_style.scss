@@ -1,0 +1,13 @@
+.popup-price {
+	&__info {
+		background: #00A3FF;
+	}
+	&__price {
+		display: none;
+	}
+	.form {
+		&__button {			
+			background: #00A3FF;
+		}
+	}
+}

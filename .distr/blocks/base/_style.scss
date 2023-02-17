@@ -1,0 +1,120 @@
+.base {
+	background: #fff;
+	padding: 64px 0 58px;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 44px;
+	}
+	&__text {
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 39px;
+		text-align: center;
+		color: #000000;
+		max-width: 1062px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 72px;
+	}
+
+	&__features {
+		margin-bottom: 50px;
+		&-fl {
+			display: flex;
+			@media (max-width: 991px) {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+
+	&__col {
+		&:nth-child(1) {
+			flex:1 0 auto;
+			@media (max-width: 991px) {
+				flex:initial;
+			}
+			.base__col-item {
+				border-left:6px solid #4D2CE0;
+				padding-left: 10px;
+				@media (max-width: 767px) {
+					&:nth-child(2) {
+						margin-bottom: 54px;
+					}
+				}
+			}
+		}
+		&:nth-child(2) {
+			margin: 0 20px;
+			align-self: center;
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@media (max-width: 991px) {
+				width: 100%;
+				order: 3;
+				margin: 20px 0 0;
+			}
+		}
+		&:nth-child(3) {
+			flex:1 0 auto;
+			@media (max-width: 991px) {
+				flex:initial;
+			}
+			.base__col-item {
+				border-right:6px solid #4D2CE0;
+				padding-right: 10px;
+				text-align: right;
+				@media (max-width: 991px) {
+					text-align: left;
+					border-left:6px solid #4D2CE0;
+					padding-left: 10px;
+					padding-right: 0;
+					border-right:0;
+					margin-left: 10px;
+				}
+			}
+
+		}
+		&-item {
+			font-weight: 600;
+			font-size: 26px;
+			line-height: 26px;
+			color: #000000;
+			margin-bottom: 36px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			@media (max-width: 767px) {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+	}
+
+	.form-horizontal {
+		&:before {
+			content: none;
+		}
+		.form {
+			background: radial-gradient(23.96% 48.14% at 33.08% -7.6%, #FF4090 0%, rgba(248, 0, 107, 0) 100%), radial-gradient(18.78% 50.22% at 75.23% 100%, #FF4090 0%, rgba(248, 0, 107, 0) 100%), linear-gradient(90.35deg, #F8006B -1.82%, #F800B3 39.52%, #F8006B 99.94%);
+			box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+			button {
+				background: #FFFFFF;
+				color: #000051!important;
+			}
+		}
+	}
+
+	// Versions
+	.external-url-synergyonline & {
+		&__features {
+			margin-bottom: 0;
+		}
+	}
+
+}

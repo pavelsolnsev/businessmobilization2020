@@ -1,0 +1,101 @@
+.speakers {
+
+	@media (max-width: 991px) {
+		padding: 70px 0 0px;
+
+		&__title {
+			margin-bottom: 50px;
+		}
+
+		&__row {
+			margin-left: -13px;
+			margin-right: -13px;
+		}
+		&-card {
+			min-height: 364px;
+			&__col {
+				padding-left: 13px;
+				padding-right: 13px;
+				padding-bottom: 24px;
+			}
+			&__text {
+				padding: 20px;
+			}
+			&__name {
+				color: $blue;
+				font-size: 29px;
+				margin: 0 0 5px;
+			}
+			&__note {
+				font-size: 16px;
+				line-height: 120%;
+			}
+		}
+
+	} // 991
+
+
+	@media (max-width: 767px) {
+		overflow: hidden;
+		padding: 15px 0 0px;
+
+		&__title {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+		&__row {
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+
+		&-card {
+			min-height: 264px;
+			&__col {
+				padding-left: 5px;
+				padding-right: 5px;
+				padding-bottom: 12px;
+			}
+
+			&__image {
+				margin-top: -10px;
+				background-position: 50% 10px;
+				img {
+				}
+			}
+			&__logo {
+				max-width: 80%;
+				max-height: 45px;
+				display: flex;
+				padding-top: 10px;
+				margin: auto 0 0 -5px;
+				img {
+					max-height: 100%;
+					display: block;
+				}
+			}
+			&__name {
+				font-size: 17px;
+				margin-bottom: 3px;
+			}
+			&__note {
+				font-size: 12px;
+				font-weight: 600;
+			}
+
+		} // &-card
+
+		&__link-more {
+			max-width: 340px;
+			min-height: 90px;
+			font-size: 20px;
+			line-height: 93.4%;
+			padding: 3px 30px 0;
+			margin-top: 37px;
+		}
+
+	}	// 767
+
+}
+
+// @import 'speakers-past/_responsive';
+// @import 'discussion/_responsive';

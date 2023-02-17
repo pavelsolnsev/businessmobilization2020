@@ -1,0 +1,49 @@
+&-accreditation {
+	max-width: 630px;
+	&__header {
+		color: #FFF;
+		font-size: 35px;
+		font-weight: 900;
+		line-height: 88.91%;
+		letter-spacing: -0.03em;
+		background: #4D2CE0;
+	}
+	&__inner {
+		padding: 58px 66px;
+	}
+	&__body {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 115%;
+		border: 2px solid #2B79E5;
+		border-top: 0;
+	}
+	&__subtitle {
+		font-size: 27px;
+		font-weight: 900;
+		line-height: 88.91%;
+		letter-spacing: -0.03em;
+		margin-bottom: 7px;
+	}
+	&__text {
+		margin-bottom: 17px;
+		a {
+			color: #4700BF;
+		}
+	}
+	&__rules {
+		margin-top: 30px;
+		&-link {
+			display: inline-block;
+			color: #5503E5;
+			font-size: 20px;
+			line-height: 0.8;
+			text-transform: uppercase;
+			border-bottom: 1px solid #5503E5;
+
+			&:hover,
+			&:focus,
+			&:active {color: #5503E5; text-decoration: none;}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.services {
+	text-align: center;
+	padding: 61px 0 54px;
+
+	&__title {
+		margin-bottom: 22px;
+		br {
+			display: none;
+		}
+	}
+
+	&__description {
+		max-width: 680px;
+		font-size: 23px;
+		line-height: 139%;
+		margin: 0 auto 35px;
+		br {
+			display: none;
+		}
+	}
+
+	&-card {
+		min-height: 204px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0;
+		box-shadow: 0px 0px 15.7057px rgba(186, 186, 203, 0.83);
+		margin-bottom: 29px;
+	}
+
+}

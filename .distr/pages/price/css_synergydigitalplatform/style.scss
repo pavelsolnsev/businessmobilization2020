@@ -1,0 +1,25 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+
+/* Шрифты из Synergydigital */
+@import url('https://synergydigital.com/price/css/fonts-39f71365fb.css');
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+
+/* Defaults synergydigital */
+@import '@price/synergydigitalplatform/common/_style';
+
+/* Icons */
+@import 'icon/_style';
+
+/***********/
+/* Blocks */
+@import '@price/synergydigitalplatform/header/_style';
+@import '@price/synergydigitalplatform/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/synergydigitalplatform/popup-price/_style';

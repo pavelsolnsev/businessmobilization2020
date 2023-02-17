@@ -1,0 +1,47 @@
+$mobile-min-width: 360px;
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import 'main/_responsive';
+@import 'about/_responsive';
+@import 'digital-plf/_responsive';
+@import 'themes/_responsive';
+@import 'discussion/_responsive';
+@import '@lp/@platform/speakers/_style';
+@import '@lp/@platform/speakers/_responsive';
+@import '@lp/@platform/about/_style';
+@import 'concept/_responsive';
+@import 'format/_responsive';
+@import '@lp/@platform/online-plf/_style';
+@import 'base/_responsive';
+@import 'services/_responsive';
+@import 'vtb/_responsive';
+@import 'offer/_responsive';
+@import 'price/_responsive';
+@import 'organizer/_responsive';
+@import 'reviews/_responsive';
+@import 'press/_responsive';
+@import 'faq/_responsive';
+@import 'partners/_responsive';
+@import 'community/_responsive';
+@import '@lp/@platform/main-platform/_responsive';
+@import '@lp/@platform/main-demo/_responsive';
+@import '@lp/@platform/footer/_responsive';
+@import '@lp/@platform/thanks/_responsive';
+
+@import '@lp/@platform/genesis/_responsive';
+
+/***********/
+/* Popups */
+
+@import '@lp/@platform/popup-speakers/_responsive';
+@import '@lp/@platform/popup-demo/_responsive';
+@import 'popup-price/_responsive';

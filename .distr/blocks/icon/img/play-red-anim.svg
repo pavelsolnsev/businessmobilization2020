@@ -1,0 +1,8 @@
+<svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="35.7888" cy="35.2019" r="35.2019" fill="#D1046B" fill-opacity="0.6"/>
+	<circle cx="35.7876" cy="35.202" r="26.9191" fill="#D1046B">
+		<animate attributeName="r" values="15; 26.9191; 15" dur="1s" begin="0s" repeatCount="indefinite"/>
+		<animate attributeName="opacity" values="0; 1; 0" dur="1s" begin="0s" repeatCount="indefinite"/>
+	</circle>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M45.0266 33.955L33.3142 26.5756C32.968 26.3694 32.538 26.4038 32.2133 26.4038C30.9144 26.4038 30.9202 27.4066 30.9202 27.6606V42.7435C30.9202 42.9583 30.9145 44.0005 32.2133 44.0005C32.538 44.0005 32.968 44.0346 33.3142 43.8286L45.0265 36.4492C45.9879 35.8771 45.8218 35.2021 45.8218 35.2021C45.8218 35.2021 45.9879 34.527 45.0266 33.955Z" fill="white"/>
+</svg>

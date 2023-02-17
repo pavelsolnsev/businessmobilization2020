@@ -1,0 +1,35 @@
+.about {
+
+	@media (max-width: 991px) {
+		padding: 145px 0;
+		background-image: none;
+
+		&__title {
+			font-size: 50px;
+			margin-bottom: 68px;
+			br {display: none;}
+		}
+
+		&__text {
+			br {display: none;}			
+			max-width: none;
+		}
+
+	} // 991
+
+
+	@media (max-width: 575px) {
+    padding: 76px 0 35px;
+
+		&__title {
+			font-size: 19px;
+			margin-bottom: 25px;
+		}
+
+		&__text {
+			font-size: 14px;
+		}
+
+	} // 575
+
+}

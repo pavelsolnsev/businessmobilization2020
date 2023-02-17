@@ -1,0 +1,27 @@
+/**********/
+/* Fonts */
+@import 'fonts/_style';
+
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+@import '@lp/@version-kotler/common/_style';
+
+
+/***********/
+/* Blocks */
+@import 'header/_style';
+@import '@lp/@version-kotler/header/_style';
+@import '@lp/@version-kotler/main/_style';
+@import '@lp/@version-kotler/about/_style';
+@import '@lp/@version-kotler/registration/_style';
+@import '@lp/@version-kotler/whois/_style';
+@import '@lp/@version-kotler/opposition/_style';
+@import '@lp/@version-kotler/what-now/_style';
+@import '@lp/@version-kotler/became-few/_style';
+@import '@lp/@version-kotler/charge/_style';
+@import '@lp/@version-kotler/soul/_style';
+@import '@lp/@version-kotler/what-will/_style';
+@import '@lp/@version-kotler/platform/_style';
+@import 'vtb/_style';

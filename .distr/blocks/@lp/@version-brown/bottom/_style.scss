@@ -1,0 +1,157 @@
+.bottom {
+    background: #EAEFF7;
+
+    &__box {
+        display: flex;
+        width: 100%;
+    }
+
+    &__left {
+        width: 50%;
+
+        &-top {
+            position: relative;
+        }
+    }
+
+    &__person {
+        position: relative;
+        text-align: right;
+        margin: -37px -37px -13px -100px;
+
+        & IMG {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 70px;
+    }
+
+    &__date {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+    }
+
+    &__name {
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 64% ;
+        color: #FF0040;
+    }
+
+    &__head {
+        position: relative;
+        background: #251B1D;
+        padding: 20px 0 70px 0;
+        color: #fff;
+
+        &:after {
+            content:'';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 100%;
+            width: 1000px;
+            background: #251B1D;
+        }
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: url(../img/@lp/@version-brown/bottom/shadow.png) no-repeat 0 0;
+        }
+    }
+
+    &__title {
+        position: relative;
+        font-weight: 900;
+        font-size: 82px;
+        line-height: 93%;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        position: relative;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100% ;
+        letter-spacing: -0.03em;
+    }
+
+    &__right {
+        position: relative;
+        width: 50%;
+        padding: 158px 0 0 110px;
+        background: #1662DA;
+        color: #fff;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            width: 1000px;
+            background: #1662DA;
+        }
+    }
+
+    &__phone {
+        padding-top: 50px;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 120%;
+        letter-spacing: normal;
+        color: #fff;
+        
+        &:before {
+            content:'';
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            // background: url(../img/@lp/@version-brown/footer/phone.png) no-repeat 0 0;
+            background-size: cover;
+            vertical-align: -5px;
+            margin-right: 2px;
+        }
+
+        A {
+            color: inherit;
+        }
+    }
+    .footer__call {
+        display: none;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        justify-content: space-between;
+        @media (max-width: 515px) {
+            display: flex;
+        }
+        .speech__button {
+            max-width: 320px;
+            height: 65px;
+            z-index: 100;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-size: 24px;
+            padding: 0 10px;
+            transform: translate(-50%, -20%);
+            left: 50%;
+        }
+    }
+}

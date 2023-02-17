@@ -1,0 +1,23 @@
+.popup-demo{
+    @media (max-width: 767px) {
+        &__right {
+            padding: 30px 30px 30px;
+        }
+        &__left {
+            padding: 60px 20px;
+
+        }
+    }
+    @media (max-width: 575px) {
+        &__wrap {
+            min-height: unset;
+            flex-direction: column;
+        }
+        &__right, &__left {
+            max-width: unset;
+        }
+        .fancybox-button svg path {
+            color: #fff;
+        }
+    }
+}

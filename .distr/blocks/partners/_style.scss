@@ -1,0 +1,137 @@
+.partners {
+	background: #FFF;
+	padding: 87px 0 50px 0;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 58px;
+
+		&_sm {
+			font-size: 40px;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		color: #333333;
+		font-size: 23px;
+		line-height: 139%;
+		margin-bottom: 83px;
+	}
+
+	&__tech,
+	&__fitness {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		.partners-card {
+			margin: 0 0 30px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		height: 100%;
+		padding-bottom: 30px;
+
+		&-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			max-width: 252px;
+			min-height: 112px;
+			border: 1px solid rgba(0, 0, 0, 0.23);
+			padding: 10px;
+			padding: 10px 25px;
+		}
+	}
+
+	&__carousel {
+
+		&_1 { padding-bottom: 30px;}
+
+		&-wrapper {
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+	}
+
+	.swiper {
+		&-wrapper {
+			max-height: 400px;
+		}
+		&-container {
+			width: 100%;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&-card {
+
+		&__inner {
+			max-width: 250px;
+			width: calc(100% - 2px);
+			min-height: 112px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid rgba(0,0,0,0.23);
+			padding: 10px 25px;
+			margin: 0 auto;
+		}
+
+		img {
+			max-height: 92px;
+		}
+		&__tech,
+		&__fitness {
+			width: 100%;
+			max-width: 252px;
+			min-height: 112px;
+			border: 1px solid rgba(0, 0, 0, 0.23);
+			padding: 10px;
+			padding: 10px 25px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin-top: 40px;
+	}
+	&__button {
+		max-width: 370px;
+		min-height: 80px;
+		color: #fff !important;
+		font-size: 29px;
+		font-weight: 900;
+		box-shadow: 0px 7px 22px rgba(0, 0, 0, 0.09);
+		margin: 0 15px 10px;
+	}
+	
+	.slider-img {
+		width: 100%;
+	}
+	.slider-ie {
+		max-width: 100%;
+	}
+}
+
+.lang-en {
+	.partners {
+		&__carousel_1 {
+			.swiper-nav {
+				display: none;
+			}
+
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.about {
+	background: #FFF url($path + 'about/bg.jpg') no-repeat 50% 29px;
+	text-transform: uppercase;
+	padding: 143px 0 154px;
+
+	&__title {
+		max-width: 870px;
+		position: relative;
+		z-index: 1;
+		font-size: 70px;
+		line-height: 117%;
+		margin-bottom: 52px;
+	}
+	&__text {
+		max-width: 680px;
+		font-size: 32px;
+		line-height: 162%;
+	}
+
+}

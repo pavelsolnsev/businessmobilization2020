@@ -1,0 +1,20 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+
+/* Шрифты из developmentforum */
+@import url('https://synergy.online/lp/developmentforum/css/fonts/stylesheet.css');
+
+/*************/
+/* Defaults */
+@import '@price/developmentforum/common/_style';
+@import '@price/developmentforum/fancybox/_style';
+
+/***********/
+/* Blocks */
+@import '@price/developmentforum/header/_style';
+@import '@price/developmentforum/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/developmentforum/popup-price/_style';

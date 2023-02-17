@@ -1,0 +1,22 @@
+.press {
+
+	@media (max-width: 767px) {
+
+		&-card {
+			min-height: 100%;
+			&__title {
+				font-size: 26px;
+			}
+			&__text {
+				font-size: 16px;
+			}
+			&__author {
+				font-size: 17px;
+				text-transform: uppercase;
+				margin-bottom: 5px;
+			}
+		}
+
+	}	// 767
+
+}

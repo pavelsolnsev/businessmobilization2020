@@ -1,0 +1,20 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+@import url('https://synergyglobal.ru/lp/beauty-forum/css/fonts/stylesheet.css');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+/*************/
+/* Defaults */
+@import '@price/beautyforum/common/_style';
+@import '@price/beautyforum/fancybox/_style';
+
+
+/***********/
+/* Blocks */
+@import '@price/beautyforum/header/_style';
+@import '@price/beautyforum/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/beautyforum/popup-price/_style';

@@ -1,0 +1,112 @@
+.tabs {
+  @media (max-width: 1199px) {
+    &__photo {
+      // max-width: 280px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+
+  @media (max-width: 991px) {
+    &__author {
+      bottom: 0;
+      width: auto;
+      align-items: initial;
+      margin: 0;
+    }
+
+    &__photo {
+      max-width: 485px;
+    }
+
+    &__name {
+      bottom: 15px;
+      font-size: 14px;
+      padding-left: 4rem;
+    }
+
+    &__text {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    &__row {
+      flex-direction: column;
+      margin: 0 2rem 0 4rem;
+    }
+
+    &__col-1, &__col-2 {
+      width: 100%;
+    }
+
+    &__col-1 {
+      order: 2;
+      margin-left: -3.7rem;
+    }
+
+    &__col-2 {
+      order: 1;
+      padding-right: 0;
+    }
+
+    &__cont {
+      padding: 40px 0 0;
+      max-width: 500px;
+      // margin: 0 auto;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+  }
+
+
+
+  @media (max-width: 575px) {   
+    &__col-1 {display: none;}
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+      // margin-bottom: 150px;
+    }
+
+    &__author {
+      bottom: 80px;
+      align-items: center;
+    }
+
+    &__photo {
+      max-width: 140px;
+    }
+    &__name {
+      color: #ffffff;
+      padding-left: 0;
+    }
+    &__row {
+      margin: 0 1rem;
+    }
+    &__cont {
+      min-height: 100vh;
+      background: transparent;
+      svg {
+        path {color: #FFFFFF;}
+      }
+      &-wrap {
+        min-height: 100vh;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

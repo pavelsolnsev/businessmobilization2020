@@ -1,0 +1,20 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+
+/* Шрифты из hrforum */
+@import url('https://synergy.online/lp/financial/css/style.css');
+
+/*************/
+/* Defaults */
+@import '@price/financial/common/_style';
+@import '@price/financial/fancybox/_style';
+
+/***********/
+/* Blocks */
+@import '@price/financial/header/_style';
+@import '@price/financial/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/financial/popup-price/_style';

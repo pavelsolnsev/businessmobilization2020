@@ -1,0 +1,50 @@
+.registration {
+	.form {
+		padding: 137px 0 150px;
+		&__title {
+			font-size: 85px;
+			line-height: 111%;
+		}
+	}
+
+
+	@media (max-width: 991px) {
+		.form {
+			&__items {
+				max-width: 630px;
+				flex-direction: column;
+				margin: 0 auto;
+			}
+			&__item {
+				margin: 0;
+			}
+			.form__item + .form__item {
+				padding: 13px 0 0;
+			}
+			&__footer {
+				padding-top: 45px;
+			}
+		}
+	} // 991
+
+
+	@media (max-width: 767px) {
+		.form {
+			padding: 74px 0 60px;
+			&__title {
+				font-size: 32px;
+				line-height: 97%;
+				margin-bottom: 30px;
+			}
+			&__items {
+				max-width: 270px;
+			}
+			.form__item + .form__item {
+				padding: 13px 0 0;
+			}
+			&__footer {
+				padding-top: 25px;
+			}
+		}
+	} // 767
+}

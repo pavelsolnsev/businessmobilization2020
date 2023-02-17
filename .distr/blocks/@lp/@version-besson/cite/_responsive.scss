@@ -1,0 +1,131 @@
+.cite {
+  @media (max-width: 1680px) {
+    .blockquote {
+      &__img {
+        &--top--left {
+          max-width: 300px;
+          top: -30%;
+          left: -10%;
+        }
+
+        &--bottom--right {
+          max-width: 800px;
+          right: -12%;
+          bottom: -55%;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 991px) {    
+    margin-top: 0;
+    .blockquote {
+      &__img {
+        &--top--left {
+          max-width: 238px;
+          top: -40%;
+          left: -20%;
+        }
+
+        &--bottom--right {
+          max-width: 500px;
+          right: -18%;
+          bottom: -70%;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    .blockquote {
+      &__img {
+        &--bottom--right {
+          max-width: 500px;
+          right: -18%;
+          bottom: -60%;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 575px) {
+    .blockquote {
+      &__img {
+        &--top--left {
+          max-width: 118px;
+          top: -40%;
+          left: -18%;
+        }
+
+        &--bottom--right {
+          max-width: 240px;
+          right: -18%;
+          bottom: -60%;
+        }
+      }
+    }
+  }
+}
+
+.lang-en {
+  .cite {
+    @media (max-width: 1680px) {
+      .blockquote {
+        &__img {
+          &--bottom--right {
+            bottom: -74%;
+          }
+        }
+      }
+    }
+    @media (max-width: 1199px) {
+      .blockquote {
+        &__img {
+          &--bottom--right {
+            bottom: -74%;
+            max-width: 700px;
+          }
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      .blockquote {
+        &__img {
+          &--bottom--right {
+            max-width: 480px;
+            right: -17%;
+            bottom: -75%;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .blockquote {
+        &__img {
+          &--bottom--right {
+            max-width: 470px;
+            right: -19%;
+            bottom: -89%;
+          }
+          &--top--left {
+            top: -51%;
+          }
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      .blockquote {
+        &__img {
+          &--bottom--right {
+            max-width: 240px;
+            right: -18%;
+            bottom: -118px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '_variables';
+
+/* Text common styles */
+@import '_text';
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+body {
+    color: #000000;
+	font-size: 15px;
+    font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+	line-height: 1.25;
+	background: #FFF;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+}
+
+.button {
+    width: 100%;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none !important;
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 700;    
+    color: #fff;
+    background: #CFAA71;
+    border: 0;
+    cursor: pointer;
+    padding-top: 2px;
+}

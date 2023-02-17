@@ -1,0 +1,42 @@
+.swiper {
+
+	&-pagination {
+		width: auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		bottom: 0;
+
+		&-bullet {
+			width: 10px;
+			height: 10px;
+			flex: 0 0 auto;
+			margin: 0 5px 2px;
+			&-active {
+				background: #4D2CE0;
+				background: red;
+			}
+		}
+	}
+
+	&-nav {
+		display: flex;
+		align-items: center;
+		margin: 40px auto 0;
+	}
+	&-prev,
+	&-next {
+		display: flex;
+		cursor: pointer;
+	}
+	&-prev {
+		margin: 0 12px 0 auto;
+	}
+	&-next {
+		margin: 0 auto 0 12px;
+	}
+	&-button-disabled {
+		opacity: 0.2;
+	}
+
+}

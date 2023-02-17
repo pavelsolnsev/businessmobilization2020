@@ -1,0 +1,65 @@
+.main_top50 {
+	position: relative;
+	color: #FFF;
+	background: #190543 url('../img/main-top50/bg.jpg') no-repeat 50% 0;
+	background-size: cover;
+	padding: 200px 0 70px;
+
+	&__bg {
+		display: flex;
+		flex-direction: column;
+		background: #190543;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		align-self: center;
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		max-width: 850px;
+		width: 100%;
+		margin: 0 auto 100px;
+		font-weight: 600;
+		font-size: 38px;
+		line-height: 41px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+	&__speakers {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #C4C4C4;
+		margin-bottom: 30px;
+		&-card {
+			max-width: 140px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			.text {
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 20px;
+				text-align: center;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	&__bottom {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 12px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+}

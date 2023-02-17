@@ -1,0 +1,83 @@
+@import '_variables';
+
+.wrapper {
+	background: #F2F4F8;
+}
+
+.button_pink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 68px;
+	max-width: 630px;
+	background: linear-gradient(0deg, #FF0099, #FF0099), #FF7600;
+	border-radius: 10px;
+	margin: 0 auto;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 26px;
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+	@media (max-width: 767px) {
+		min-height: 53px;
+		font-size: 18px;
+		line-height: 94%;
+	}
+}
+
+.color-pink {
+	color: #FF0099;
+}
+
+.title {
+	font-size: 70px;
+	@media (max-width: 767px) {
+		font-size: 40px;
+	}
+}
+
+.swiper {
+	&-nav {
+		padding: 7px 30px;
+	}
+
+	&-prev,
+	&-next {
+		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+		border-radius: 50%;
+		img {
+			display: none;
+		}
+	}
+	&-prev:before {
+		content: url('../img/@lp/@synergyonline-platform/common/arrow-left.svg');
+		line-height: 0;
+	}
+	&-next:before {
+		content: url('../img/@lp/@synergyonline-platform/common/arrow-right.svg');
+		line-height: 0;
+	}
+
+	&-pagination-bullet {
+		width: 12px;
+		height: 12px;
+		border-radius: 12px;
+		background-color: #3900FF;
+		opacity: 1;
+		transition: 0.3s;
+		margin: 3px;
+		&-active {
+			width: 30px;
+		}
+	}
+
+}
+
+
+.form-horizontal {
+	margin-top: 30px;
+}

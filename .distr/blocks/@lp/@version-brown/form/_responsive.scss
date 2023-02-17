@@ -1,0 +1,92 @@
+@import 'form/_mixins';
+
+.form {
+
+	&_inline {
+		.form__item {
+			flex-basis: 33.33333%;
+		}
+	}
+
+	@media (max-width: 1199px) {
+
+		&_vertical {
+			.form__title {
+				font-weight: 700;
+				font-size: 36px;
+				line-height: 100%;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		&_inline {
+			.form__item {
+				flex-basis: 22%;
+			}
+			.form__item + .form__item_button {
+				flex-basis: 34%;
+			}
+		}
+	} // 991
+
+
+	@media (max-width: 767px) {
+
+		&__items {
+			flex-flow: column wrap;
+		}
+
+		&_inline {
+			@include form-vertical-childs;
+		}
+
+		.form__title {
+			font-size: 30px;
+		}
+
+		&__button {
+			max-width: 320px;
+		}
+
+		&-horizontal {
+			&::before {
+				left: -18px;
+				right: -18px;
+				bottom: -76px;
+			}
+
+			.form {
+				background: linear-gradient(90deg, rgba(5, 0, 109, 0.88) 0%, rgba(71, 0, 191, 0.88) 27.26%, rgba(98, 0, 160, 0.88) 65.09%, rgba(184, 0, 147, 0.88) 100.7%);
+				padding: 35px 25px;
+				position: relative;
+
+				&:after {
+					content: '';
+					position: absolute;
+					display: block;
+					top: 0;
+					right: 0;
+					height: 100%;
+					width: 260px;
+					z-index: 1;
+					background: url('../img/form/mobile/horizontal-after.png') no-repeat 0 0 / cover;
+				}
+
+				&__button {
+					max-width: 320px;
+				}
+			}
+		}
+
+	} // 767
+
+	@media (max-width: 575px) {
+
+		.form__title {
+			font-size: 26px;
+			line-height: 130%;
+		}
+    
+	}
+}

@@ -1,0 +1,49 @@
+.footer {
+
+	@media (max-width: 991px) {
+		&__meta {
+			&_2 {
+				float: none;
+				padding-left: 0;
+			}
+		}
+
+	} // 991
+
+
+	@media (max-width: 767px) {
+		padding-top: 28px;
+		padding-bottom: 80px; // +высота кнопок в шапке - http://prntscr.com/lcpb9f
+
+		&__logo {
+			max-width: 156px;
+			margin-bottom: 22px;
+		}
+
+		&__links {
+			margin: 0 0 30px 0;
+			&-item {
+				margin-bottom: 8px;
+			}
+		}
+
+		&__contacts {
+			float: none;
+			margin-bottom: 25px;
+		}
+
+		&__meta {
+			&_1 {
+				a {
+					display: block;
+					margin: 6px 0;
+				}
+			}
+			&_2 {
+				font-size: 11px;
+			}
+		}
+
+	}	// 767
+
+}

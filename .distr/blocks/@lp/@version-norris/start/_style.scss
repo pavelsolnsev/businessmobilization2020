@@ -1,0 +1,86 @@
+.start {
+	padding: 147px 0 160px 0;
+	background: #edeeef;
+
+	&__content {
+		width: 92%;
+		margin: 0 auto;
+	}
+
+	&__title {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 47px;
+		line-height: 120px;
+	}
+
+	&__img {
+		width: 50%;
+		
+		z-index: 10;
+		position: relative;
+
+		&-box {
+			display: inline-block;
+		}
+
+		&-signature {
+			max-width: 505px;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 202%;
+			text-transform: uppercase;
+			text-align: left;
+			margin: -50px auto 0 auto;
+		}
+
+		&_left {
+			text-align: right;
+			margin: 100px 10rem 0 0;
+		}
+
+		&_right {
+			text-align: right;
+			margin-top: 40px;
+		}
+	}
+
+	&__left {
+		width: 50%;
+		padding-top: 150px;
+	}
+
+	&__right {
+		width: 50%;
+	}
+
+	&__text {
+		display: flex;
+		width: 100%;
+		margin-bottom: 22px;
+
+		&--title {
+			display: flex;
+		}
+
+		p {
+			margin-bottom: 2.8rem;
+		}
+	}
+
+	.blockquote {
+		// margin-top: -277px;
+		&__img {
+			&--bottom--right {
+				bottom: -15%;
+				right: 11%;
+			}
+			img {
+				max-height: 180px;
+			}
+			picture {
+				max-height: 180px;
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.footer {
+	padding: 32px 0;
+	background-color: #FFF;
+	color: #8D90A3;
+	&__bottom {
+		font-size: 13px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__meta {
+		padding: 0 10px;
+		a {text-decoration: underline;}
+		&-col{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 0 10px;
+			&_2 {min-width: 220px;}
+			&-inner {
+				display: flex;
+				justify-content: space-between;
+				&_1 {margin-bottom: 15px;}
+			}
+		}
+		&-3, &-4 {text-align: right;}
+	}
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		max-width: 225px;
+		&-link {
+			width: 25px;
+			height: 25px;
+			display: inline-block;
+			background: url(../img/@lp/@synergyonline-platform/footer/icons.svg) no-repeat 0 0;
+			&_2 {background-position-x: 25%;}
+			&_3 {background-position-x: 50%;}
+			&_4 {background-position-x: 75%;}
+			&_5 {background-position-x: 100%;}
+		}
+	}
+}

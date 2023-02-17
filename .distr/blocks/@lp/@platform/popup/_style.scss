@@ -1,0 +1,47 @@
+.popup {
+	color: #FFF;
+	background: radial-gradient(30.39% 16.19% at 40.37% 0%, #FF4090 0%, rgba(248, 0, 107, 0) 100%), radial-gradient(53.03% 12.68% at 64.66% 100%, #FF4090 0%, rgba(248, 0, 107, 0) 100%), linear-gradient(90.05deg, rgba(248, 0, 107, 0.65) -1.82%, rgba(248, 0, 179, 0.706875) 39.52%, rgba(248, 0, 107, 0.79) 99.94%);
+	padding: 33px 42px 53px 46px;
+
+	.fancybox-container & {
+		max-width: 373px;
+		border-radius: 5px;
+	}
+
+	&__title {
+		font-size: 29px;
+		font-weight: 900;
+		line-height: 119%;
+		letter-spacing: -0.06em;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	.form {
+		&__input {
+			color: #000;
+			background: #FFF;
+			// border: 1px solid transparentize(#04071F, 0.66);
+		}
+		&__item_button {
+			margin-bottom: 0;
+		}
+		&__button {
+			font-size: 17.4527px;
+			font-weight: 900;
+			max-width: 290px;
+		}
+		&__footer-checkbox {
+			opacity: 0.5;
+		}
+		&__footer-text {
+		}
+		&_vertical &__footer {
+			margin-bottom: 30px;
+		}
+	}
+
+	@import '_style.accreditation';
+	@import '_style.synergyonline';
+
+}

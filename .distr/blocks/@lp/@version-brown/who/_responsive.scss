@@ -1,0 +1,101 @@
+.who {
+    @media(max-width: 1199px ) {
+        &__banner {
+            min-height: 40vw;
+        }
+    }
+    @media (max-width: 991px) {
+        &__title {
+            font-size: 40px;
+        }
+        &__banner {
+            &_left {
+                &_img {
+                    max-width: 34vw;
+                }
+            }
+            &_right {
+                &_quote {
+                    font-size: 5vw;
+                    line-height: 6vw;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__banner{
+            margin-bottom: 60px;
+            padding: 50px 0;
+            &_box {
+                flex-direction: column;
+                align-items: center;
+            }
+            &_left {
+                &_img {
+                    margin-bottom: -30px;
+                    max-width: unset;
+                }
+            }
+            &_center {
+                margin-bottom: -60px;
+                position: static;
+                left: unset;
+                top: unset;
+                transform: initial;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        padding: 75px 0 0;
+        &__banner {
+            &_right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &_quote {
+                    font-size: 8vw;
+                    line-height: 9vw;                
+                    span {
+
+                        &:first-child::before, 
+                        &:last-child::after {                
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-size: 90%;
+                        }
+        
+                        &:first-child {
+                            &:before {
+                                left: -30px;
+                            }
+                        }
+            
+                        &:last-child {
+                            &:after {
+                                right: -30px;
+                            }
+                        }
+                    }
+                }
+            }
+            &_left {
+                &_img {
+                    max-width: 55vw;
+                    margin-bottom: -15px;
+                }
+            }
+            &_center {
+                &_img {
+                    max-width: 75vw;
+                }
+            }
+        }
+        &__buttonbox {
+            max-width: 320px;
+        }
+        &__button {
+            padding: 0 67px;
+        }
+    }
+}

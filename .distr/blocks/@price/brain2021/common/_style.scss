@@ -1,0 +1,37 @@
+@import '_variables';
+
+/* Common стили с brain2021 */
+@import '_common_old';
+/* Text common styles */
+@import '_text';
+
+/* Icons */
+@import '@price/brain2021/icon/_style';
+
+/* Fancybox */
+@import '@price/brain2021/fancybox/_style';
+
+
+body {
+	color: #1C1C1C;
+	font-size: 15px;
+	font-family: 'Mont', Arial, Helvetica, sans-serif;
+	line-height: 1.25;
+	background: #FFF;
+}
+
+.button {
+    width: 100%;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding-top: 2px;
+}

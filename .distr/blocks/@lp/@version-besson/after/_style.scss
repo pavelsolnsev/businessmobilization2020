@@ -1,0 +1,36 @@
+.after {
+	background-color: #EDEEEF;
+	padding: 144px 0 82px 0;
+
+	&__title {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 40px;
+		line-height: 120px;
+	}
+	&__content {
+	}
+	&__img {
+		width: 50%;
+		text-align: right;
+		z-index: 10;
+		picture {
+			// width: 946px;
+			// height: 1189px;
+			// display: block;
+			// margin-bottom: -325px;
+		}
+		img {
+			margin: 101px -141px -325px 0;
+			max-width: 946px;
+		}
+	}
+	&__text {
+		width: 50%;
+		margin-bottom: 22px;
+		padding: 0 1rem 0 5rem;
+		p {
+			margin-bottom: 2.8rem;
+		}
+	}
+}

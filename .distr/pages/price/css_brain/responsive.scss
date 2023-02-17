@@ -1,0 +1,16 @@
+$mobile-min-width: 360px;
+
+
+
+/*************/
+/* Defaults */
+@import '@price/brain2021/common/_responsive';
+
+/***********/
+/* Blocks */
+@import '@price/brain2021/header/_responsive';
+@import '@price/brain2021/price/_responsive';
+
+/***********/
+/* Popups */
+@import '@price/brain2021/popup-price/_responsive';

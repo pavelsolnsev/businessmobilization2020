@@ -1,0 +1,15 @@
+$mobile-min-width: 360px;
+
+/*************/
+/* Defaults */
+@import '@price/top50/common/_responsive';
+
+/***********/
+/* Blocks */
+@import '@price/top50/header/_responsive';
+@import '@price/top50/css/_responsive';
+@import '@price/top50/price/_responsive';
+
+/***********/
+/* Popups */
+@import '@price/top50/popup-price/_responsive';

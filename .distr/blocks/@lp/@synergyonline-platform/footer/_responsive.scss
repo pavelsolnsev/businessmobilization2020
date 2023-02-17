@@ -1,0 +1,25 @@
+.footer {
+	@media (max-width: 767px) {
+		margin-bottom: 80px;
+		&__bottom {
+			flex-direction: column;
+		}
+		&__meta {
+			padding: 0;
+			margin-bottom: 15px;
+			&-col {
+				&-inner {
+					flex-direction: column;
+					&_1 {margin-bottom: 0;}
+				}
+				&_2 {
+					min-width: auto;
+					max-width: 220px;
+				}
+			}
+			&-3, &-4 {text-align: left;}
+		}
+
+	} // 767
+
+}

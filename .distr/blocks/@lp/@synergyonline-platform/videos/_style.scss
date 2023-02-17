@@ -1,0 +1,88 @@
+.videos {
+	padding: 50px 0 70px;
+	background: none;
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		height: 100%;
+		max-width: 360px;
+		min-height: 200px;
+		background-color: #FFF;
+		box-shadow: 0px 4px 30px rgba(77, 44, 224, 0.3);
+		font-weight: 900;
+		font-size: 32px;
+		line-height: 88.91%;
+		text-align: center;
+		letter-spacing: -0.03em;
+		color: #05006D;
+		padding: 23px 10px 30px 10px;
+		margin: 0 auto;
+		text-align: center;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 102px;
+			height: 82px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			margin: 0 auto 10px auto;
+		}
+
+		&_1 {
+			&:before {background-image: url(../img/@lp/@synergyonline-platform/videos/digital-icon-3.png);}
+		}
+		&_2 {
+			&:before {background-image: url(../img/@lp/@synergyonline-platform/videos/digital-icon-4.png);}
+		}
+		&_3 {
+			&:before {background-image: url(../img/@lp/@synergyonline-platform/videos/digital-icon-5.png);}
+		}
+	}
+
+	&__desc {
+		color: #333;
+		font-size: 24px;
+		line-height: 120%;
+		margin-bottom: 35px;
+		&_1 {
+			max-width: 520px;
+			font-weight: bold;
+		}
+	}
+
+	&__subtitle {
+		font-weight: bold;
+		font-size: 23px;
+		margin: 30px 0 15px;
+	}
+
+	&__slide {
+		&-photo {
+			margin-bottom: 10px;
+			img {border-radius: 5px;}
+		}
+		&-text {
+			margin-bottom: 5px;
+			font-size: 12px;
+			line-height: 1;
+			text-transform: uppercase;
+			color: #757575;
+		}
+		&-theme {
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+
+	&__slider {
+		overflow: hidden;
+	}
+
+	&__button {
+		margin-top: 40px;
+	}
+}

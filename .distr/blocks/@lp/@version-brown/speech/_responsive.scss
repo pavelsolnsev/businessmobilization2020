@@ -1,0 +1,108 @@
+.speech {
+  @media (max-width: 1199px) {
+    &__photo {
+      width: 190%;
+      margin-left: 0;
+    }
+    &__title {
+      font-size: 60px;
+      margin-bottom: 25px;
+
+      p {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &__subtitle {
+      font-size: 38px;
+      padding: 25px 25px 35px;
+      margin-top: -135px;
+
+      &::before {height: 60%;}
+
+      &:after {
+        content: url(../img/@lp/@version-brown/speech/tablet/shadow.png);
+        position: absolute;
+        bottom: -37%;
+        right: 11%;
+      }
+    }
+
+    &__right {    padding: 60px 20px 20px;}
+    &__button {margin-left: 25px;}
+  }
+
+  @media (max-width: 991px) {
+
+    &__title {font-size: 47px;}
+    &__subtitle {margin-top: -20px;}
+  }
+
+  @media (max-width: 767px) {
+    &__photo {
+      width: 170%;
+    }
+
+    &__title {
+      font-size: 44px;      
+      &::after {
+        content: url(../img/@lp/@version-brown/speech/mobile/shadow.png);    
+        left: -35%;
+        bottom: -70%;
+      }
+    }
+    &__subtitle {
+      font-size: 28px;
+      br {display: none !important;}
+    }
+  }
+
+  @media (max-width: 575px) {
+    padding: 60px 0 36px;
+
+    &__box {flex-direction: column-reverse;}
+
+    &__left,
+    &__right {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    &__right {padding: 0 0 20px;}
+
+    &__photo {
+      width: 150%;
+      margin-top: -35px;
+      margin-left: -40px;
+    }
+
+    &__title,
+    &__books {
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+      &::after {
+        left: 0;
+        bottom: -92%;
+      }
+    }
+
+    &__subtitle {     
+      margin-top: -60px;
+      margin-bottom: -15px;
+
+      &::after {
+        content: url(../img/@lp/@version-brown/speech/mobile/shadow-bottom.png);
+        position: absolute;
+        bottom: -42%;
+        right: 3%;
+      }
+    }
+
+    &__button {margin: 0 auto;}
+  }
+}

@@ -1,0 +1,44 @@
+.headliners {
+    padding: 175px 0 120px;
+    background: #f4f4f4;
+    &__title {
+        margin-bottom: 44px;
+    }
+    &__wrap {
+        display: flex;
+    }
+    &__text {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    &__left {
+        max-width: 650px;
+        margin-right: 30px;
+    }
+    &__right {
+        margin-top: -30px;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        &_name {
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        &:first-child {
+            position: relative;
+            z-index: 1;
+        }
+        &:nth-child(2) {
+            margin: 0 -78px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+@import '@lp/@version-norris/common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import '@lp/@version-norris/header/_responsive';
+@import '@lp/@version-norris/main/_responsive';
+@import '@lp/@version-norris/about/_responsive';
+@import '@lp/@version-norris/registration/_responsive';
+@import '@lp/@version-norris/beginning/_responsive';
+@import '@lp/@version-norris/reputation/_responsive';
+@import '@lp/@version-norris/lee/_responsive';
+@import '@lp/@version-norris/start/_responsive';
+@import '@lp/@version-norris/what-now/_responsive';
+@import '@lp/@version-norris/comingsoon/_responsive';
+@import '@lp/@version-norris/platform/_responsive';
+@import '@lp/@version-norris/pay/_responsive';
+@import '@lp/@version-norris/footer/_responsive';
+@import 'price/_responsive';
+@import 'vtb/_responsive';
+
+/***********/
+/* Popups */
+@import 'popup-price/_responsive';
+@import '@lp/@version-norris/popup/_responsive';

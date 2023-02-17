@@ -1,0 +1,22 @@
+.concept {
+
+	@media (max-width: 991px) {
+	} // 991
+
+	@media (max-width: 767px) {
+		padding: 29px 0 30px;
+		&__title span {
+			display: none;
+		}
+		&__subtitle {
+			display: none;
+		}
+		&__text {
+			font-size: 22px;
+			&_1 {
+				margin-bottom: 20px;
+			}
+		}
+	}	// 767
+
+}

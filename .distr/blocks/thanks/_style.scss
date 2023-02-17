@@ -1,0 +1,82 @@
+.thanks {
+	width: 100%;
+	max-width: 1920px;
+	padding: 100px 0;
+	h1 {
+		font-size: 70px;
+		line-height: 70px;
+		font-weight: 900;
+		letter-spacing: -0.03em;
+		text-align: center;
+		color: #000051;
+		span {
+			color: #F8006B;
+		}
+	}
+
+	&-promo {
+		width: 100%;
+		display: flex;
+		background: #F2F2F2;
+		margin-top: 50px;
+		&__img {
+			width: 100%;
+			max-width: 382px;
+			min-height: 100%;
+			background: url('../img/thanks/picture.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		&__text {
+			padding: 69px 56px 71px 77px;
+			p {
+				font-size: 21px;
+				line-height: 29px;
+				font-weight: 600;
+				color: #0C0C0C;
+				margin: 15px 0 0;
+			}
+		}
+		&__title {
+			margin-bottom: 33px;
+			h2 {
+				font-size: 50px;
+				line-height: 50px;
+				color: #000051;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		&__subtitle {
+			h3 {
+				font-size: 31px;
+				line-height: 31px;
+				color: #3215E4;
+				margin: 0;
+			}
+		}
+		&__logo {
+			max-width: 123px;
+			margin-top: 32px;
+			img {
+				width: 100%;
+			}
+		}
+		&__button {
+			margin-top: 50px;
+			.button {
+				width: auto;
+				max-width: 550px;
+				min-width: 300px;
+				min-height: 80px;
+				font-size: 29px;
+				font-weight: 900;
+				background: #F8006B;
+				box-shadow: 0px 7px 22px rgba(0, 0, 0, 0.09);
+				color: #fff;
+				padding: 0 20px;
+			}
+		}
+	}
+}

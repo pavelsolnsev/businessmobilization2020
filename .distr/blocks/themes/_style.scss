@@ -1,0 +1,53 @@
+.themes {
+	background: #FFF;
+	@media (min-width: 1800px) {
+		background: #FFF url('../img/themes/bg.png') no-repeat right top 309px;
+	}
+	padding: 92px 0 58px;
+
+	&__title {
+		margin-bottom: 29px;
+	}
+
+	&__card {
+		display: flex;
+		align-items: center;
+		background: #EFEFEF;
+		&-num {
+			max-width: 125px;
+			min-height: 132px;
+			align-self: stretch;
+			flex: 1 1 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #FFF;
+			font-size: 58px;
+			font-weight: bold;
+			background: $red;
+		}
+		&-text {
+			padding: 20px 20px 20px 39px;
+		}
+		&-title {
+			color: #3215E4;
+			font-size: 60px;
+			line-height: 100%;
+			letter-spacing: -0.03em;
+		}
+		&-desc {
+			color: $blue;
+			font-size: 28px;
+			font-weight: bold;
+			line-height: 100%;
+		}
+	}
+	&__card + &__card {
+		margin-top: 17px;
+	}
+
+	.form-horizontal {
+		margin-top: 79px;
+	}
+
+}

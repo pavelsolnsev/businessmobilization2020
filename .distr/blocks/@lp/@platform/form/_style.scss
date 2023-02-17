@@ -1,0 +1,8 @@
+.form {
+	&_inline {
+		[data-name="promocode"] + .form__item_button {
+			padding: 14px 0 0;
+		}
+
+	}
+}

@@ -1,0 +1,39 @@
+.base {
+	color: #333333;
+	background: #F7F7F7;
+	padding: 65px 0 44px;
+
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__logo {
+		margin-bottom: 49px;
+	}
+	&__text {
+		font-size: 23px;
+		line-height: 139%;
+		margin-bottom: 61px;
+	}
+	&__image {
+		text-align: right;
+		margin-top: 5px;
+	}
+
+	&__features {
+		&-card {
+			height: 100%;
+			font-size: 23px;
+			font-weight: bold;
+			line-height: 139%;
+			border-left: 3px solid #5503E5;
+			padding: 22px 0 10px 31px;
+			&-col {
+				margin-bottom: 44px;
+			}
+			br {
+				display: none;
+			}
+		}
+	}
+
+}

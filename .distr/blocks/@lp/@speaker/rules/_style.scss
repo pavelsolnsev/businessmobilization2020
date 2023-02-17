@@ -1,0 +1,30 @@
+.rules {
+	text-align: center;
+	background: #F6F6F6 url('../img/@lp/@speaker/rules/bg.svg') no-repeat 50% 50% / 100% auto;
+	padding: 106px 0 90px;
+
+	&__title {
+		font-size: 60px;
+		color: $red;
+		margin-bottom: 37px;
+	}
+
+	&-card {
+		max-width: 915px;
+		color: #333333;
+		font-size: 58px;
+		line-height: 103%;
+		margin: 0 auto;
+		&:before {
+			content: '“';
+			display: block;
+			color: #4D2CE0;
+			font-size: 78px;
+			font-family: $font-regular;
+			font-style: italic;
+			line-height: 56%;
+			margin: 0.1em 0 -0.1em;
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+.success {
+  margin: 100px 0 0;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0 0 62px;
+    line-height: 114px;
+  }
+
+  &__p {
+    margin: 0 0 80px;
+    color: #000000;
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  &__img {
+    max-width: 530px;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.11), 0px 4px 20px rgba(0, 0, 0, 0.11), 0px 4px 8px rgba(0, 0, 0, 0.11);
+  }
+}

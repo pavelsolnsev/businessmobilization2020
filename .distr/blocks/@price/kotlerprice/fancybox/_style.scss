@@ -1,0 +1,43 @@
+.fancybox {
+	&-content {
+		padding: 0;
+	}
+
+	&-theme-dark &-button path {
+		fill: #FFF;
+	}
+
+	&-button {
+		overflow: hidden;
+		padding: 0 !important;
+		svg {
+			display: block;
+			width: 25px;
+			height: 25px;
+			margin: 0 0 0 10px;
+		}
+	}
+
+	&-close-small {
+		width: 56px !important;
+		height: 56px !important;
+		border-left: 2px solid #2B79E5;
+		border-bottom: 2px solid #2B79E5;
+	}
+
+	@media (max-width: 767px) {
+		&-close-small {
+			width: 46px !important;
+			height: 46px !important;
+			border: none;
+			svg {
+				width: 46px !important;
+				height: 46px !important;
+
+				path {
+					fill: #FFF ;
+				}
+			}
+		}
+	}
+}

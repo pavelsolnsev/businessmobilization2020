@@ -1,0 +1,34 @@
+{% set speaker = [
+    {
+        id: 'dyakovski',
+        name: 'Борис<br> Дьяконов'
+    },
+        {
+        id: 'prozorov',
+        name: 'Дмитрий<br>Прозоров'
+    },
+        {
+        id: 'mojenkov',
+        name: 'Владимир <br>Моженков'
+    },
+        {
+        id: 'kuchment',
+        name: 'Михаил<br> Кучмент'
+    },
+        {
+        id: 'kuniskii',
+        name: 'Кирилл<br> Куницкий'
+    },
+        {
+        id: 'ketting',
+        name: 'Йерун<br> Кеттинг'
+    },
+        {
+        id: 'balahin',
+        name: 'Илья<br> Балахнин'
+    },
+        {
+        id: 'ryjonkov',
+        name: 'Василий<br> Рыжонков'
+    }
+]%}

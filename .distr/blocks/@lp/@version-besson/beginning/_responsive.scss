@@ -1,0 +1,186 @@
+.beginning {
+
+	@media (max-width: 1580px) {
+		.blockquote {
+			margin-top: -40px;
+		}
+	}
+
+	@media (max-width: 1199px) {
+		.blockquote {
+			&__img {
+				&--bottom--left {
+					left: -10.6%;
+				}
+				&--bottom--right {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		background-image: none;
+
+		&__title {
+			line-height: 94px;
+			margin-bottom: 48px;
+		}
+		&__subtitle {
+			margin-bottom: 35px;
+		}
+		&__text {
+			&--img {
+				display: none;
+			}
+		}
+		&__img {
+			img {
+				margin: -30px -45px 0 0;
+				max-width: 600px;
+			}
+		}
+		&__content {
+			&--bottom {
+				padding: 96px 0 0 0;
+			}
+		}
+		.blockquote {
+			margin-top: 0;
+			&__img {
+				&--bottom--left {
+					bottom: -83%;
+					left: -11%;
+					img {
+						width: 415px;
+					}
+				}
+				&--bottom--right {
+					bottom: -77px;
+					right: -117px;
+					img {
+						width: 290px;
+					}
+				}
+			}
+		}
+	} // 991
+
+
+	@media (max-width: 575px) {
+		padding-top: 95px;
+		padding-bottom: 25px;
+		&__title {
+			margin-bottom: 25px;
+			line-height: 31px;
+			br {
+				display: none;
+			}
+		}
+		&__subtitle {
+			order: 2;
+			font-size: 24px;
+			line-height: 24px;
+			br {
+				display: none;
+			}
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			padding: 0 2rem 0 2rem;
+			margin-bottom: 4px;
+			&--title {
+				order: 1;
+			}
+			&--box {
+				order: 4;
+			}
+			p {
+				margin-bottom: 1.5rem;
+			}
+			&--bottom {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+		&__img {
+			order: 3;
+			float: none;
+			img {
+				margin: -30px -45px 0 0;
+				max-width: 300px;
+			}
+		}
+
+		&__content {
+			&--bottom {
+				padding: 195px 0 0 0;
+			}
+		}
+
+		.blockquote {
+			&__img {
+				&--bottom--left {
+					bottom: -191px;
+					left: -35px;
+					img {
+						width: 225px;
+					}
+				}
+				&--bottom--right {
+					display: none;
+				}
+			}
+		}
+
+	} // 575
+
+}
+
+.lang-en {
+	.beginning {
+		@media(max-width: 1199px) {
+			.blockquote {
+				&__img {
+					&--bottom--left {
+						left: -14.6%;
+					}
+				}
+				
+			}
+		}
+		@media (max-width: 991px) {
+			.blockquote {
+				&__img {
+					&--bottom--left {
+						bottom: -83%;
+					}
+				}
+				
+			}
+		}
+		@media (max-width:767px) {
+			.blockquote {
+				&__img {
+					&--bottom--left {
+						left: -115px;
+						bottom: -83%;
+					}
+				}
+				
+			}
+		}
+		@media (max-width:575px) {
+			.blockquote {
+				&__img {
+					&--bottom--left {
+						bottom: -191px;
+						left: -35px;					
+					}
+				}
+				
+			}
+		}
+	}
+}

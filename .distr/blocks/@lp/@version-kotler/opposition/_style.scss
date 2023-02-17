@@ -1,0 +1,101 @@
+.opposition {
+	@include vw('padding: 177px 0 160px 0');
+	background: linear-gradient(0deg, #EDEEEF, #EDEEEF);
+
+	&__title {
+		position: relative;
+		z-index: 1;
+		@include vw('margin-bottom: 47px');
+		@include vw('line-height: 120px');
+	}
+
+	&__img {
+		width: 50%;
+		text-align: right;
+		z-index: 10;
+		position: relative;
+		img {
+			@include vw('width: 1100px');
+			@include vw('margin: -50px -140px 0 0');
+		}
+	}
+
+	&__left {
+		width: 50%;
+	}
+
+	&__text {
+		display: flex;
+		width: 100%;
+    margin-bottom: 30px;
+		@include vw('padding: 0 0 0 120px');
+
+		p { 
+			@include vw('margin: 0 0 45px 0');
+		}
+	}
+
+	&__box {
+		border-left-style: solid;
+		border-left-color: #000;
+		font-style: italic;
+		font-weight: 600;
+		@include vw('width: 1140px');
+		@include vw('border-left-width: 10px');
+		@include vw('margin-top: 90px');
+		@include vw('margin-bottom: 180px');
+		margin-left: auto;
+		margin-right: auto;
+		@include vw('padding: 0 0 0 36px');
+
+		&-text {
+			@include vw('font-size: 29px');
+			@include vw('line-height: 49px');
+			@include vw('margin: 0 0 85px 0');
+			transform: translateY(-8%);
+
+			&:last-child {
+				@include vw('margin: 85px 0 0 0');
+				transform: translateY(7%);
+			}
+		}
+
+		&-item {
+			@include vw('font-size: 40px');
+			@include vw('line-height: 52px');
+			&+& {@include vw('margin-top: 35px');}
+
+			&:before {	
+				content: '';
+				display: inline-block;				
+				vertical-align: middle;
+				@include vw('width: 92px');
+				@include vw('height: 17px');
+				@include vw('margin-right: 25px');
+			}
+
+			&_1:before {background-color: #2837B9;}
+			&_2:before {background-color: #6636A4;}
+			&_3:before {background-color: #D93D3D;}
+			&_4:before {background-color: #D5682A;}
+		}
+	}
+
+	.blockquote {
+		&__subtitle {			
+			font-weight: 600;
+			@include vw('width: 819px');
+			@include vw('font-size: 29px');
+			@include vw('line-height: 46px');
+			@include vw('margin-bottom: 70px');
+		}
+		&__img {
+			&--top--right {				
+				@include vw('width: 399px');
+			}
+		}
+		&__text {
+			@include vw('width: 1140px');
+		}
+	}
+}

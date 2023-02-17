@@ -1,0 +1,16 @@
+$mobile-min-width: 360px;
+
+
+
+/*************/
+/* Defaults */
+@import '@price/civilization/common/_responsive';
+
+/***********/
+/* Blocks */
+@import '@price/civilization/header/_responsive';
+@import '@price/civilization/price/_responsive';
+
+/***********/
+/* Popups */
+@import '@price/civilization/popup-price/_responsive';

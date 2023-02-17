@@ -1,0 +1,247 @@
+.main-platform {
+
+	@media (max-width: 991px) {
+		// background-image: url('../img/@lp/@platform/main-platform/mobile/bg.jpg');
+		padding-top: 31px;
+
+		&__info {
+			font-size: 37.8787px;
+		}
+
+		&__title {
+			margin-right: 60px;
+		}
+
+		&__slogan {
+			font-size: 60.9353px;
+			margin-right: 30px;
+		}
+
+		&__features {
+			font-size: 32px;
+			&-item {
+				padding: 21px 10px 20px 25px;
+				&:before {
+					width: 12px;
+				}
+			}
+		}
+
+		&__partner {
+			&-text {
+				font-size: 32px;
+			}
+		}
+
+		&__form {
+			margin-bottom: 38px;
+		}
+
+	} // 991
+
+
+	@media (max-width: 767px) {
+		// background-image: url('../img/@lp/@platform/main-platform/mobile/bg.jpg');
+		padding-top: 46px;
+
+		&__bg {
+			background: #230872;
+
+			.header + & {
+				margin-top: 66px;
+			}
+		}
+
+		&__col-1 {
+			padding: 0px 34px 30px;
+		}
+
+		&__info {
+			font-size: 22px;
+			margin-bottom: 8px;
+		}
+
+		&__title {
+			margin: 0 0 10px;
+		}
+
+		&__slogan {
+			font-size: 35px;
+			margin: 0 0 15px;
+		}
+
+		&__features {
+			display: block;
+			text-align: center;
+			font-size: 30px;
+			line-height: 1;
+			margin: 0 -15px;
+			&:before {
+				right: 0;
+				background: radial-gradient(20.29% 60.68% at 62.14% 108.23%, rgba(255, 0, 138, 0.4736) 0%, rgba(255, 0, 138, 0) 100%), linear-gradient(90deg, rgba(193, 32, 116, 0) 2.24%, rgba(194, 25, 181, 0.2418) 27.99%, rgba(142, 7, 224, 0.1911) 51.93%, rgba(62, 0, 203, 0.312) 75.19%, rgba(44, 21, 168, 0) 100%), #25095F;
+			}
+
+			&-item {
+				padding-bottom: 15px;
+				&:before {
+					width: 100%;
+					height: 9px;
+				}
+			}
+		}
+
+	} // 767
+
+}
+
+.version-blogger {
+	@media (max-width: 1080px) {
+		.main-platform {
+			&__discount {
+				padding: 0;
+			}
+			&__pocket {
+				max-width: 148px;
+				min-height: 139px;
+				max-height: 139px;
+				padding: 12px 4px 19px;
+				text-align: center;
+				&-small {
+					&_top {
+						font-size: 11px;
+						margin-bottom: 0;
+					}
+					&_bottom {
+						display: none;
+					}
+				}
+				&-bottom {
+					display: none;
+				}
+				&-name {
+					font-size: 25px;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				&-list {
+					display: none;
+				}
+				&-price {
+					min-width: 162px;
+					min-height: 59px;
+					padding: 12px;
+					margin-bottom: 0;
+					transform: translateX(-7%);
+					&:before, &:after {
+						position: absolute;
+						bottom: -7px;
+						content: '';
+						max-width: 7px;
+						max-height: 7px;
+					}
+					&:before {
+						left: 0;
+						border: 4px solid transparent;
+						border-top: 4px solid #7D0036;
+						border-right: 4px solid #7D0036;
+					}
+					&:after {
+						right: 0;
+						border: 4px solid transparent;
+						border-top: 4px solid #7D0036;
+						border-left: 4px solid #7D0036;
+					}
+				}
+				&-time {
+					font-size: 18px;
+					text-align: left;
+				}
+				&-discount {
+					font-size: 12px;
+					text-align: left;
+					&:after {
+						max-width: 78px;
+						min-height: 1px;
+						bottom: 50%;
+						left: -2%;
+					}
+				}
+			}
+			.form-horizontal-blogger {
+				margin-top: 50px;
+				.form {
+					width: 100%;
+					max-width: 100%;
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					padding: 26px;
+					&__title {
+						order: 1;
+						max-width: 355px;
+						font-size: 35px;
+						line-height: 32px;
+					}
+					.main-platform__pocket {
+						order: 2;
+					}
+					&__items {
+						order: 4;
+						width: 100%;
+						max-width: 100%;
+						flex-wrap: wrap;
+					}
+					&__item {
+						width: 100%;
+						max-width: 100%;
+						&:nth-child(4) + .form__item_button {
+							flex-basis: 100% !important;
+							margin-left: 0 !important;
+						}
+					}
+					&__input {
+						max-width: 100%;
+						input {
+							max-width: 100%;
+						}
+					}
+					&__link {
+						width: 100%;
+						max-width: 100%;
+						display: flex;
+						justify-content: center;
+						order: 3;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 600px) {
+		.main-platform {
+			background: #190543 url('../img/@lp/@platform/main-platform/bg.jpg') no-repeat top center;
+			background-size: unset;
+			.container {
+				&:nth-child(2) {
+					max-width: 100%;
+					padding: 0;
+				}
+			}
+			&__pocket {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.form-horizontal-blogger {
+			.form {
+				&__title {
+					text-align: center;
+				}
+				&__link {
+					a {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

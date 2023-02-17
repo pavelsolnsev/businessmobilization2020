@@ -1,0 +1,42 @@
+$mobile-min-width: 360px;
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import 'main/_responsive';
+@import 'about/_responsive';
+@import 'digital-plf/_responsive';
+@import 'themes/_responsive';
+@import 'discussion/_responsive';
+@import 'speakers/_responsive';
+@import 'concept/_responsive';
+@import 'format/_responsive';
+@import 'online-plf/_responsive';
+@import 'base/_responsive';
+@import 'services/_responsive';
+@import 'thanks/_responsive';
+@import 'thanks_form/_responsive';
+@import 'offer/_responsive';
+@import 'price/_responsive';
+@import 'organizer/_responsive';
+@import 'reviews/_responsive';
+@import 'press/_responsive';
+@import 'faq/_responsive';
+@import 'partners/_responsive';
+@import 'vtb/_responsive';
+@import 'community/_responsive';
+@import 'main-2/_responsive';
+@import 'footer/_responsive';
+
+@import 'main-top50/_responsive';
+
+/***********/
+/* Popups */
+@import 'popup-speakers/_responsive';
+@import 'popup-price/_responsive';

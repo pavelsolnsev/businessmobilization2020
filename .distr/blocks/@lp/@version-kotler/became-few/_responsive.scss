@@ -1,0 +1,65 @@
+.became-few {
+
+	@media (max-width: 991px) {
+		padding: 130px 0 160px;
+
+		&__box {		
+			padding: 0px 6rem;
+			margin-bottom: 60px;
+		}	
+
+		.blockquote {	
+			&__text {
+				width: auto;
+				&-box { 
+					display: block;				
+					margin: 53px 0 60px;
+				}
+	
+				&-inner {		
+					width: auto;
+					margin-bottom: 60px;
+					p {
+						font-size: 24px;
+						line-height: 167%;
+					}
+				}	
+				&-img {
+					margin: 0 auto;
+					width: 70%;
+				}
+			}
+		}
+	} // 991
+
+	@media (max-width: 767px) {
+		&__box {
+			padding: 0px 2rem;
+			margin-bottom: 35px;
+		}
+	}
+
+	@media (max-width: 575px) {
+		padding: 75px 0 80px;
+		.blockquote {	
+			&__text {
+				&-box { 
+					display: block;				
+					margin: 33px 0;
+				}	
+				&-inner {		
+					margin-bottom: 40px;
+					p {
+						font-size: 17px;
+						line-height: 133%;
+					}
+				}	
+				&-img {
+					width: 100%;
+					max-width: 300px;
+				}
+			}
+		}
+	} // 575
+
+}

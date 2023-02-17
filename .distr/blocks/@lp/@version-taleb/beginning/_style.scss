@@ -1,0 +1,109 @@
+.beginning {
+    padding: 124px 0 160px;
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__padding {
+        padding-left: 115px;
+    }
+    &__top {
+        display: flex;
+        margin-bottom: 14px;
+    }
+    &__bottom {
+      padding-right: 190px;
+    }
+    &__left {
+        max-width: 820px;
+    }
+    &__right {
+        position: relative;
+        right: -85px;
+    }
+    &__text {
+        margin-bottom: 60px;
+    }
+    &__mid {
+        margin-bottom: 140px;
+    }
+    &__photo {
+        &_mobile {
+            display: none;
+        }
+    }
+
+
+    .blockquote {
+        margin: 0;
+        &__description {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 34px;
+            text-transform: uppercase;
+        }
+        &__text {
+            p {
+                line-height: 63px;
+            }
+        }
+    }
+    .tabs {
+        &__row {
+          display: flex;
+          justify-content: space-between;
+        }
+      
+        &__col-1 {
+          margin: 0 60px 0 0;
+        }
+      
+        &__col-1, &__col-2 {
+          width: 50%;
+        }
+      
+        &__cont {
+        //   padding: 100px 0 0;
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+        }
+      
+        &__cont.active {
+          display: flex;
+        }
+      
+        &__author {
+        //   bottom: 160px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: -55px;
+        }
+      
+        &__img {
+          width: 100%;
+          max-width: 700px;
+        }
+      
+        &__photo {
+          height: auto;
+        }
+      
+        &__name {
+          position: relative;
+          display: inline-block;
+          color: #000000;
+          font-size: 16px;
+          line-height: 202%;
+          text-transform: uppercase;
+          padding: 0 3vw 0 5vw;
+        }
+      
+        &__text {
+          font-size: 29px;
+          line-height: 160%;
+        }
+    }
+}

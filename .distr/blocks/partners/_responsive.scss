@@ -1,0 +1,49 @@
+.partners {
+	@media (max-width: 767px) {
+		padding: 30px 0 40px;
+
+		&__title {
+			text-align: center;
+			margin-bottom: 25px;
+		}
+
+		&__text {
+			font-size: 22px;
+			margin-bottom: 25px;
+		}
+
+		&__carousel {
+			margin-bottom: 40px;
+		}
+
+		&-card {
+			&__inner {
+				padding: 10px;
+			}
+
+			&__tech,
+			&__fitness {
+				padding: 10px;
+			}
+		}
+
+		.version-retargeting & {
+			padding-top: 50px;
+		}
+
+	} // 767
+
+}
+
+.lang-en {
+	.partners {
+		@media (max-width: 990px) {
+			&__carousel_1 {
+				.swiper-nav {
+					display: flex;
+				}
+	
+			}
+		}
+	}
+}

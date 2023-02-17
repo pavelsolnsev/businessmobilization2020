@@ -1,0 +1,333 @@
+.genesis {
+	font-family: 'Futura PT';
+	width: 100%;
+	max-width: 1920px;
+	min-height: 100vh;
+	// background: url('../img/@lp/@platform/thanks/picture.jpg');
+	
+	a {
+		text-decoration: none;
+	}
+
+	&-banner {
+
+		&__cont {
+			background: url('../img/@lp/@platform/genesis/bg_face.png')no-repeat left 0 #F5FAFF;
+			padding: 50px 0;
+		}
+
+		&__title-cont {
+			display: flex;
+			align-items: flex-start;
+
+			img {
+				max-width: 36px;
+				margin-right: 10px;
+			}
+		}
+
+		&__title {
+			font: 800 45px/90% TTCommons;
+			letter-spacing: -4%;
+			text-transform: uppercase;
+			color: #050B37;
+			position: relative;
+			padding: 4px 30px 0 0;
+			margin: 0;
+			margin-bottom: 30px;
+		}
+
+		&__middle {
+			display: flex;
+			justify-content: space-between;
+			align-items: end;
+			margin: 0;
+		}		
+
+	  &__desc {
+	    padding: 0 0 36px 0;
+	  }
+
+		&__p {
+			font: 400 40px/100% TTCommons;
+			margin: 0;
+			padding: 0 0 20px 0;
+			color: #222222;
+			letter-spacing: -0.04em;
+		} 
+
+		&__list {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+
+			&-item {
+				color: #222222;
+				font-size: 25px;
+				line-height: 37px;
+				list-style: none;
+				letter-spacing: 0px;
+			}
+		}
+
+		&__img {
+			width: 40%;
+			position: relative;
+			top: -75px;
+
+			&-txt {
+				font: 800 26px/110% TTCommons;
+				display: block;
+				margin-left: auto;
+				width: 350px;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+				max-width: 500px;
+				height: auto;
+				position: absolute;
+				top: 10px;
+			}
+		}
+
+		&__button {
+			font: 500 18px/120% TTCommons;
+			color: white;
+			background: #2B79E5;
+			max-width: 215px;
+			width: 100%;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:hover {
+				color: white;
+			}
+		}
+	}
+
+
+
+
+
+
+	&__bg{
+		background: url('../img/@lp/@platform/genesis/bg.jpg') center center no-repeat;
+		background-size: cover;
+		padding-top: 40px;
+		padding-bottom: 220px;
+	}
+	&__header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-content{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			width: 100%;
+		}
+		&-logo{
+			max-width: 230px;
+			flex-shrink: 0;
+		}
+		&-phone{
+			font-style: normal;
+			font-weight: 450;
+			font-size: 19px;
+			line-height: 150%;
+			text-transform: uppercase;
+			color: #222222;
+			// margin-right: 15px;
+			&:hover{
+				color: #222222;
+				text-decoration: none;
+			}
+		}
+		&-btn{
+			display: none;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			min-height: 45px;
+			width: 100%;
+			max-width: 125px;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 150%;
+			color: #222222;
+			border: 1px solid #000000;
+			box-sizing: border-box;
+			border-radius: 30px;
+			&:hover{
+				color: #222222;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__main{
+		padding-top: 200px;
+		&-title{
+			font-weight: 600;
+			font-size: 98px;
+			line-height: 90%;
+			color: #222222;
+			span{
+				display: block;
+				font-size: 66px;
+			}
+		}
+		&-block{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&-name{
+			background: #003ADC;
+			font-weight: 600;
+			font-size: 49px;
+			line-height: 100%;
+			color: #FFFFFF;
+			padding: 10px 20px 16px;
+			margin: 0;
+		}
+		&-time{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-left: 60px;
+			&-pic{
+				width: 50px;
+				height: 50px;
+				flex-shrink: 0;
+			}
+		}
+		&-column{
+			margin-left: 15px;
+			&-title{
+				font-style: normal;
+				font-weight: bold;
+				font-size: 23px;
+				line-height: 150%;
+				color: #222222;
+				margin: 0;
+			}
+			&-description{
+				font-weight: 450;
+				font-size: 23px;
+				line-height: 150%;
+				color: #222222;
+				margin: 0;
+			}
+		}
+		&-text{
+			font-weight: normal;
+			font-size: 50px;
+			line-height: 90%;
+			color: #222222;
+			max-width: 880px;
+			margin-top:40px;
+		}
+	}
+	&__form{
+		background: #003ADC;
+		color: #FFFFFF;
+		padding-top: 60px;
+		padding-bottom: 90px;
+		.version-mbaforum2022 & {
+			background: #8C52FF;
+		}
+		&-container{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+			&-title{
+				max-width: 320px;
+			}
+			&-block{
+				margin-top: 120px;
+			}
+		}
+		.form{
+			&__title{
+				font-style: normal;
+				font-weight: 450;
+				font-size: 44px;
+				line-height: 94.5%;
+				color: #FFFFFF;
+				&-pic{
+					max-width: 305px;
+				}
+			}
+			&__items{
+				justify-content: space-between;
+			}
+			&__item{
+				width: 25%;
+				flex-grow: 0;
+				margin-right: 10px;
+			}
+			&__input{
+				background: transparent;
+			}
+			&__button{
+				max-width: 140px;
+				.btn{
+					width: 100%;
+					height: 60px;
+					background: transparent;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 150%;
+					color: #000000;
+				}
+			}
+			&__more{
+				margin-top: 10px;
+			}
+			&__footer{
+				font-weight: 450;
+				font-size: 16px;
+				line-height: 125%;
+				letter-spacing: 0.08em;
+				text-transform: inherit;
+				color: #FFFFFF;
+				max-width: 615px;
+			}
+		}
+	}
+	&__footer{
+		background: linear-gradient(180deg, #DBDFEB 0%, rgba(219, 223, 235, 0) 32.78%), #EEF1FB;
+		padding: 35px 0;
+		&-flex{
+			display: flex;
+			text-align: center;
+			justify-content: flex-start;
+		}
+		&-link{
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 18px;
+			text-decoration-line: underline;
+			color: #222222;
+			margin-bottom:0;
+			&:hover{
+				text-decoration:none;
+			}
+		}
+		&-text{
+			font-style: normal;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 18px;
+			color: #222222;
+			margin-left: 20px;
+			margin-bottom:0;
+		}
+	}
+}

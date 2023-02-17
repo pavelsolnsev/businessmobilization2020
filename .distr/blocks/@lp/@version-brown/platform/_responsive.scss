@@ -1,0 +1,75 @@
+.platform {
+    @media (max-width: 991px) {
+        padding: 110px 0 120px;
+        &__logo {
+            display: none;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__content {
+            font-size: 36px;
+            line-height: 54px;
+        }
+        &__text {
+            font-size: 28px;
+            line-height: 44px;
+        }
+        &__description {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        &__list {
+            margin: 0 -15px;
+        }
+        &__item {
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+        &__item {
+            flex-basis: 50%;
+            &_order {
+                &_start {order:0;}
+                &_5 {order:5;}
+                &_10 {order:10;}
+                &_end {order:15;}
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        padding: 70px 0 90px;
+        &__head {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        &__title {
+            font-size: 34px;
+            line-height: 34px;
+        }
+        &__content {
+            font-size: 28px;
+            line-height: 46px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &__description {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__list {
+            margin: 0 -10px;
+        }
+        &__item {
+            padding: 0 10px;
+        }
+        &__box {
+            padding: 0 10px;
+        }
+    }
+}

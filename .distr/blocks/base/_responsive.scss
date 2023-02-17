@@ -1,0 +1,37 @@
+.base {
+	@media (max-width: 991px) {
+		padding-top: 70px;
+	} // 991
+
+	@media (max-width: 767px) {
+		padding: 40px 0 40px;
+		form{
+			box-shadow: none!important;
+		}
+		&__title {
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 30px;
+		}
+
+		&__features {
+			margin-bottom: 0px;
+			&-image {
+				min-height: 0;
+				margin-bottom: 6px;
+				img {
+					max-height: 50px;
+				}
+			}
+			&-title {
+				font-size: 17.638px;
+				margin-bottom: 30px;
+			}
+		}
+
+	} // 767
+}

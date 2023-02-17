@@ -1,0 +1,51 @@
+.button {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	font-weight: bold;
+	border: 0;
+	cursor: pointer;
+	padding-top: 2px;
+
+	&_red {
+		color: #FFF !important;
+		background: #F8006B;
+	}
+	&_blue {
+		color: #FFF !important;
+		background: #4D2CE0;
+	}
+
+	@include ie11-align-center-fix;
+
+	&[disabled] {
+		position: relative;
+		z-index: 2;
+		cursor: not-allowed;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.5);
+			mix-blend-mode: saturation;
+		}
+	}
+
+	&.loading {
+		cursor: wait;
+	}
+
+}
+
+// Скрываем кнопку "Выставить счет" для партнеров франшизы
+body[class*="partner-"] button[name="payment-type-invoice"] {
+	display: none;
+}

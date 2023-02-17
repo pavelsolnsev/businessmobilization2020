@@ -1,0 +1,161 @@
+.vtb {
+    padding: 0 0 68px 0;
+
+    &__box {
+        position: relative;
+        display: flex;
+        max-width: 1144px;
+        background: #fff;
+        box-shadow: 0px 4.02994px 30.2245px rgba(77, 44, 224, 0.3);
+        margin: 0 auto;
+    }
+
+    &__left {
+        width: 55%;
+        padding: 64px 40px 55px 61px;
+    }
+
+    &__right {
+        display: flex;
+		width: 45%;
+		padding: 70px 29px 40px 29px;
+		flex-direction: column;
+		background: #123274;
+		&-item{
+			margin: 0 2px;
+			p{
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 24px;
+				text-align: center;
+				color: #FFFFFF;
+				margin-top: 20px;
+			}
+		}
+		&-block{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		&-content{
+			margin-top: 35px;
+			&_title{
+				font-weight: 600;
+				font-size: 22px;
+				line-height: 24px;
+				color: #FFFFFF;
+				padding-left: 75px;
+				margin-bottom: 30px;
+				position: relative;
+				span{
+					color:#5FDEF8;
+				}
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 56px;
+					height: 57px;
+					background: url('../img/vtb/gift.png') no-repeat 50% 0;
+				}
+			}
+			&_list{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				li{
+					position: relative;
+					font-size: 20px;
+					line-height: 120%;
+					color: #FFFFFF;
+					padding-left: 45px;
+					margin-bottom: 25px;
+					&:before{
+						content: '';
+						width: 30px;
+						height: 1px;
+						background-color: #FFFFFF;
+						position: absolute;
+						left: 0;
+						top: 12px;
+					}
+				}
+			}
+		}
+    }
+
+    &__logo {
+        margin-bottom: 34px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 38.5459px;
+        line-height: 115%;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 22.27px;
+        line-height: 163%;
+        color: #0A2973;
+    }
+
+    &__list {
+        display: inline-block;
+        min-width: 370px;
+        list-style: none;
+        padding: 0 0 10px 0;
+
+        &-item {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 67, 187, 0.14);
+            font-size: 18px;
+            line-height: 129%;
+
+            &:last-child {
+                border: 0;
+            }
+
+            &-part {
+                font-weight: 700;
+                color: #5fdef8;
+            }
+        }
+    }
+
+    &__button {
+        max-width: 286px;
+        height: 60px;
+        font-size: 23.3068px;
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+        }
+    }
+
+    &__gift {
+        position: relative;
+        padding-left: 70px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 98%;
+        color: #fff;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 56px;
+            height: 57px;
+            background: url(../img/vtb/gift.png) no-repeat 50% 0;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/**********/
+/* Fonts */
+@import 'fonts/_style';
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+@import '@lp/@synergyonline-platform/common/_style';
+
+
+/***********/
+/* Blocks */
+@import '@lp/@synergyonline-platform/header/_style';
+@import '@lp/@synergyonline-platform/main/_style';
+@import '@lp/@synergyonline-platform/about/_style';
+@import '@lp/@synergyonline-platform/videos/_style';
+@import '@lp/@synergyonline-platform/weekly-forums/_style';
+@import 'speakers/_style';
+@import '@lp/@synergyonline-platform/speakers/_style';
+@import '@lp/@synergyonline-platform/community/_style';
+// @import '@lp/@synergyonline-platform/price/_style';
+@import 'faq/_style';
+@import '@lp/@synergyonline-platform/faq/_style';
+@import 'press/_style';
+@import '@lp/@synergyonline-platform/press/_style';
+@import '@lp/@synergyonline-platform/news/_style';
+@import 'vtb/_style';
+@import '@lp/@synergyonline-platform/footer/_style';
+
+
+/***********/
+/* Popups */
+@import 'popup-speakers/_style';
+@import 'popup-price/_style';
+@import 'popup-message/_style';
+@import '@lp/@synergyonline-platform/popup/_style';

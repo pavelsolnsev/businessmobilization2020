@@ -1,0 +1,30 @@
+@media (max-width: 1199px) {
+
+    .button {
+        font-size: 24px;
+    }
+    .text-bg {
+        background-image: url(../img/@lp/@version-brown/common/tablet/text-bg.svg);
+    }  
+
+}
+
+@media (max-width: 991px) {  
+    .text-bg {
+        background-image: url(../img/@lp/@version-brown/common/mobile/text-bg.svg);
+    } 
+
+    .quotes {    
+        &::before,
+        &::after {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 767px) {  
+}
+
+@media (max-width: 575px) {
+    
+}

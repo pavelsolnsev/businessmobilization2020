@@ -1,0 +1,104 @@
+.header {
+    @media (max-width: 1060px) {
+        &__block {
+            padding: 20px 0;
+            &-logo {
+                max-width: 110px;
+            }
+            &-nav {
+                display: none;
+                .fixed & {
+                    display: flex;
+                }
+            }
+            &-link {
+                max-width: 286px;
+                .phone {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-right: 20px;
+                    .fixed & {
+                        display: none;
+                    }
+                }
+                .link {
+                    max-width: 145px;
+                    height: 34px;
+                    font-size: 13px;
+                    line-height: 100%;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        &__block {
+            padding: 20px 0;
+            .price__fixed & {
+                height: 50px;
+            }
+            &-nav {
+                .fixed & {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            &-link {
+                .link {
+                    height: 30px;
+                    font-size: 11px;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+  
+    @media (max-width: 680px) {
+        &__block {
+            padding: 20px 0;
+            &-logo {
+                max-width: 100px;
+            }
+            &-nav {
+                .fixed & {
+                    display: none;
+                }
+            }
+            &-link {
+                max-width: 30px;
+                .phone {
+                    display: none;
+                    &-mobile {
+                        display: block;
+                    }
+                }
+                .link {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:680px) {
+    .header__list-mobile {
+        margin-top: 0px;
+    }
+    .activ-nav {
+        display: block;
+    }
+    .burger-menu {
+        display: block;
+        width: 30px;
+        height: 25px;
+        margin-left: 20px;
+        background-image: url(../img/header/burger.svg);
+        background-repeat: round;
+        background-size: cover;
+        cursor: pointer;
+        &.open {
+            background-image: url(../img/header/open_burger.svg);
+        }
+    }
+}

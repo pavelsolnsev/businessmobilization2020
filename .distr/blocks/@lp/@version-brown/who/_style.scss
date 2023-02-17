@@ -1,0 +1,116 @@
+.who {
+    padding: 175px 0 40px;
+    &__title {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: -0.03em;
+        color: #1662DA;
+        margin-bottom: 50px;
+    }
+    &__banner {
+        background: #1662DA;
+        max-width: 1460px;
+        min-height: 510px;
+        margin: 0 -100px 120px;
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_box {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &_right {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            &_quote {
+                font-weight: bold;
+                font-size: 60px;
+                line-height: 60px;
+                letter-spacing: -0.03em;
+                margin-bottom: 40px;
+
+                span {            
+                    position: relative;
+        
+                    &:first-child::before, 
+                    &:last-child::after {                
+                        content: '';
+                        width: 35px;
+                        height: 35px;
+                        position: absolute;                
+                        background: url(../img/@lp/@version-brown/who/quote-white.svg) no-repeat;
+                    }
+        
+                    &:first-child {
+                        &:before {
+                            left: -50px;
+                            top: 0;
+                        }
+                    }
+        
+                    &:last-child {
+                        &:after {
+                            right: -50px;
+                            bottom: 0;                
+                            background: url(../img/@lp/@version-brown/who/quote-white.svg) no-repeat;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+            }
+            &_background {
+                background: #251B1D;
+            }
+        }
+        &_left {
+            position: relative;
+            z-index: 1;
+            align-self: center;
+            &_text {
+                color: #fff;
+                -webkit-text-stroke: 1px #fff;
+                -webkit-text-fill-color: transparent;
+                font-weight: 900;
+                font-size: 140px;
+                line-height: 110px;
+                letter-spacing: -0.04em;
+                text-transform: uppercase;
+                span {
+                    display: block;
+                }
+            }
+            &_circle {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                top: 0;
+                left: 0;
+                color: #fff;
+                display: block;
+                -webkit-text-fill-color: #fff;
+            }
+        }
+        &_center {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+    &__buttonbox {
+        position: relative;
+        z-index: 1;
+        max-width: 293px;
+    }
+
+}

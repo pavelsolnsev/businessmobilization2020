@@ -1,0 +1,42 @@
+@import '_variables';
+
+body {
+	min-width: $mobile-min-width;
+}
+
+
+/***********/
+/* Common */
+
+/* Forms */
+@import 'form/_responsive';
+
+
+/* Tabs */
+// @import 'tabs/_responsive';
+
+
+/* Carousel */
+// @import 'slick-carousel/_responsive';
+@import 'swiper/_responsive';
+
+
+/* Popup */
+@import 'popup/_responsive';
+
+
+
+/* ******* */
+/* Layout */
+@media (max-width: 991px) {
+	.container {
+		max-width: 962px;
+	}
+} // 991
+
+
+@media (max-width: 767px) {
+	.wrapper {
+		// max-width: $mobile-min-width;
+	}
+} // 767

@@ -1,0 +1,32 @@
+.header {
+	color: #000;
+
+	&__top {
+		background: #FFF;
+	}
+
+	&__bottom {
+		display: none;
+	}
+
+	&__button {
+		box-shadow: none;
+	}
+
+	&__row {
+		.page-scrolled &{
+			min-height: 46px;
+		}
+	}
+
+	&__logo {
+		display: flex;
+
+		&-line {
+			width: 2px;
+			background-color: transparent;
+			margin: 0 20px;
+		}
+	}
+
+}

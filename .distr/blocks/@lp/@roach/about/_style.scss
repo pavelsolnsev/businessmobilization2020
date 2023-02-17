@@ -1,0 +1,40 @@
+.about {
+	padding: 32px 0 77px;
+
+	&__title {
+		margin: 70px 0 10px;
+	}
+
+	&__text {
+		max-width: 720px;
+		color: #333333;
+		font-size: 23px;
+		line-height: 152%;
+		margin-bottom: 70px;
+	}
+
+	&__image {
+		display: inline-block;
+		background: url('../img/@lp/@speaker/about/bg-image.svg') no-repeat 50% 50% / cover;
+		padding: 38px;
+		margin-left: -20px;
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	&__info {
+		&-title {
+			font-size: 38px;
+			font-weight: bold;
+			line-height: 68%;
+			margin-bottom: 17px;
+		}
+		&-text {
+			color: #333333;
+			font-size: 18px;
+			line-height: 144%;
+		}
+	}
+
+}

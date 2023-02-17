@@ -1,0 +1,68 @@
+.worldclass {
+    @media (max-width: 1199px) {
+        &__title {
+            flex-basis: initial;
+            font-size: 70px;
+        }
+    }
+    @media (max-width: 991px) {
+        &__header {
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 90px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 300px;
+
+        &__title {
+            font-size: 64px;
+            line-height: 100%;
+        }
+        &__description {
+            p {
+                font-size: 18px;
+                line-height: 29px;
+            }
+        }
+        &__schedule {
+            &-time {
+                p {
+                    font-size: 18px;
+                    line-height: 29px;
+                }
+            }
+            &-text {
+                font-size: 18px;
+                line-height: 29px;
+            }
+        }
+
+        .version-retargeting & {
+            padding-top: 50px;
+        }
+    }
+    @media (max-width: 575px) {
+        &__title {
+            font-size: 50px;
+        }
+        &__photo {
+            &-list {
+                display: none;
+                &__mobile {
+                    display: block;
+                    margin-bottom: 25px;
+                }
+                &__container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        &__button {
+            font-size: 18px;
+            line-height: 88.91%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+
+body {
+    color: #000000;
+	font-size: 15px;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	line-height: 1.25;
+	background: #FFF;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+}
+
+.button {
+    width: 100%;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #333333 !important;
+    background-color: #FDF406;
+    border: 0;
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.condensed {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 100%;
+    text-transform: uppercase;
+}

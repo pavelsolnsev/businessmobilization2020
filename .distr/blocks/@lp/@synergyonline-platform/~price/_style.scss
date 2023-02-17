@@ -1,0 +1,78 @@
+.price {
+	background: radial-gradient(85.97% 85.97% at 50% 50%, #701E8D 0%, #19024A 100%), linear-gradient(90.54deg, #7200E4 2.82%, #DB00FF 99.91%);
+	padding: 10px 0 80px;
+
+	&-payment {
+		&__options {display: none;}
+		&__title {
+			&-part {
+				font-size: 70px;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	&-card {
+		@media (min-width: 768px) {
+			background: #FFF;
+		}
+		&__seemore {
+			margin-top: 0 !important;
+			position: relative;
+			&:before {
+				content: url("data:image/svg+xml,%3Csvg width='15' height='7' viewBox='0 0 15 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.4052 1.42872L8.35575 6.75487C7.98453 7.08171 7.38266 7.08171 7.01143 6.75487L0.962011 1.42872C0.590789 1.10188 0.590789 0.571968 0.962011 0.245129C1.33323 -0.0817104 1.9351 -0.0817103 2.30633 0.245129L7.68359 4.97949L13.0609 0.245129C13.4321 -0.0817098 14.034 -0.0817098 14.4052 0.245129C14.7764 0.571969 14.7764 1.10188 14.4052 1.42872Z' fill='white'/%3E%3C/svg%3E%0A");
+				position: absolute;
+				top: -2px;
+				right: 20px;
+				transition: 0.3s;
+			}
+			&-text-2 {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding-bottom: 0;
+
+		&-payment {
+			&__title {
+				&-part {
+					font-size: 40px;
+				}
+			}
+		}
+
+		&-card {
+			&--opened {
+				position: relative;
+				border-radius: 5px 5px 0 0 !important;
+				background: #FFF;
+				overflow: visible !important;
+				margin-bottom: 65px !important;
+			}
+			&--opened & {
+				&__seemore {
+					width: 100%;
+					position: absolute;
+					top: 100%;
+					left: 0 !important;
+					opacity: 1 !important;
+					border-radius: 0 0 5px 5px;
+					&:before {
+						top: 3px;
+						transform: rotate(180deg);
+					}
+					&-text-1 {
+						display: none;
+					}
+					&-text-2 {
+						display: block;
+					}
+				}
+			}
+		}
+
+	}	// 767
+
+}

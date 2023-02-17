@@ -1,0 +1,150 @@
+.slick {
+	&-carousel {
+		display: none;
+	}
+
+	&-initialized {
+		display: block;
+	}
+
+	&-list {
+	}
+
+	&-track {
+	}
+
+	&-slide {
+		img {
+			display: inline-block;
+		}
+	}
+
+	&-dots {
+		max-width: 80%;
+		display: table;
+		list-style: none;
+		text-align: center;
+		padding: 0 70px;
+		margin: 0 auto 0;
+
+		li {
+			width: 20px;
+			height: 20px;
+			line-height: 0;
+			display: inline-block;
+			border-radius: 50%;
+			padding: 6px 0 23px;
+			margin: 0;
+			cursor: pointer;
+		}
+
+		button {
+			border: 0;
+			font-size: 0;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			background: #DDDDDD;
+			padding: 0;
+			outline: 0;
+			cursor: inherit;
+			transition: 0.3s;
+		}
+
+		.slick-active {
+			cursor: default;
+			button {
+				background: #4D2CE0;
+			}
+		}
+	}
+
+	&-arrow {
+		border: 0;
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+		color: inherit;
+		font-size: 34px;
+		line-height: 0;
+		cursor: pointer;
+		background: none;
+		outline: 0 !important;
+		padding: 0;
+	}
+	&-prev {
+		left: 40%;
+		i {
+			transform: rotate(180deg);
+		}
+	}
+	&-next {
+		right: 40%;
+	}
+	&-disabled {
+		display: none !important;
+	}
+
+	&-carousel_theme-big & {
+		&-dots {
+			li {
+				width: 28px;
+				height: 28px;
+				padding: 7px 7px 0;
+			}
+
+			button {
+				width: 12px;
+				height: 12px;
+			}
+		}
+
+		&-arrow {
+			font-size: 64px;
+			margin-bottom: -8px;
+		}
+	}
+
+	&-carousel_numbered & {
+		&-dots {
+			max-width: none;
+			counter-reset: slides-num;
+			font-size: 29px;
+			font-family: $font-condensed;
+			font-weight: 900;
+			letter-spacing: -0.02em;
+			margin-bottom: -12px;
+
+			&:after {
+				content: "/" counter(slides-num);
+				vertical-align: middle;
+			}
+
+			li {
+				position: absolute;
+				left: -9999px;
+				counter-increment: slides-num;
+				border: 0;
+				transition: none;
+				margin-bottom: 22px;
+
+				button {
+					display: none;
+				}
+			}
+			.slick-active {
+				width: auto !important;
+				height: auto !important;
+				position: static;
+				text-align: right;
+				padding: 0 !important;
+				margin: 0;
+				&:before {
+					content: counter(slides-num);
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+.main_top50 {
+	@media (max-width: 992px) {
+			
+		&__logo {
+			max-width: 610px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__text {
+			max-width: 575px;
+			margin: 0 auto 40px;
+		}
+
+		&__speakers {
+			max-width: 575px;
+			width: 100%;
+			flex-wrap: wrap;
+			padding-bottom: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+			&-card {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding: 100px 0 70px;
+	}
+
+	@media (max-width: 450px) {
+			
+		&__logo {
+			max-width: 300px;
+		}
+
+		&__text {
+			max-width: 300px;
+			font-size: 25px;
+			line-height: 108.8%;
+			margin: 0 auto 20px;
+		}
+
+		&__speakers {
+			max-width: 310px;
+		}
+	}
+}

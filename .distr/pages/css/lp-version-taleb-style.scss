@@ -1,0 +1,33 @@
+/**********/
+/* Fonts */
+@import 'fonts/_style';
+
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+@import '@lp/@version-taleb/common/_style';
+
+
+/***********/
+/* Blocks */
+@import 'header/_style';
+@import '@lp/@version-taleb/header/_style';
+@import '@lp/@version-taleb/main/_style';
+@import '@lp/@version-taleb/about/_style';
+@import '@lp/@version-taleb/registration/_style';
+@import '@lp/@version-taleb/after/_style';
+@import '@lp/@version-taleb/whois/_style';
+@import '@lp/@version-taleb/reputation/_style';
+@import '@lp/@version-taleb/what-now/_style';
+@import '@lp/@version-taleb/comingsoon/_style';
+@import '@lp/@version-taleb/beginning/_style';
+@import '@lp/@version-taleb/platform/_style';
+@import '@lp/@version-taleb/pay/_style';
+@import '@lp/@version-taleb/footer/_style';
+@import 'price/_style';
+
+/***********/
+/* Popups */
+@import 'popup-price/_style';
+@import 'popup-message/_style';

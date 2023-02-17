@@ -1,0 +1,55 @@
+.about {
+	background: #FFF url($path + 'about/bg.jpg') no-repeat 50% 29px;
+	text-transform: uppercase;
+	padding: 145px 0 0;
+
+	&__title {
+		position: relative;
+		z-index: 1;
+		font-size: 70px;
+		line-height: 117%;
+		margin-bottom: 52px;
+	}
+	&__text {
+		max-width: 680px;
+		font-size: 32px;
+		line-height: 162%;
+		margin-bottom: 88px;
+	}
+
+	&__icon {
+		vertical-align: top;
+		font-size: 0;
+		img {
+			position: relative;
+			z-index: -1;
+			margin: -50% 1% -50% 0;
+		}
+	}
+
+	&__films {
+		margin-bottom: 33px;
+	}
+
+	&__mc {
+		background: #EDEEEF;
+		padding: 254px 0 161px;
+		margin-top: -250px;
+		&-title {
+			max-width: 920px;
+			text-align: center;
+			font-size: 123px;
+			line-height: 98%;
+			letter-spacing: -0.02em;
+			margin: 0 auto 138px;
+		}
+		&-item {
+			position: relative;
+			z-index: 1;
+			font-size: 43px;
+			line-height: 77%;
+			margin-top: 67px;
+		}
+	}
+
+}

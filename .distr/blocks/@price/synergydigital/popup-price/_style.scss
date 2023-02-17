@@ -1,0 +1,330 @@
+.popup-price {
+	width: 100%;
+	max-width: 754px;
+	&__head {
+		height: 64px;
+		background-color: #FFD602;
+	}
+	&__wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+	}
+	&__package {
+		display: none;
+		font-size: 25px;
+		line-height: 14px;
+	}
+	&__info {
+		position: relative;
+		width: 100%;
+		min-height: 100%;
+		max-width: 381px;
+		color: #000000;
+		text-align: center;
+		background: #F0F0FA;
+		box-shadow: inset 0px 50px 100px rgba(0, 12, 119, 0.05);
+		padding: 0 20px 40px;
+		text-align: left;
+	}
+	&__name {
+		font-size: 50px;
+		line-height: 110%;
+		font-weight: bold;
+		text-transform: lowercase;
+		margin: 20px 0 10px;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+	&__text {
+		margin: 0px 0 46px;
+		span {
+			display: block;
+			margin: 20px 0;
+		}
+		ul { padding-left: 15px; }
+		li {
+			font-size: 16px;
+			line-height: 157%;
+			margin-bottom: 20px;
+		}
+		img {
+			display: none;
+		}
+	}
+	&__price {
+		color: #000000;
+		font-size: 26px;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		&-internal {
+			margin-top: 50px;
+		}
+		span {
+			font-weight: 500;
+			font-size: 100%;
+		}
+	}
+	&__banner {margin-bottom: 60px;}
+	&__phone {
+		font-weight: bold;
+		font-size: 16px;
+		&_link {outline: none;}
+		&-text {
+			font-size: 12px;
+			line-height: 150%;
+			margin-bottom: 10px;
+		}
+	}
+	&__form {
+		padding: 30px;
+	}
+	&__button-get {
+		display: none;
+		.popup-price_no-cost & {
+			display: block;
+		}
+	}
+	.popup-price_no-cost &__button-buy {
+		display: none;
+	}
+
+	/*Цвет шапки попапа под цвет полосы билета*/
+	&[data-package="standard"] & {
+		&__head {
+			background: #2EAF5A;
+		}
+		&__text {
+			.price-card__list-item {
+				&_3,&_4,&_5,&_6 {opacity: .5;}
+			}
+		}
+	}
+	&[data-package="business"] & {
+		&__head {
+			background: linear-gradient(0deg, #2452F5, #2452F5), #FFFFFF;
+		}
+		&__text {
+			.price-card__list-item {
+				&_5,&_6 {opacity: .5;}
+			}
+		}
+	}
+	&[data-package="vip"] & {
+		&__head {
+			background: linear-gradient(0deg, #DC0000, #DC0000), #FFFFFF;
+		}
+		&__text {
+			.price-card__list-item {
+				&_6 {opacity: .5;}
+			}
+		}
+	}
+	&[data-package="silver"] & {
+		&__head {
+			background: #00ABE0;
+		}
+	}
+	&[data-package="gold"] & {
+		&__head {
+			background: linear-gradient(0deg, #FDD506, #FDD506), #FFFFFF;
+		}
+	}
+	&[data-package="platinum"] & {
+		&__head {
+			background: linear-gradient(0deg, #59009E, #59009E), #FFFFFF;
+		}
+	}
+	&[data-package="bachelor"] & {
+		&__head {
+			background: #97D7AD;
+		}
+	}
+	&[data-package="magister"] & {
+		&__head {
+			background: linear-gradient(0deg, #92A9FA, #92A9FA), #FFFFFF;
+		}
+	}
+	&[data-package="postgraduate"] & {
+		&__head {
+			background: linear-gradient(0deg, #EE8080, #EE8080), #FFFFFF;
+		}
+	}
+	&[data-package="ready"] & {
+		&__head {
+			background: #FFBD80;
+		}
+	}
+	&[data-package="steady"] & {
+		&__head {
+			background: linear-gradient(0deg, #AC80CF, #AC80CF), #FFFFFF;
+		}
+	}
+	&[data-package="run"] & {
+		&__head {
+			background: linear-gradient(0deg, #80D5F0, #80D5F0), #FFFFFF;
+		}
+	}
+
+
+	&[data-package="standard"],
+	&[data-package="business"],
+	&[data-package="vip"],
+	&[data-package="silver"],
+	&[data-package="gold"],
+	&[data-package="platinum"] {
+		.price-card {
+			&__list {
+				&-item {
+					display: none !important;
+	
+					&_1,&_2,&_3,&_4,&_5,&_6,&_7,&_8 {display: flex !important;}
+				}
+			}
+		}
+	}
+
+
+	.form {
+		max-width: 338px;
+		&__title {
+			width: 77%;
+			font-size: 24px;
+			line-height: 130%;
+			margin-bottom: 70px;
+			text-transform: uppercase;
+			font-weight: 900;
+		}
+		&__input {
+			width: 100%;
+			height: 100%;
+			min-height: 56px;
+			margin: 20px 0;
+			padding-left: 0;
+			padding-right: 0;
+			position: relative;
+			input {
+				width: 100%;
+				height: 100%;
+				min-height: 56px;
+				padding: 14px;
+				border: 1px solid #000000;
+				&::placeholder {
+					color: #000000;
+				}
+				&.error{
+					border-color:red;
+					outline:none;
+					& + label{
+						position: absolute;
+						display: block!important;
+						top: -2px;
+						transform: translateY(-100%);
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		&__submit {
+			font-size: 0;
+			text-transform: uppercase;
+			color: #333333;
+			background-color: #FFD602;
+			position: relative;
+
+			&:before {
+				content: 'принять участие';
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 16px;
+				letter-spacing: 0.1em;
+			}
+		}
+		.checkcontainer {
+			margin-top: 20px;
+			max-width: 100%;
+			display: flex;
+			&__text {
+				font-size: 10px;
+				line-height: 12px;
+				color: #333333;
+				text-transform: uppercase;
+			}
+			&_is-recurrent,
+			.checkbox_custom {
+				display: none;
+			}
+		}
+	}
+
+}
+
+
+.stripe {
+	background: #eaf1f7;
+	border-radius: 8px;
+	form {
+		width: 496px;
+		padding: 50px 15px;
+		& > * + * {
+			margin-top: 20px;
+		}
+	}
+	.container {
+		background-color: #fff;
+		box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+		border-radius: 4px;
+		padding: 3px;
+	}
+	input, button[type="submit"] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		outline: none;
+		border-style: none;
+		color: #fff;
+	}
+	fieldset {
+		border-style: none;
+		padding: 5px;
+		margin-left: -5px;
+		margin-right: -5px;
+		background: rgba(18, 91, 152, 0.05);
+		border-radius: 8px;
+		legend {
+			float: left;
+			width: 100%;
+			text-align: center;
+			font-size: 13px;
+			color: #8898aa;
+			padding: 3px 10px 7px;
+			& + * {
+				clear: both;
+			}
+		}
+	}
+	button[type="submit"] {
+		display: block;
+		width: 100%;
+		height: 37px;
+		background-color: #d782d9;
+		border-radius: 2px;
+		color: #fff;
+		cursor: pointer;
+		&:active {
+			background-color: #b76ac4;
+		}
+	}
+	.card-only {
+		display: block;
+	}
+	.payment-request-available {
+		display: none;
+	}
+	#payment-elements {
+		padding: 10px;
+		margin-bottom: 2px;
+	}
+}

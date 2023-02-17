@@ -1,0 +1,48 @@
+/**********/
+/* Fonts */
+@import 'fonts/_style';
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+@import '@lp/@platform/form/_style';
+
+/***********/
+/* Blocks */
+@import 'header/_style';
+@import '@lp/@platform/header/_style';
+@import '@lp/@platform/about/_style';
+@import 'main/_style';
+@import 'about/_style';
+@import 'digital-plf/_style';
+@import 'themes/_style';
+@import 'discussion/_style';
+@import '@lp/@platform/speakers/_style';
+@import 'concept/_style';
+@import 'format/_style';
+@import '@lp/@platform/online-plf/_style';
+@import 'base/_style';
+@import 'services/_style';
+@import 'vtb/_style';
+@import 'offer/_style';
+@import 'price/_style';
+@import 'organizer/_style';
+@import 'reviews/_style';
+@import 'press/_style';
+@import 'faq/_style';
+@import 'partners/_style';
+@import 'community/_style';
+@import '@lp/@platform/main-platform/_style';
+@import '@lp/@platform/main-demo/_style';
+@import '@lp/@platform/footer/_style';
+@import '@lp/@platform/thanks/_style';
+
+@import '@lp/@platform/genesis/_style';
+
+/***********/
+/* Popups */
+@import '@lp/@platform/popup/_style';
+@import '@lp/@platform/popup-speakers/_style';
+@import '@lp/@platform/popup-demo/_style';
+@import 'popup-price/_style';
+@import 'popup-message/_style';

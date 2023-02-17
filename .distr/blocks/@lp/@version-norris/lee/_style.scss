@@ -1,0 +1,99 @@
+.lee {
+	padding: 130px 0 60px 0;
+
+	&__content {
+		width: 92%;
+		margin: 0 auto;
+	}
+
+	&__title {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 47px;
+		line-height: 120px;
+	}
+
+	&__img {
+		width: 50%;
+		
+		z-index: 10;
+		position: relative;
+
+		&-box {
+			display: inline-block;
+		}
+
+		&-signature {
+			max-width: 505px;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 202%;
+			text-transform: uppercase;
+			text-align: left;
+			margin: -50px auto 0 auto;
+		}
+
+		&_right {
+			text-align: right;
+			padding: 250px 5rem 0 3rem;
+		}
+
+		&_left {
+			text-align: right;
+			margin-top: 40px;
+		}
+	}
+
+	&__left {
+		width: 50%;
+	}
+
+	&__right {
+		width: 50%;
+	}
+
+	&__text {
+		display: flex;
+		width: 100%;
+		margin-bottom: 22px;
+
+		&--title {
+			display: flex;
+		}
+
+		p {
+			margin-bottom: 2.8rem;
+		}
+	}
+
+	.blockquote {
+		margin-bottom: 100px;
+
+		&__img {
+
+			&--bottom--1 {
+				bottom: -5%;
+				right: 11%;
+
+				img {
+					max-height: 181px;
+				}
+				picture {
+					max-height: 181px;
+				}
+			}
+
+			&--bottom--2 {
+				bottom: -5%;
+				right: 30%;
+
+				img {
+					max-height: 146px;
+				}
+				picture {
+					max-height: 146px;
+				}
+			}
+		}
+	}
+}

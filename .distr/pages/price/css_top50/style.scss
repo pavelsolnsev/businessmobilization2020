@@ -1,0 +1,20 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+/*************/
+/* Defaults */
+@import '@price/top50/common/_style';
+@import '@price/top50/fancybox/_style';
+
+
+/***********/
+/* Blocks */
+@import '@price/top50/header/_style';
+@import '@price/top50/css/_style';
+@import '@price/top50/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/top50/popup-price/_style';

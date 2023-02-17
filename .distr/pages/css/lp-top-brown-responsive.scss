@@ -1,0 +1,34 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+@import '@lp/@top-brown/common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import '@lp/@top-brown/header/_responsive';
+@import '@lp/@top-brown/main/_responsive';
+@import '@lp/@top-brown/headliners/_responsive';
+@import '@lp/@top-brown/main-headliner/_responsive';
+@import 'community/_responsive';
+@import 'concept/_responsive';
+@import 'footer/_responsive';
+@import 'format/_responsive';
+@import 'franchise/_responsive';
+@import 'organizer/_responsive';
+@import 'partners/_responsive';
+@import 'online-plf/_responsive';
+@import 'press/_responsive';
+@import 'reviews/_responsive';
+@import 'speakers/_responsive';
+
+/***********/
+/* Popups */
+@import 'popup-speakers/_responsive';
+@import 'popup-price/_responsive';

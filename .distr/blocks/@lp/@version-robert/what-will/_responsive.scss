@@ -1,0 +1,75 @@
+.what-will {
+	@media (max-width: 1570px) {
+		background: #FFF url(../img/@lp/@version-robert/what-will/robert.png) no-repeat 120% -40px;
+		background-size: 65%;
+	}
+	@media (max-width: 991px) {
+		padding: 140px 0 60px 0;
+		background: none ;
+		&__text {
+			padding: 0vw 6rem;
+			width: auto;
+			
+			p {margin-bottom: 50px;}
+
+			&-1 {
+				font-size: 32px;
+				line-height: 160%;
+			}
+		}
+		&__content.row {
+			display: block;
+		}
+		&__img {
+			display: block;
+			float: none;
+			margin: 0 auto;
+			width: 100%;
+			img {
+				width: auto;
+				margin: 0;
+			}
+		}
+		&__title {
+			margin-bottom: 49px;
+			line-height: 94px;
+		}
+		&__subtitle {
+			font-size: 50px;
+			line-height: 118%;
+		}
+	} // 991
+
+	@media (max-width: 767px) {
+		&__text {
+			padding: 0 2rem;
+		}
+	}
+
+	@media (max-width: 575px) {
+		padding-top: 70px;
+		padding-bottom: 25px;
+		&__img {
+			float: none;
+			text-align: center;
+			img { margin: 0; }
+		}
+		&__title {
+			margin-bottom: 25px;
+			line-height: 31px;
+		}
+		&__subtitle {
+			font-size: 19px;
+			line-height: 116%;
+			margin-bottom: 25px;
+		}
+		&__text {
+			p {margin-bottom: 25px;}
+			&-1 {
+				font-size: 14px;
+				line-height: 160%;
+			}
+		}
+	} // 575
+
+}

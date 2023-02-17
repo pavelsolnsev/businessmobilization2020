@@ -1,0 +1,73 @@
+.arni {
+
+	@media (max-width: 991px) {
+
+		&__title {
+			font-size: 82px;
+			line-height: 0.95;
+		}
+
+		&__subtitle {
+			font-size: 70px;
+		}
+
+		&__img {
+			bottom: 106px;
+		}
+
+		&__link {
+
+			&-text {
+				font-size: 53px;
+				line-height: 62px;
+			}
+
+			img {
+				max-width: 77px;
+			}
+		}
+
+	} // 991
+
+	@media (max-width: 767px) {
+
+		&__title {
+			font-size: 48px;
+			line-height: 0.8;
+		}
+
+		&__subtitle {
+			font-size: 38px;
+			line-height: 31px;
+		}
+
+		&__img {
+			width: 90%;
+		}
+
+		&__link {
+			margin-left: -15px;
+			padding-left: 15px;
+
+			&::after {
+				content: none;
+			}
+
+			&-text {
+				margin-left: 10px;
+				font-size: 41px;
+				line-height: 1;
+			}
+			
+		}
+
+	}	// 767
+
+	@media (max-width: 575px) {
+		&__img {
+			width: 400px;
+			right: 50%;
+			transform: translateX(50%);
+		}
+	} // 575
+}

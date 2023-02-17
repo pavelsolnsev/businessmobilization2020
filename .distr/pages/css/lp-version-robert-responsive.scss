@@ -1,0 +1,24 @@
+$mobile-min-width: 360px;
+
+
+
+
+/*************/
+/* Defaults */
+@import 'common/_responsive';
+@import '@lp/@version-robert/common/_responsive';
+
+
+/***********/
+/* Blocks */
+@import 'header/_responsive';
+@import '@lp/@version-robert/header/_responsive';
+@import '@lp/@version-robert/main/_responsive';
+@import '@lp/@version-robert/about/_responsive';
+@import '@lp/@version-robert/registration/_responsive';
+@import '@lp/@version-robert/whois/_responsive';
+@import '@lp/@version-robert/opposition/_responsive';
+@import '@lp/@version-robert/soul/_responsive';
+@import '@lp/@version-robert/what-will/_responsive';
+@import '@lp/@version-robert/platform/_responsive';
+@import '@lp/@version-robert/footer/_responsive';

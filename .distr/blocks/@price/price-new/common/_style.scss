@@ -1,0 +1,28 @@
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.button {
+    width: 100%;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+/*     font-family: Minion Pro, sans-serif; */
+    font-weight: bold;    
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    background: linear-gradient(148.05deg, rgba(254, 237, 174, 0.7) -13.24%, rgba(228, 152, 12, 0.7) 10.13%, rgba(228, 152, 12, 0) 32.74%), #E72F0C;
+    border: 0;
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.color-blue {
+   color: #0057FF; 
+}

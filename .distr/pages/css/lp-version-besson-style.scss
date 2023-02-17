@@ -1,0 +1,28 @@
+/**********/
+/* Fonts */
+@import 'fonts/_style';
+
+
+/*************/
+/* Defaults */
+@import 'common/_style';
+@import '@lp/@version-besson/common/_style';
+
+
+/***********/
+/* Blocks */
+@import 'header/_style';
+@import '@lp/@version-besson/header/_style';
+@import '@lp/@version-besson/main/_style';
+@import '@lp/@version-besson/about/_style';
+@import '@lp/@version-besson/registration/_style';
+@import '@lp/@version-besson/platform/_style';
+@import '@lp/@version-besson/whois/_style';
+@import '@lp/@version-besson/beginning/_style';
+@import '@lp/@version-besson/success/_style';
+@import '@lp/@version-besson/tabs/_style';
+@import '@lp/@version-besson/cite/_style';
+@import '@lp/@version-besson/after/_style';
+@import '@lp/@version-besson/current/_style';
+@import '@lp/@version-besson/comingsoon/_style';
+@import '@lp/@version-besson/breakthrough/_style';

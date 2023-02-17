@@ -1,0 +1,211 @@
+@import 'form/_mixins';
+
+.speakers {
+	background: #F4F4F4 url('../img/speakers/bg.png') no-repeat 0 444px;
+	@media (max-width: 1800px) {
+		background-image: none;
+	}
+	padding: 80px 0 0px;
+	margin-bottom: -48px;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 73px;
+	}
+
+	&-card {
+		height: 100%;
+		min-height: 427px;
+		position: relative;
+		top: auto;
+		left: auto;
+		display: flex;
+		flex-direction: column;
+		text-decoration: none !important;
+		background: #FFF;
+		box-shadow: 0px 3.3345px 25.0088px rgba(77, 44, 224, 0.3);
+		opacity: 1;
+		transition: 0.3s;
+		margin: 0 auto;
+
+		[data-more-hidden] & {
+			position: absolute;
+			top: 9999px;
+			left: -9999px;
+			opacity: 0;
+		}
+
+		&__col {
+			padding-bottom: 29px;
+			&[data-more-hidden] {
+				min-height: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		&__info {
+			display: none;
+		}
+
+		&__image {
+			/* min-height: 252px;
+			overflow: hidden; */
+			background: url('../img/speakers/bg-card-1.jpg') no-repeat 0 22px / 100% 100%;
+			margin-top: -22px;
+			&_odd {
+				background-image: url('../img/speakers/bg-card-2.jpg');
+			}
+			picture {
+				display: block;
+				overflow: hidden;
+			}
+			img {
+				margin-bottom: -1px; // компенсация пустой строки пикселей в фотках от криворуких дизайнеров
+				.speakers-nospeaker & {
+					mix-blend-mode: overlay;
+				}
+			}
+		}
+		&__text {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 24px;
+		}
+		&__role {
+			color: #3215E4;
+			margin-bottom: 5px;
+		}
+		&__name {
+			color: $blue;
+			font-size: 35px;
+			letter-spacing: -0.03em;
+			line-height: 88.91%;
+			margin: 0 0 5px;
+			.speakers-nospeaker & {
+				margin-bottom: 15px;
+			}
+		}
+		&__note {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 115%;
+		}
+		&__logo {
+			margin-top: auto;
+			img {
+				max-height: 69px;
+			}
+		}
+		&__button {
+			min-height: 60px;
+			font-size: 23px;
+			font-weight: 900;
+			letter-spacing: 0.03em;
+			margin: auto 0 0;
+		}
+
+		@media (min-width: 992px) {
+			&__col_headliner {
+				order: -1;
+			}
+			&__col_headliner & {
+				min-height: 0;
+				flex-flow: row;
+				&__image {
+					max-width: 360px;
+					flex: 0 0 31.7%;
+					background-image: url('../img/speakers/bg-headliner.jpg');
+				}
+				&__text {
+					padding: 30px;
+					display: flex;
+					flex-flow: column;
+				}
+				&__role {
+					font-size: 30px;
+					font-weight: 900;
+					line-height: 1;
+					letter-spacing: -0.03em;
+					margin: 10px 0 auto;
+				}
+				&__name {
+					font-size: 65px;
+					margin-bottom: 17px;
+				}
+				&__logo {
+					display: none;
+				}
+			} // &__col_headliner &
+		} // 992
+
+	} // &-card
+
+	&__link-more {
+		max-width: 750px;
+		min-height: 103px;
+		position: relative;
+		display: none;
+		color: #FFF;
+		font-size: 41.496px;
+		font-weight: 900;
+		// background-color: #F8006B;
+		background-image: linear-gradient(180deg, #F8006B -0.32%, #B800B0 100%);
+		margin: 60px auto 0;
+		&-icon {
+			display: none;
+			width: 80px;
+			height: 79px;
+			position: absolute;
+			top: -45px;
+			left: 0;
+			right: 0;
+			background: url('../img/speakers/bg-more.png') no-repeat 0 0 / auto 100%;
+			animation: speakers-link-more-icon 2s ease infinite;
+			margin: 0 auto;
+			&_1 {
+				right: 55px;
+				animation-delay: 2s;
+			}
+			&_2 {
+				background-position: -80px 0;
+				animation-delay: 2.1s;
+			}
+			&_3 {
+				left: 55px;
+				background-position: -160px 0;
+				animation-delay: 2.3s;
+			}
+		}
+	}
+	&_show-all & {
+		&__link-more {
+			display: none;
+		}
+	}
+
+}
+
+@keyframes speakers-link-more-icon {
+	0% { transform: scale(0.7); }
+	20% { transform: scale(1); }
+	50% { transform: scale(0.7); }
+	100% { transform: scale(0.7); }
+}
+
+.popup-add-speaker {
+	.form {
+		&__title {
+			text-align: center;
+		}
+		&__item_email {
+			order: 2;
+		}
+		&__footer {
+			display: none;
+		}
+	}
+}
+
+// @import 'speakers-past/_style';
+// @import 'discussion/_style';

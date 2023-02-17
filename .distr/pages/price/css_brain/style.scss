@@ -1,0 +1,19 @@
+/**********/
+/* Fonts */
+@import '@price/fonts/_style';
+
+/* Шрифты из brain2021 */
+@import url('https://brain2021.ru/price/css/fonts.css');
+
+/*************/
+/* Defaults */
+@import '@price/brain2021/common/_style';
+
+/***********/
+/* Blocks */
+@import '@price/brain2021/header/_style';
+@import '@price/brain2021/price/_style';
+
+/***********/
+/* Popups */
+@import '@price/brain2021/popup-price/_style';

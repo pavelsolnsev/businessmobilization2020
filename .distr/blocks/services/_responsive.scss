@@ -1,0 +1,48 @@
+.services {
+
+	@media (max-width: 767px) {
+		padding: 45px 0 42px;
+
+		&__title {
+			text-align: center;
+			margin-bottom: 25px;
+			font-size: 30px;
+			line-height: 100%;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 25px;
+		}
+
+		&__carousel {
+			margin-bottom: 40px;
+		}
+
+		// .swiper-pagination {
+		// 	width: 100%;
+		// 	max-width: 180px;
+		// }
+
+		&-card {
+			padding: 10px;
+			&__tech {
+				padding: 10px;
+			}
+		}
+
+		.version-retargeting & {
+			padding-top: 50px;
+		}
+
+	} // 767
+
+
+	@media (max-width: 600px) {
+		.swiper-nav {
+			max-width: 90%;
+		}
+	} // 600
+
+}

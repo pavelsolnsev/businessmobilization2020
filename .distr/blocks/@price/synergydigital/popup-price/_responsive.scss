@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+	.popup-price {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 380px;
+		}
+		&__name {
+			font-size: 50px;
+		}
+		&__form {
+			position: relative;
+			padding: 20px;
+		}
+		&__price {
+			font-size: 26px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+	}
+}

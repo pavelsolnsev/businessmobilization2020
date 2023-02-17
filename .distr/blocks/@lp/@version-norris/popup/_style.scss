@@ -1,0 +1,11 @@
+.popup {
+	&-other {
+		max-width: 505px !important;
+		padding: 50px;
+		background: transparent;
+
+		&__text {
+			margin-top: 25px;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.public-section {
+    background: url(../img/@lp/@version-brown/public-section/public.jpg) center center / cover no-repeat;
+    padding: 110px 0 120px;
+    &__title {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        border-color: #fff;
+        margin-bottom: 50px;
+    }
+    &__description {
+        font-family: 'TT Commons';
+        font-size: 48px;
+        line-height: 72px;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+        margin-bottom: 70px;
+    }
+    &__text {
+        font-family: 'TT Commons';
+        font-size: 32px;
+        line-height: 52px;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+    }
+    &__decoration {
+        color: #1662DA;
+        background: #fff;
+        display: inline-block;
+        padding-left: 24px;
+        padding-right: 16px;
+        &_padding {
+            &-top {
+                padding-top: 7px;
+            }
+            &-bottom {
+                padding-bottom: 10px;
+            }
+        }
+    }
+    &__years {
+        color: #fff;
+        background: #1662DA;
+        max-width: 408px;
+        padding: 25px 0 20px 24px;
+    }
+    &__box {
+        padding-bottom: 50px;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        flex-basis: 42%;
+    }
+    &__right {
+        font-family: 'Proxima Nova ExCn';
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.03em;
+        flex-basis: 53%;
+    }
+    &__wrap {
+        padding-top: 10px;
+        br{
+            display: none;
+        }
+    }
+}
+
+.lang-en {
+    .public-section {
+        &__decoration {
+            &_padding {
+                &-bottom {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.registration {
+	color: #FFF;
+	background: $red;
+
+	.form {
+		padding: 145px 0;
+		&__title {
+			text-align: center;
+			font-size: 123px;
+			line-height: 98%;
+			letter-spacing: -0.03em;
+			text-transform: uppercase;
+			margin: 0 -15px 65px;
+		}
+		&__input {
+			min-height: 70px;
+			font-size: 22px;
+			border: 4px solid #FFFFFF;
+			border-radius: 6.29909px;
+			background: none;
+		}
+		&__button {
+			min-height: 70px;
+			font-size: 27px;
+			font-weight: bold;
+			font-family: $font-regular;
+			border-radius: 6.29909px;
+			background: #FFFFFF;
+		}
+		&__footer {
+			font-size: 17.6526px;
+			padding-top: 33px;
+			&-checkbox {
+				width: 14px;
+				height: 14px;
+				border-radius: 3px;
+				background: #FFFFFF;
+				margin-top: 3px;
+				&-icon:before {
+					content: url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.66843 9.36373L6.99799 13.7459L16.9999 1.53303' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+	} // .form
+
+}

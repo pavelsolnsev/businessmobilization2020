@@ -1,0 +1,62 @@
+$font-serif: 'PT Serif', serif;
+
+
+.serif {
+	font-family: $font-serif;
+}
+
+.popup__title {
+	font-size: 28px;
+}
+
+
+.title {
+	font-size: 70px;
+
+	@media (max-width: 991px) {
+		font-size: 60px;
+	} // 991
+
+	@media (max-width: 767px) {
+		font-size: 35px;
+	} // 767
+
+}
+
+
+.carousel {
+	> * {
+		position: absolute;
+		left: -9999px;
+		:first-child {
+			position: static;
+		}
+	}
+
+	&.swiper-container-initialized {
+		> * {
+			position: static;
+		}
+	}
+
+}
+
+
+.swiper-pagination-bullet-active {
+	background: #4D2CE0;
+}
+
+
+// Versions
+.version-vujicic-platform {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.wrapper > * { order: 200; }
+	.wrapper > .header { order: 10; }
+	.wrapper > .main__bg { order: 20; }
+	.wrapper > .themes { order: 30; }
+	.wrapper > .platform { order: 40; background: #F7F7F7; }
+	.wrapper > .base { order: 50; background: #FFF; }
+}

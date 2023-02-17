@@ -1,0 +1,40 @@
+.speakers {
+	padding: 60px 0;
+	margin-bottom: 0;
+	background: radial-gradient(50% 50% at 50% 50%, #701E8D 0%, #19024A 100%);
+
+	&__title {
+		color: #FFFFFF;
+		margin-bottom: 13px;
+	}
+
+	&__subtitle {
+		max-width: 880px;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 121%;
+		margin: 0 auto 40px;
+	}
+	.speakers-card {
+		&__date {
+			display: none;
+		}
+		&__col {
+			&.speakers-kotler {
+				order: -1;
+			}
+			&.speakers-harari {
+				order: -1;
+			}
+			&.speakers-vujicic {
+				order: -1;
+			}
+			&.speakers-taleb {
+				order: -1;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+.after {
+
+	@media (max-width: 991px) {
+		background-image: none;
+
+		&__title {
+			margin-bottom: 50px;
+			line-height: 94px;
+		}
+		&__text {
+			width: 70%;
+			padding: 0 1rem 0 6rem;
+		}
+		&__img {
+			width: 30%;
+			img {
+				margin: 480px 0 -208px -80px;
+				max-width: 490px;
+			}
+		}
+
+	} // 991
+
+
+	@media (max-width: 575px) {
+		padding-top: 76px;
+
+		&__title {
+			margin-bottom: 25px;
+			line-height: 31px;
+		}
+		&__content.row {
+			display: block;
+		}
+		&__text {
+			width: 100%;
+			padding: 0 2rem 0 2rem;
+		}
+		&__img {
+			width: 100%;
+			img {
+				margin: -61px 37px -76px 0;
+				max-width: 260px;
+			}
+		}
+
+	} // 575
+
+}

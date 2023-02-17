@@ -1,0 +1,46 @@
+.main {
+	&__title {
+		text-transform: uppercase;
+		margin: 10px 0 43px;
+
+	}
+
+	&__speaker {
+		&-image {
+			bottom: -64px;
+		}
+		&-title {
+			display: none !important;
+		}
+	}
+
+
+	// Versions
+
+	.version-vujicic & {
+		&__title {
+			&-speaker {
+				&-date {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+
+	.version-vujicic-platform & {
+		&__title {
+			&-speaker {
+				&-date {
+					display: none;
+				}
+				@media (min-width: 768px) {
+					&-name {
+						padding-top: 10px;
+						font-size: 130px;
+					}
+				}
+			}
+		}
+	}
+
+}

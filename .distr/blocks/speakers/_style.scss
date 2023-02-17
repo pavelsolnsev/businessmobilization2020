@@ -1,0 +1,314 @@
+@import 'form/_mixins';
+
+.speakers {
+	background: #FFF url('../img/speakers/bg.png') no-repeat 0 444px;
+	@media (max-width: 1800px) {
+		background-image: none;
+	}
+	padding: 60px 0 0px;
+	margin-bottom: -48px;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 53px;
+	}
+
+	&__row {
+		justify-content: center;
+	}
+
+	&-nospeaker {
+		padding-bottom: 29px;
+	}
+
+	&-card {
+		height: 100%;
+		position: relative;
+		top: auto;
+		left: auto;
+		display: flex;
+		flex-direction: column;
+		text-decoration: none !important;
+		background: #FFF;
+		box-shadow: 0px 3.3345px 25.0088px rgba(77, 44, 224, 0.3);
+		margin: 0 auto;
+
+		&[data-fancybox] {
+			transform: perspective(1px) translateZ(0);
+			cursor: pointer;
+		}
+
+		&[data-fancybox]:hover,
+		&[data-fancybox]:focus,
+		&[data-fancybox]:active {
+			animation: hvr-pop 0.25s linear;
+		}
+
+		&_no-popup {
+			pointer-events: none;
+		}
+
+		&__col {
+			position: static;
+			opacity: 1;
+			transition: opacity 0.3s;
+			padding-bottom: 29px;
+		}
+
+		&__date {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			color: #FFF;
+			background: #F8006B;
+			font-size: 24px;
+			line-height: 79%;
+			letter-spacing: -0.01em;
+			text-transform: uppercase;
+			padding: 10px 15px;
+			& span { font-weight: 800; }
+			&_base {
+				display: inline-flex;
+				font-size: 0;
+				background-color: #B800F8;
+				padding: 11px;
+				&:after {
+					content: '';
+					display: block;
+					width: 128px;
+					height: 16px;
+					background: url('../img/speakers/icons/syn-icon.svg') no-repeat 0 0 / cover;
+				}
+			}
+		}
+
+		&__info {
+			display: none;
+		}
+
+		&__image {
+			position: relative;
+			background: url('../img/speakers/bg-card-1.jpg') no-repeat 0 22px / 100% 100%;
+			margin-top: -22px;
+			&_odd {
+				background-image: url('../img/speakers/bg-card-2.jpg');
+			}
+			picture {
+				max-height: 251px;
+				overflow: hidden;
+				display: block;
+			}
+			img {
+				margin-bottom: -1px; // компенсация пустой строки пикселей в фотках от криворуких дизайнеров
+				.speakers-nospeaker & {
+					mix-blend-mode: overlay;
+				}
+			}
+		}
+		&__text {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 24px;
+		}
+		&__role {
+			color: #3215E4;
+			margin-bottom: 5px;
+		}
+		&__name {
+			color: $blue;
+			font-size: 35px;
+			letter-spacing: -0.03em;
+			line-height: 88.91%;
+			margin: 0 0 5px;
+
+			.speakers-nospeaker & {
+				margin-bottom: 15px;
+			}
+
+			.speakers-otb & {
+				font-size: 28px;
+			}
+		}
+		&__note {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 115%;
+			a {
+				text-decoration: underline;
+			}
+			span{
+				display: none;
+			}
+		}
+		&__logo {
+			margin-top: auto;
+			padding-top: 15px;
+			img {
+				max-height: 69px;
+			}
+		}
+		&__button {
+			min-height: 60px;
+			font-size: 23px;
+			font-weight: 900;
+			letter-spacing: 0.03em;
+			margin: auto 0 0;
+		}
+
+		&__col_headliner {
+			order: -1;
+
+			&.speakers-taleb {
+				order: -10;
+			}
+		}
+		&__col_headliner & {
+			min-height: 0;
+			flex-flow: row;
+			&__image {
+				position: static;
+				max-width: 360px;
+				min-height: 237px;
+				flex: 0 0 31.7%;
+				background-image: url('../img/speakers/bg-headliner.jpg');
+				picture {
+					height: 100%;
+					max-height: none;
+					display: flex;
+					align-items: flex-end;
+					justify-content: flex-end;
+				}
+			}
+
+			&__date {
+				top: 40px;
+				bottom: auto;
+				img { max-width: 17px; }
+			}
+
+			&__text {
+				display: flex;
+				flex-flow: column;
+				padding: 30px;
+			}
+			&__role {
+				font-weight: 900;
+				line-height: 1;
+				letter-spacing: -0.03em;
+				margin: 10px 0 auto;
+			}
+			&__name {
+				margin: auto 0;
+			}
+			&__note {
+				margin: auto 0;
+			}
+			&__logo {
+				display: none;
+			}
+
+			@media (min-width: 992px) {
+				&__role {
+					font-size: 30px;
+				}
+				&__name {
+					font-size: 65px;
+				}
+			} // 992
+
+		} // &__col_headliner &
+
+	} // &-card
+
+	&-hidden {
+		position: absolute;
+		top: 9999px;
+		left: -9999px;
+		opacity: 0;
+	}
+
+	&__link-more {
+		max-width: 750px;
+		min-height: 103px;
+		position: relative;
+		display: none;
+		color: #FFF;
+		font-size: 41.496px;
+		font-weight: 900;
+		// background-color: #F8006B;
+		background-image: linear-gradient(180deg, #F8006B -0.32%, #B800B0 100%);
+		margin: 60px auto 0;
+		&-icon {
+			width: 80px;
+			height: 79px;
+			position: absolute;
+			top: -45px;
+			left: 0;
+			right: 0;
+			background: url('../img/speakers/bg-more.png') no-repeat 0 0 / auto 100%;
+			animation: speakers-link-more-icon 2s ease infinite;
+			margin: 0 auto;
+			&_1 {
+				right: 55px;
+				animation-delay: 2s;
+			}
+			&_2 {
+				background-position: -80px 0;
+				animation-delay: 2.1s;
+			}
+			&_3 {
+				left: 55px;
+				background-position: -160px 0;
+				animation-delay: 2.3s;
+			}
+		}
+	}
+	&_show-all & {
+		&__link-more {
+			display: none;
+		}
+	}
+
+
+	// ========
+	// Versions
+	.lang-en & {
+		margin-bottom: 0;
+	}
+
+	.version-saysembaev &,
+	.version-hashimov & {
+		&-adizes {
+			order: -100;
+		}
+	}
+
+	.external-url-synergyonline & {
+		background: #F4F4F4;
+	}
+} // .speakers
+
+.version-top50{
+	.speakers-card__note{
+		span{
+			display: block;
+		}
+	}
+}
+
+@keyframes speakers-link-more-icon {
+	0% { transform: scale(0.7); }
+	20% { transform: scale(1); }
+	50% { transform: scale(0.7); }
+	100% { transform: scale(0.7); }
+}
+
+@keyframes hvr-pop {
+	50% { transform: scale3d(1.02,1.02,1.02); }
+}
+
+
+
+// @import 'speakers-past/_style';
+// @import 'discussion/_style';

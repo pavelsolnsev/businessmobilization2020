@@ -1,0 +1,28 @@
+.cite {
+  background-color: #EDEEEF;
+  padding: 60px 0 200px;
+  .blockquote {
+    &__img {
+      &--bottom--right {
+        bottom: -15%;
+        right: 4%;
+        picture {
+          max-width: 260px;
+        }
+        img {
+          max-width: 260px;
+        }
+      }
+    }
+  }
+}
+
+.lang-en {
+  .cite {
+    .blockquote {
+      &__img {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.whois {
+
+	@media (max-width: 1199px) {
+		&__img {
+			&_bottom {padding: 0 15px;}
+		}
+		&__img_bottom {
+			display: none;
+		}
+	}
+
+	@media (max-width: 991px) {
+	padding: 126px 0 60px 0;
+	background: #FFF url(../img/@lp/@version-robert/whois/bg.png) no-repeat right 29px;
+		&__text {
+			padding: 0vw 6rem;
+			width: auto;
+			ol {
+				font-size: 24px;
+				line-height: 40px;
+				padding: 15px;
+			}
+		}
+		&__content.row {
+			display: block;
+			padding-bottom: 23px;
+		}
+		&__img {
+			float: right;
+			text-align: right;
+			img {
+				width: auto;
+				margin: -45px -65px 0 0;
+			}
+
+			&_top {
+				display: none;
+			}
+
+			&_bottom {
+				width: 40%;
+				float: none;
+				margin: 40px auto 0;
+				img {margin-right: 0;}
+			}
+		}
+		&__content {
+			&_bottom.row {
+				display: flex;
+				flex-direction: column-reverse;
+				margin-top: 190px;
+			}
+		}
+		&__title {
+			max-width: 70%;
+			margin-bottom: 49px;
+			line-height: 94px;
+		}
+		&__text_1 {
+			max-width: 65%;
+		}
+		.blockquote {
+			padding-right: 0;
+			&__wrap {
+				&-img {
+					max-width: 300px;
+					width: 100%;
+					right: unset;
+					top: unset;
+					left: 10%;
+					bottom: -120px;
+					transform: none;
+				}
+			}			
+			&__text {
+				max-width: 100%;
+			}
+		}
+	} // 991
+
+	@media (max-width: 900px) {
+		background: #FFF url(../img/@lp/@version-robert/whois/bg.png) no-repeat 130% 29px;
+	}
+
+	@media (max-width: 767px) {
+		&__text {
+			padding: 0 2rem;
+		}
+	}
+
+	@media (max-width: 575px) {
+		background: none;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__img {
+			float: none;
+			text-align: center;
+			width: 70%;
+			img { margin: 0; }
+			&-mob {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		&__title {
+			margin-bottom: 25px;
+			line-height: 31px;
+			max-width: 100%;
+		}
+		&__text_1 {
+			max-width: 100%;
+		}
+		&__text {
+			font-size: 14px;
+			margin: 0;
+			padding: 0 2rem;
+			p+p {
+				margin: 1.8rem 0 0;
+			}
+			ol {
+				font-size: 18px;
+				line-height: 28px;
+				padding: 10px;
+			}
+		}
+		&__content {
+			&_bottom.row {
+				margin-top: 50px;
+				padding-bottom: 0;
+			}
+		}
+		.blockquote {
+			margin-bottom: 30px;
+			&__wrap {
+				&-img {
+					width: 100%;
+					position: static;
+					text-align: center;
+				}
+			}
+		}
+	} // 575
+
+}

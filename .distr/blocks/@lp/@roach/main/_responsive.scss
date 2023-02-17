@@ -1,0 +1,151 @@
+.main {
+
+	@media (max-width: 1199px) {
+
+		&__speaker {
+			&_no-content & {
+				&-image {
+					max-width: inherit;
+				}
+			}
+		}	
+	}
+
+	@media (max-width: 991px) {
+		padding: 100px 0 50px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__title {
+			&-speaker {
+				&-date {
+					font-size: 22px;
+				}
+				&-name {
+					font-size: 120px;
+				}
+				&-note {
+					font-size: 35px;
+				}
+			}
+		}
+
+		&__speaker {
+			max-width: 370px;
+			margin: auto;
+			&-image {
+				max-width: none;
+				right: 53px;
+			}
+			&-content {
+				margin: 3px 0 auto auto;
+			}
+
+			&_no-content & {
+				&-image {
+					max-width: none;
+				}
+			}	
+		}
+
+		&__books {
+			&_1 {
+				margin-right: 60px;
+			}
+	
+			&-wrap {
+				margin-bottom: -200px;
+				img {max-width: 180px;}
+			}
+		}
+
+	} // 991
+
+
+	@media (max-width: 767px) {
+		padding: 60px 0 0px;
+
+		&__title {
+			position: relative;
+			z-index: 2;
+			min-height: 293px;
+			display: flex;
+			flex-direction: column;
+			&-speaker {
+				&-date {
+					font-size: 18.6133px;
+					padding: 7px 12px;
+					margin: 0 auto 0 0;
+				}
+				&-name {
+					font-size: 63.4873px;
+					line-height: 89%;
+					margin: auto 0 0;
+				}
+				&-note {
+					max-width: 220px;
+					font-size: 36.3434px;
+					margin: 6px 0 12px;
+				}
+			}
+		}
+
+		&__speaker {
+			background: none;
+			&-image {
+				bottom: 0 !important;
+				max-height: none !important;
+				max-width: 305px;
+				bottom: 53px;
+				right: -33px;
+				overflow: visible;
+				&:before {
+					content: '';
+					height: 100px;
+					position: absolute;
+					bottom: -53px;
+					left: -999px;
+					right: -999px;
+					background: linear-gradient(180deg, rgba(37, 6, 141, 0) 0%, rgb(37, 6, 141) 50%, #3900FF 100%);
+				}
+			}
+			&-content {
+				max-width: 99px;
+				position: absolute;
+				bottom: 39px;
+				right: 8px;
+				box-shadow: 9.14001px 9.14001px 8.226px rgba(54, 0, 80, 0.61), inset 0px -32.904px 58.496px rgba(82, 0, 146, 0.2);
+				margin: 0;
+			}
+		}
+
+	} // 767
+
+	@media (max-width: 575px) {
+		padding-top: 25px;
+		&__speaker {			
+			&-image {
+				min-width: 290px;
+			}
+		}
+		&__title {
+			max-width: 100%;
+			min-height: auto;
+			&-speaker {
+				&-date {
+					font-size: 16px;
+				}
+				&-name {
+					margin: 33px 0 0;
+					font-size: 66px;
+				}
+				&-note {
+					font-size: 22px;
+				}
+			}
+		}
+		&__button {
+			text-align: center;
+		}
+	} // 575
+}
